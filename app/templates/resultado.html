@@ -1,0 +1,12 @@
+<h1>Resultado</h1>
+
+<h2 style="font-size: 80px;">{{ kanji.caractere }}</h2>
+
+{% if alternativa.correta %}
+    <p style="color: green;">✔ Resposta Correta!</p>
+{% else %}
+    <p style="color: red;">✘ Incorreto!</p>
+{% endif %}
+
+<a href="/">Voltar</a>
+<a href="/quiz/?nivel={{ kanji.nivel }}">Próxima questão</a>

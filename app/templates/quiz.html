@@ -1,0 +1,16 @@
+<h1>Qual é a leitura deste Kanji?</h1>
+
+<h2 style="font-size: 80px;">{{ kanji.caractere }}</h2>
+
+<form action="/responder/{{ kanji.id }}/" method="POST">
+    {% csrf_token %}
+
+    {% for alt in alternativas %}
+        <p>
+            <input type="radio" name="alternativa" value="{{ alt.id }}" required>
+            {{ alt.texto }}
+        </p>
+    {% endfor %}
+
+    <button type="submit">Responder</button>
+</form>
