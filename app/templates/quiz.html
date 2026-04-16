@@ -1,16 +1,147 @@
-<h1>Qual é a leitura deste Kanji?</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Kanji Quiz</title>
+<style>
+    body {
+        font-family: Arial;
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+    }
+    .kanji {
+        font-size: 80px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .alternativas button {
+        width: 100%;
+        padding: 15px;
+        margin: 8px 0;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .botao-proximo {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 16px 24px;
+        font-size: 20px;
+        border-radius: 12px;
+        float: right;
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+    .botao-proximo.ativo {
+        cursor: pointer;
+        opacity: 1;
+    }
+    .botao-anterior {
+        background-color: #2196F3;
+        color: white;
+        text-decoration: none; 
+        border: none;
+        padding: 16px 24px;
+        font-size: 20px;
+        border-radius: 12px;
+        float: left;
+        cursor: pointer;
+    }
+    .botao-parar {
+        background-color: #f44336;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        font-size: 16px;
+        border-radius: 8px;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        text-decoration: none;
+        z-index: 1000;
+    }
+    .botoes-container {
+        margin-top: 10px;
+        overflow: hidden;
+    }
+</style>
+</head>
+<body>
 
-<h2 style="font-size: 80px;">{{ kanji.caractere }}</h2>
+<!-- Botão Parar Quiz -->
+<a href="{% url 'parar_quiz' quiz.id %}" 
+   class="botao-parar"
+   onclick="return confirm('Tem certeza que deseja parar o quiz?');">
+   Parar Quiz
+</a>
 
-<form action="/responder/{{ kanji.id }}/" method="POST">
+<h2>Questão {{ questao_atual }} / {{ total }}</h2>
+
+<div class="kanji">{{ kanji.kanji }}</div>
+
+<form method="post" id="quizForm" action="{% url 'responder' quiz.id kanji.id %}">
     {% csrf_token %}
+    <input type="hidden" name="questao" value="{{ questao_atual }}">
 
-    {% for alt in alternativas %}
-        <p>
-            <input type="radio" name="alternativa" value="{{ alt.id }}" required>
-            {{ alt.texto }}
-        </p>
-    {% endfor %}
+    <div class="alternativas">
+        {% for alt in alternativas %}
+            <button type="button"
+                    class="alternativa {% if resposta and resposta.alternativa.id == alt.id %}selecionada{% endif %}"
+                    data-id="{{ alt.id }}">
+                {{ alt.texto }}
+            </button>
+        {% endfor %}
+    </div>
 
-    <button type="submit">Responder</button>
+    <div class="botoes-container">
+        <a href="{% url 'quiz_pergunta' quiz_id=quiz.id questao=questao_atual|add:'-1' %}"
+           class="botao-anterior"
+           {% if questao_atual == 1 %}style="opacity:0.5;pointer-events:none;"{% endif %}>
+           Anterior
+        </a>
+
+        <button type="submit" name="proximo" value="1" id="proximoBtn" class="botao-proximo" disabled>Próximo</button>
+    </div>
 </form>
+
+
+<script>
+    const alternativas = document.querySelectorAll('.alternativa');
+    const proximoBtn = document.getElementById('proximoBtn');
+    const form = document.getElementById('quizForm');
+
+    let hiddenInput = document.createElement('input');
+    hiddenInput.type = 'hidden';
+    hiddenInput.name = 'alternativa';
+    form.appendChild(hiddenInput);
+
+    const selecionadaBackend = "{{ selecionada }}";
+
+    if (selecionadaBackend && selecionadaBackend !== "None") {
+        alternativas.forEach(btn => {
+            if (btn.getAttribute('data-id') === selecionadaBackend) {
+                btn.style.backgroundColor = '#d0f0c0';
+                hiddenInput.value = selecionadaBackend;
+
+                proximoBtn.disabled = false;
+                proximoBtn.classList.add('ativo');
+            }
+        });
+    }
+
+    alternativas.forEach(btn => {
+        btn.addEventListener('click', () => {
+            alternativas.forEach(b => b.style.backgroundColor = '');
+            btn.style.backgroundColor = '#d0f0c0';
+
+            hiddenInput.value = btn.getAttribute('data-id');
+
+            proximoBtn.disabled = false;
+            proximoBtn.classList.add('ativo');
+        });
+    });
+</script>
+
+</body>
+</html>

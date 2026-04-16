@@ -1,12 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado do Quiz</title>
+    <style>
+        body { font-family: Arial; max-width: 600px; margin: auto; padding: 20px; }
+        .ok { color: green; }
+        .no { color: red; }
+        .kanji { font-size: 40px; }
+    </style>
+</head>
+<body>
+
 <h1>Resultado</h1>
 
-<h2 style="font-size: 80px;">{{ kanji.caractere }}</h2>
+<p><strong>Acertos:</strong> {{ quiz.acertos }} / {{ quiz.quantidade }}</p>
+<p><strong>Porcentagem:</strong> {{ porcentagem }}%</p>
+<p><strong>Tempo:</strong> {{ tempo }}</p>
 
-{% if alternativa.correta %}
-    <p style="color: green;">✔ Resposta Correta!</p>
-{% else %}
-    <p style="color: red;">✘ Incorreto!</p>
-{% endif %}
+<hr>
 
-<a href="/">Voltar</a>
-<a href="/quiz/?nivel={{ kanji.nivel }}">Próxima questão</a>
+<h2>Detalhes das respostas</h2>
+
+{% for r in resumo %}
+    <div style="margin-bottom: 20px;">
+        <div class="kanji">{{ r.kanji.kanji }}</div>
+
+        {% if r.acertou %}
+            <p class="ok">✔ Correto</p>
+        {% else %}
+            <p class="no">✘ Errado</p>
+            <p><strong>Alternativa correta:</strong> {{ r.correta_texto }}</p>
+        {% endif %}
+
+        <p><strong>Você escolheu:</strong> {{ r.escolhida.texto }}</p>
+    </div>
+    <hr>
+{% endfor %}
+
+<div style="text-align: center; margin-top: 30px;">
+    <a href="{% url 'menu' %}"
+       style="
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+       ">
+        Voltar ao início
+    </a>
+</div>
+
+</body>
+</html>
+

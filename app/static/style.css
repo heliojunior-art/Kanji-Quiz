@@ -1,0 +1,19 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+.kanji {
+    font-size: 6rem;
+}
+
+.alternativa {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 200px;
+}
+
+.selecionada {
+    background-color: #d0f0c0;
+}

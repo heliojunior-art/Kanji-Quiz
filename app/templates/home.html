@@ -1,12 +1,33 @@
-<h1>Quiz de Kanji</h1>
+{% extends "base.html" %}
 
-<form action="/quiz/">
-    <label>Nível:</label>
-    <select name="nivel">
-        <option value="1年">1年</option>
-        <option value="2年">2年</option>
-        <option value="3年">3年</option>
-    </select>
+{% block content %}
 
-    <button type="submit">Iniciar Quiz</button>
-</form>
+<div class="d-flex flex-column justify-content-center align-items-center text-center fade-slide" style="height: 70vh;">
+
+    <!-- Título principal -->
+    <h1 style="font-size: 64px; font-weight: bold; letter-spacing: 4px;">
+        漢字クイズ
+    </h1>
+
+    <!-- Subtítulo -->
+    <h3 class="mb-5" style="color: gray;">
+        --Kanji Quiz--
+    </h3>
+
+    <!-- Botão iniciar -->
+    <a href="{% url 'menu' %}" 
+       class="btn"
+       style="
+            background-color: #58cc02;
+            color: white;
+            font-size: 24px;
+            padding: 16px 50px;
+            border-radius: 14px;
+            box-shadow: 0 4px 0 #46a302;
+       ">
+        ▶ Iniciar
+    </a>
+
+</div>
+
+{% endblock %}

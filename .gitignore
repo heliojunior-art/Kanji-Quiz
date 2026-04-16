@@ -1,0 +1,43 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.tmp
+
+# --- Environment ---
+.env
+venv/
+ENV/
+*.sqlite3
+
+# --- Django ---
+staticfiles/
+media/
+*.log
+
+# --- Django Migrations ---
+**/migrations/*.py
+!**/migrations/__init__.py
+
+# --- VS Code ---
+.vscode/
+*.code-workspace
+
+# --- OS Files ---
+Thumbs.db
+.DS_Store
+
+# --- MyPy ---
+.mypy_cache/
+
+# --- PyTest ---
+.pytest_cache/
+
+# --- Pip ---
+pip-log.txt
+
+# --- Coverage ---
+.coverage
+htmlcov/
