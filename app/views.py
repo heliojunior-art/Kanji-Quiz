@@ -4,7 +4,15 @@ from .models import Kanji, Alternativa, Resposta, QuizSession
 from django.db import transaction
 from django.core.paginator import Paginator
 from .management.commands.import_kanjis import Command
+from django.http import HttpResponse
+from django.core.management import call_command
+from django.contrib.admin.views.decorators import staff_member_required
 import random
+
+@staff_member_required
+def setup_kanjis(request):
+    call_command("import_kanjis", "kanjis.json")
+    return HttpResponse("Kanjis importados com sucesso")
 
 # -------------------------------
 # HOME

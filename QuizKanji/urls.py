@@ -6,6 +6,7 @@ urlpatterns = [
     path("", views.home, name="home"),
     path('menu/', views.menu, name='menu'), 
     path('admin/', admin.site.urls),
+    path("setup-kanjis/", views.setup_kanjis),
 
     # Quiz
     path('quiz/<int:quiz_id>/<int:questao>/', views.quiz_pergunta, name='quiz_pergunta'),
