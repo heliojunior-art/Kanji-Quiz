@@ -15,6 +15,9 @@ class Kanji(models.Model):
     alternativa1 = models.CharField(max_length=255, blank=True, null=True)
     alternativa2 = models.CharField(max_length=255, blank=True, null=True)
     alternativa3 = models.CharField(max_length=255, blank=True, null=True)
+    
+    class Meta:  
+        db_table = 'app_kanji'
         
     def __str__(self):
         return self.kanji
