@@ -78,6 +78,7 @@ class Command(BaseCommand):
                             correta=is_correct
                         )
 
-            total += 1
+            if created:
+                total += 1
 
         self.stdout.write(self.style.SUCCESS(f"Importação concluída! {total} kanjis processados."))
