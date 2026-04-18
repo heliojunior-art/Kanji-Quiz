@@ -3,6 +3,7 @@ from django.utils import timezone
 from .models import Kanji, Alternativa, Resposta, QuizSession
 from django.db import transaction
 from django.core.paginator import Paginator
+from .management.commands.import_kanjis import Command
 import random
 
 # -------------------------------
@@ -10,6 +11,7 @@ import random
 # -------------------------------
 def home(request):
     return render(request, "home.html")
+print("ENTROU NA VIEW")
 
 # -------------------------------
 # MENU – Criar Quiz
@@ -23,7 +25,10 @@ def menu(request):
         kanjis = list(Kanji.objects.filter(nivel=nivel))
         if len(kanjis) < quantidade:
             quantidade = len(kanjis)    
-        print("TOTAL KANJIS:", Kanji.objects.count())
+        if Kanji.objects.count() == 0:
+            print("IMPORTANDO KANJIS NO RENDER...")
+            cmd = Command()
+            cmd.handle(arquivo="kanjis.json")
         ordem_kanjis = random.sample([k.id for k in kanjis], quantidade)
 
         quiz = QuizSession.objects.create(
