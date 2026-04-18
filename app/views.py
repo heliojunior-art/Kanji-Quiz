@@ -17,11 +17,13 @@ def home(request):
 def menu(request):
     if request.method == "POST":
         nivel = request.POST.get("nivel")
+        
         quantidade = int(request.POST.get("quantidade"))
 
         kanjis = list(Kanji.objects.filter(nivel=nivel))
         if len(kanjis) < quantidade:
-            quantidade = len(kanjis)
+            quantidade = len(kanjis)    
+        print("TOTAL KANJIS:", Kanji.objects.count())
         ordem_kanjis = random.sample([k.id for k in kanjis], quantidade)
 
         quiz = QuizSession.objects.create(
