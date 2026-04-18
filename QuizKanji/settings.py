@@ -1,4 +1,5 @@
 from pathlib import Path
+import dj_database_url
 import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -51,14 +52,9 @@ WSGI_APPLICATION = 'QuizKanji.wsgi.application'
 # MySQL
 # ------------------------------
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        'USER': 'root',
-        'PASSWORD': '3352',
-        'HOST': 'localhost',
-        'PORT': '3306',
-    }
+        'default': dj_database_url.config(
+            default=os.getenv('DATABASE_URL')
+    )
 }
 
 AUTH_PASSWORD_VALIDATORS = [
