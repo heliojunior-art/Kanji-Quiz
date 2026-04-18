@@ -11,7 +11,6 @@ import random
 # -------------------------------
 def home(request):
     return render(request, "home.html")
-print("ENTROU NA VIEW")
 
 # -------------------------------
 # MENU – Criar Quiz
@@ -25,10 +24,6 @@ def menu(request):
         kanjis = list(Kanji.objects.filter(nivel=nivel))
         if len(kanjis) < quantidade:
             quantidade = len(kanjis)    
-        if Kanji.objects.count() == 0:
-            print("IMPORTANDO KANJIS NO RENDER...")
-            cmd = Command()
-            cmd.handle(arquivo="kanjis.json")
         ordem_kanjis = random.sample([k.id for k in kanjis], quantidade)
 
         quiz = QuizSession.objects.create(
