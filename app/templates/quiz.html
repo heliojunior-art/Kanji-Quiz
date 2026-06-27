@@ -14,15 +14,15 @@
                 <button type="button" 
                         class="btn btn-sm btn-outline-warning font-weight-bold px-3"
                         style="border-radius: 10px; font-size: 13px;"
-                        data-bs-toggle="modal" 
-                        data-bs-target="#dicaModal">
+                        onclick="abrirDicaCustomizada()">
                     💡 Dica
                 </button>
 
+                <!-- ✕ CORRIGIDO: Removido o onclick duplicado do HTML. Agora o clique é tratado exclusivamente via ID no JavaScript -->
                 <a href="{% url 'parar_quiz' quiz.id %}" 
+                   id="btnPararQuiz"
                    class="btn btn-sm btn-outline-danger font-weight-bold px-3 text-nowrap"
-                   style="border-radius: 10px; font-size: 13px;"
-                   onclick="return confirm('Se você sair, o progresso do seu quiz atual será perdido. Tem certeza?');">
+                   style="border-radius: 10px; font-size: 13px;">
                    Parar Quiz
                 </a>
             </div>
@@ -76,24 +76,20 @@
     </div>
 </div>
 
-<div class="modal fade" id="dicaModal" tabindex="-1" aria-labelledby="dicaModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" style="max-width: 380px;">
-        <div class="modal-content border-0 shadow-lg" style="border-radius: 18px;">
-            <div class="modal-header border-0 pb-0">
-                <h5 class="modal-title font-weight-bold text-warning" id="dicaModalLabel">💡 Dica de Estudo</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body text-start py-3" style="font-size: 15px; color: #495057;">
-                {% if kanji.dica %}
-                    <p class="mb-0 text-dark font-medium">{{ kanji.dica }}</p>
-                {% else %}
-                    <p class="mb-2"><strong>Leitura:</strong> <span class="text-dark font-japanese">{{ kanji.leitura }}</span></p>
-                    <p class="mb-0"><strong>Significado:</strong> <span class="text-dark">{{ kanji.significado }}</span></p>
-                {% endif %}
-            </div>
-            <div class="modal-footer border-0 pt-0">
-                <button type="button" class="btn btn-secondary w-100 font-weight-bold" style="border-radius: 10px;" data-bs-dismiss="modal">Entendi!</button>
-            </div>
+<!-- Pop-up Customizado de Dica -->
+<div id="modalDicaCustom" class="modal-custom-overlay" style="display: none;">
+    <div class="modal-custom-card">
+        <div class="modal-custom-header">
+            <h5 class="modal-custom-title">💡 Dica de Estudo</h5>
+            <button type="button" class="modal-custom-close-x" onclick="fecharDicaCustomizada()">✕</button>
+        </div>
+        <div class="modal-custom-body">
+            <p id="textoDicaCustom" style="margin: 0; white-space: pre-wrap; font-size: 15px; color: #334155; line-height: 1.5;"></p>
+        </div>
+        <div class="modal-custom-footer">
+            <button type="button" class="btn btn-primary w-100 font-weight-bold py-2.5" style="border-radius: 12px;" onclick="fecharDicaCustomizada()">
+                Entendi!
+            </button>
         </div>
     </div>
 </div>
@@ -103,7 +99,51 @@
     const proximoBtn = document.getElementById('proximoBtn');
     const form = document.getElementById('quizForm');
     const barraProgresso = document.getElementById('barraProgresso');
+    const btnPararQuiz = document.getElementById('btnPararQuiz');
 
+    // Variável de controle para saber se a saída é permitida
+    let desativarConfirmacaoSaida = false;
+
+    // Lógica do botão de parar oficial (Trata apenas um aviso limpo)
+    if (btnPararQuiz) {
+        btnPararQuiz.addEventListener('click', (event) => {
+            const desejaSair = confirm('Se você sair, o progresso do seu quiz atual será perdido. Tem certeza?');
+            if (desejaSair) {
+                // Se confirmou, avisa o navegador para não disparar o segundo pop-up de erro
+                desativarConfirmacaoSaida = true;
+            } else {
+                // Se cancelou, impede o link de navegar
+                event.preventDefault();
+            }
+        });
+    }
+
+    // Lógica do Pop-up Customizado
+    const modalDicaCustom = document.getElementById('modalDicaCustom');
+    const textoDicaCustom = document.getElementById('textoDicaCustom');
+
+    function abrirDicaCustomizada() {
+        const dicaDoBanco = "{{ kanji.dica|escapejs }}";
+        const leitura = "{{ kanji.leitura|escapejs }}";
+        const significado = "{{ kanji.significado|escapejs }}";
+
+        if (dicaDoBanco && dicaDoBanco !== "None" && dicaDoBanco.trim() !== "") {
+            textoDicaCustom.textContent = dicaDoBanco;
+        } else {
+            textoDicaCustom.innerHTML = `<strong>Leitura:</strong> ${leitura}<br><br><strong>Significado:</strong> ${significado}`;
+        }
+        modalDicaCustom.style.display = 'flex';
+    }
+
+    function fecharDicaCustomizada() {
+        modalDicaCustom.style.display = 'none';
+    }
+
+    window.addEventListener('click', (e) => {
+        if (e.target === modalDicaCustom) { fecharDicaCustomizada(); }
+    });
+
+    // Lógica da Barra de Progresso
     const questaoAtual = parseInt("{{ questao_atual }}");
     const totalQuestoes = parseInt("{{ total }}");
     if (barraProgresso) {
@@ -140,36 +180,55 @@
     const selecionadaBackend = "{{ selecionada }}";
     if (selecionadaBackend && selecionadaBackend !== "None" && selecionadaBackend !== "") {
         alternativas.forEach(btn => {
-            if (btn.getAttribute('data-id') === selecionadaBackend) {
-                marcarBotao(btn);
-            }
+            if (btn.getAttribute('data-id') === selecionadaBackend) { marcarBotao(btn); }
         });
     }
 
     alternativas.forEach(btn => {
-        btn.addEventListener('click', () => {
-            marcarBotao(btn);
-        });
+        btn.addEventListener('click', () => { marcarBotao(btn); });
     });
 
-    let enviarFormulario = false;
-    form.addEventListener('submit', () => { enviarFormulario = true; });
+    // Envio limpo do formulário
+    form.addEventListener('submit', () => { desativarConfirmacaoSaida = true; });
+
+    // 🔒 CORRIGIDO: Bloqueador global só dispara se NÃO for clique no "Parar" ou no "Próximo"
     window.addEventListener('beforeunload', (event) => {
-        if (enviarFormulario) return;
+        if (desativarConfirmacaoSaida) return;
         event.preventDefault();
-        event.returnValue = 'Se você sair, o progresso do seu quiz atual será perdido. Tem certeza?';
-        return event.returnValue;
+        return event.returnValue = 'Se você sair, o progresso do seu quiz atual será perdido. Tem certeza?';
     });
 </script>
 
 <style>
-    .animate-fade-in {
-        opacity: 0;
-        transform: translateY(12px);
-        animation: fadeSlideIn 0.4s ease-out forwards;
+    .modal-custom-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(15, 23, 42, 0.4);
+        backdrop-filter: blur(2px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        padding: 20px;
     }
-    @keyframes fadeSlideIn {
-        to { opacity: 1; transform: translateY(0); }
+    .modal-custom-card {
+        background-color: #ffffff;
+        width: 100%;
+        max-width: 400px;
+        border-radius: 20px;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        padding: 24px;
+        animation: scaleUp 0.2s ease-out forwards;
     }
+    .modal-custom-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+    .modal-custom-title { margin: 0; font-size: 18px; font-weight: 700; color: #eab308; }
+    .modal-custom-close-x { background: none; border: none; font-size: 18px; color: #94a3b8; cursor: pointer; padding: 0; line-height: 1; }
+    .modal-custom-body { margin-bottom: 24px; }
+    .animate-fade-in { opacity: 0; transform: translateY(12px); animation: fadeSlideIn 0.4s ease-out forwards; }
+    @keyframes fadeSlideIn { to { opacity: 1; transform: translateY(0); } }
+    @keyframes scaleUp { from { transform: scale(0.95); opacity: 0; } to { transform: scale(1); opacity: 1; } }
 </style>
 {% endblock %}

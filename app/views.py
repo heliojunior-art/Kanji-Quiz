@@ -122,13 +122,11 @@ def responder(request, quiz_id, kanji_id):
 
     print("POST alternativa:", alternativa_id)
 
-    # ❌ impedir salvar vazio
     if not alternativa_id or alternativa_id == "None":
         return redirect("quiz_pergunta", quiz_id=quiz.id, questao=questao)
 
     alternativa = get_object_or_404(Alternativa, id=int(alternativa_id))
 
-    # 🔒 salva resposta
     resposta, created = Resposta.objects.update_or_create(
         quiz=quiz,
         kanji=kanji,
@@ -138,19 +136,16 @@ def responder(request, quiz_id, kanji_id):
         }
     )
 
-    # ✅ só soma acerto se for nova
     if alternativa.correta and created:
         quiz.acertos += 1
         quiz.save()
 
-    # 👉 próximo
     if 'proximo' in request.POST:
         questao += 1
         if questao > quiz.quantidade:
             return redirect("quiz_final", quiz_id=quiz.id)
         return redirect("quiz_pergunta", quiz_id=quiz.id, questao=questao)
 
-    # 👉 anterior
     if 'anterior' in request.POST:
         questao -= 1
         if questao < 1:

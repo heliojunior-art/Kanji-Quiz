@@ -5,22 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kanji Quiz</title>
 
-    <!-- Bootstrap -->
+    <!-- Bootstrap CSS v5.3.0 -->
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
         rel="stylesheet"
     >
 
     <style>
-        .body {
+        body {
             background: #f4f6f9;
         }
         .card {
             border-radius: 20px;
         }
-        .kanji {
-            font-size: 140px;
-            text-align: center;
+        .font-japanese {
+            font-family: "Yu Mincho", "MS Mincho", "Hiragino Mincho ProN", serif;
         }
         .fade-slide {
             opacity: 0;
@@ -41,9 +40,9 @@
 
 <nav class="navbar navbar-dark bg-dark mb-4 shadow-sm py-3" style="line-height: 1;">
     <div class="container">
-        <!-- Botão restaurado e refinado visualmente -->
-        <a class="navbar-brand d-flex align-items-center font-weight-bold text-white text-decoration-none" href="{% url 'home' %}" style="font-size: 28px; letter-spacing: 0.5px;">
-            📘 Kanji Quiz
+        <!-- Título e ícone de tamanho ampliado e estável -->
+        <a class="navbar-brand d-flex align-items-center font-weight-bold text-white text-decoration-none" href="{% url 'home' %}" style="font-size: 26px; letter-spacing: 0.5px; font-weight: 700;">
+            <span class="me-2" style="line-height: 1;">📘</span> Kanji Quiz
         </a>
     </div>
 </nav>
