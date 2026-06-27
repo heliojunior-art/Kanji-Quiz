@@ -11,7 +11,8 @@
 		"correta" : "um",
 		"alternativa1" : "dois",
 		"alternativa2" : "três",
-		"alternativa3" : "quatro"
+		"alternativa3" : "quatro",
+		"dica" : "Apenas um único traço horizontal."
 	},
 	{
 		"id" : 2,
@@ -25,7 +26,8 @@
 		"correta" : "dois",
 		"alternativa1" : "três",
 		"alternativa2" : "um",
-		"alternativa3" : "cinco"
+		"alternativa3" : "cinco",
+		"dica" : "Dois traços horizontais paralelos."
 	},
 	{
 		"id" : 3,
@@ -39,7 +41,8 @@
 		"correta" : "três",
 		"alternativa1" : "quatro",
 		"alternativa2" : "muitos",
-		"alternativa3" : "seis"
+		"alternativa3" : "seis",
+		"dica": "Três traços horizontais empilhados."
 	},
 	{
 		"id" : 4,
@@ -53,7 +56,8 @@
 		"correta" : "quatro",
 		"alternativa1" : "cinco",
 		"alternativa2" : "hora",
-		"alternativa3" : "tempo"
+		"alternativa3" : "tempo",
+		"dica": "Uma caixa com pernas ou cortinas abertas lá dentro."
 	},
 	{
 		"id" : 5,
@@ -67,7 +71,8 @@
 		"correta" : "cinco",
 		"alternativa1" : "seis",
 		"alternativa2" : "quatro",
-		"alternativa3" : "quantidade"
+		"alternativa3" : "quantidade",
+		"dica": "Lembra visualmente o número 5 de cabeça para baixo ou manuscrito."
 	},
 	{
 		"id" : 6,
@@ -81,7 +86,8 @@
 		"correta" : "seis",
 		"alternativa1" : "sete",
 		"alternativa2" : "hora",
-		"alternativa3" : "tempo"
+		"alternativa3" : "tempo",
+		"dica": "Uma pessoa estilizada com os braços abertos e duas pernas separadas."
 	},
 	{
 		"id" : 7,
@@ -95,7 +101,8 @@
 		"correta" : "sete",
 		"alternativa1" : "oito",
 		"alternativa2" : "data",
-		"alternativa3" : "três"
+		"alternativa3" : "três",
+		"dica": "Lembra um número 7 de ponta-cabeça e cortado ao meio."
 	},
 	{
 		"id" : 8,
@@ -109,7 +116,8 @@
 		"correta" : "oito",
 		"alternativa1" : "nove",
 		"alternativa2" : "quantidade",
-		"alternativa3" : "quatro"
+		"alternativa3" : "quatro",
+		"dica": "Duas linhas se abrindo na base, como o topo de um monte."
 	},
 	{
 		"id" : 9,
@@ -123,7 +131,8 @@
 		"correta" : "nove",
 		"alternativa1" : "dez",
 		"alternativa2" : "mês",
-		"alternativa3" : "data"
+		"alternativa3" : "data",
+		"dica": "Lembra a letra minúscula 'n' com uma cauda cruzada."
 	},
 	{
 		"id" : 10,
@@ -137,7 +146,8 @@
 		"correta" : "dez",
 		"alternativa1" : "cem",
 		"alternativa2" : "número",
-		"alternativa3" : "mil"
+		"alternativa3" : "mil",
+		"dica": "Formato de uma cruz perfeita."
 	},
 	{
 		"id" : 11,
@@ -151,7 +161,8 @@
 		"correta" : "cem",
 		"alternativa1" : "mil",
 		"alternativa2" : "dez mil",
-		"alternativa3" : "dinheiro"
+		"alternativa3" : "dinheiro",
+		"dica": "O Kanji de branco (白) com um traço extra no topo."
 	},
 	{
 		"id" : 12,
@@ -165,7 +176,8 @@
 		"correta" : "mil",
 		"alternativa1" : "cem",
 		"alternativa2" : "valor",
-		"alternativa3" : "dez mil"
+		"alternativa3" : "dez mil",
+		"dica": "O Kanji de dez (十) com uma linha diagonal cortando o topo."
 	},
 	{
 		"id" : 13,
@@ -179,7 +191,8 @@
 		"correta" : "dez mil",
 		"alternativa1" : "mil",
 		"alternativa2" : "iene",
-		"alternativa3" : "cem"
+		"alternativa3" : "cem",
+		"dica": "Parece uma letra 'T' estilizada com uma base curvada."
 	},
 	{
 		"id" : 14,
@@ -193,7 +206,8 @@
 		"correta" : "dia",
 		"alternativa1" : "mês",
 		"alternativa2" : "ano",
-		"alternativa3" : "tempo"
+		"alternativa3" : "tempo",
+		"dica": "Uma caixa retangular dividida ao meio, desenhando o Sol."
 	},
 	{
 		"id" : 15,
@@ -207,7 +221,8 @@
 		"correta" : "lua",
 		"alternativa1" : "sol",
 		"alternativa2" : "estrela",
-		"alternativa3" : "tempo"
+		"alternativa3" : "tempo",
+		"dica": "Formato de uma lua minguante com dois traços internos."
 	},
 	{
 		"id" : 16,
@@ -221,7 +236,8 @@
 		"correta" : "fogo",
 		"alternativa1" : "água",
 		"alternativa2" : "luz",
-		"alternativa3" : "calor"
+		"alternativa3" : "calor",
+		"dica": "Uma pessoa abrindo os braços cercada por labaredas."
 	},
 	{
 		"id" : 17,
@@ -235,7 +251,8 @@
 		"correta" : "água",
 		"alternativa1" : "suco",
 		"alternativa2" : "fogo",
-		"alternativa3" : "líquido"
+		"alternativa3" : "líquido",
+		"dica": "O fluxo central de um riacho com respingos nas laterais."
 	},
 	{
 		"id" : 18,
@@ -249,7 +266,8 @@
 		"correta" : "árvore",
 		"alternativa1" : "flor",
 		"alternativa2" : "planta",
-		"alternativa3" : "metal"
+		"alternativa3" : "metal",
+		"dica": "Um tronco central com galhos esticados e raízes no chão."
 	},
 	{
 		"id" : 19,
@@ -263,7 +281,8 @@
 		"correta" : "ouro",
 		"alternativa1" : "preço",
 		"alternativa2" : "valor",
-		"alternativa3" : "prata"
+		"alternativa3" : "prata",
+		"dica": "Um telhado protegendo pepitas de ouro guardadas na terra."
 	},
 	{
 		"id" : 20,
@@ -277,7 +296,8 @@
 		"correta" : "terra",
 		"alternativa1" : "areia",
 		"alternativa2" : "pedra",
-		"alternativa3" : "chão"
+		"alternativa3" : "chão",
+		"dica": "Uma planta brotando e se estendendo acima da linha do solo."
 	},
 	{
 		"id" : 21,
@@ -291,7 +311,8 @@
 		"correta" : "acima",
 		"alternativa1" : "embaixo",
 		"alternativa2" : "lado",
-		"alternativa3" : "frente"
+		"alternativa3" : "frente",
+		"dica": "Uma haste vertical apontando para cima a partir do solo."
 	},
 	{
 		"id" : 22,
@@ -305,7 +326,8 @@
 		"correta" : "abaixo",
 		"alternativa1" : "acima",
 		"alternativa2" : "fora",
-		"alternativa3" : "lado"
+		"alternativa3" : "lado",
+		"dica": "Uma linha indicando algo pendurado para baixo do teto."
 	},
 	{
 		"id" : 23,
@@ -319,7 +341,8 @@
 		"correta" : "direita",
 		"alternativa1" : "esquerda",
 		"alternativa2" : "frente",
-		"alternativa3" : "atrás"
+		"alternativa3" : "atrás",
+		"dica": "A mão que leva a comida até a boca (口)."
 	},
 	{
 		"id" : 24,
@@ -333,7 +356,8 @@
 		"correta" : "esquerda",
 		"alternativa1" : "direita",
 		"alternativa2" : "frente",
-		"alternativa3" : "lado"
+		"alternativa3" : "lado",
+		"dica": "A mão auxiliar que segura a ferramenta de trabalho (工)."
 	},
 	{
 		"id" : 25,
@@ -347,7 +371,8 @@
 		"correta" : "fora",
 		"alternativa1" : "dentro",
 		"alternativa2" : "lado",
-		"alternativa3" : "frente"
+		"alternativa3" : "frente",
+		"dica": "Fazer leituras do destino à noite, do lado de fora da casa."
 	},
 	{
 		"id" : 26,
@@ -361,7 +386,8 @@
 		"correta" : "dentro",
 		"alternativa1" : "fora",
 		"alternativa2" : "acima",
-		"alternativa3" : "lado"
+		"alternativa3" : "lado"	,
+		"dica" : "Uma linha vertical que corta exatamente o meio de um quadrado."
 	},
 	{
 		"id" : 27,
@@ -375,7 +401,8 @@
 		"correta" : "frente",
 		"alternativa1" : "atrás",
 		"alternativa2" : "lado",
-		"alternativa3" : "depois"
+		"alternativa3" : "depois",
+		"dica" : "Pense em chifres de carneiro e uma espada avançando na linha de frente."
 	},
 	{
 		"id" : 28,
@@ -389,7 +416,8 @@
 		"correta" : "atrás",
 		"alternativa1" : "antes",
 		"alternativa2" : "agora",
-		"alternativa3" : "sempre"
+		"alternativa3" : "sempre",
+		"dica" : "Alguém caminhando devagar na estrada que acabou ficando para trás."
 	},
 	{
 		"id" : 29,
@@ -403,7 +431,8 @@
 		"correta" : "norte",
 		"alternativa1" : "sul",
 		"alternativa2" : "leste",
-		"alternativa3" : "oeste"
+		"alternativa3" : "oeste",
+		"dica" : "Duas pessoas sentadas de costas uma para a outra tremendo no frio do norte."
 	},
 	{
 		"id" : 30,
@@ -417,7 +446,8 @@
 		"correta" : "sul",
 		"alternativa1" : "norte",
 		"alternativa2" : "leste",
-		"alternativa3" : "oeste"
+		"alternativa3" : "oeste",
+		"dica" : "Uma bússola antiga protegida por uma tenda apontando para o sul."
 	},
 	{
 		"id" : 31,
@@ -431,7 +461,8 @@
 		"correta" : "leste",
 		"alternativa1" : "oeste",
 		"alternativa2" : "norte",
-		"alternativa3" : "sul"
+		"alternativa3" : "sul",
+		"dica" : "O Sol (日) nascendo bem atrás de uma árvore (木) no horizonte leste."
 	},
 	{
 		"id" : 32,
@@ -445,7 +476,8 @@
 		"correta" : "oeste",
 		"alternativa1" : "leste",
 		"alternativa2" : "norte",
-		"alternativa3" : "sul"
+		"alternativa3" : "sul",
+		"dica" : "Um pássaro voando de volta para o seu ninho quadrado quando o sol se põe a oeste."
 	},
 	{
 		"id" : 33,
@@ -459,7 +491,8 @@
 		"correta" : "pessoa",
 		"alternativa1" : "homem",
 		"alternativa2" : "mulher",
-		"alternativa3" : "criança"
+		"alternativa3" : "criança",
+		"dica" : "O desenho de perfil de uma pessoa caminhando com duas pernas."
 	},
 	{
 		"id" : 34,
@@ -473,7 +506,8 @@
 		"correta" : "homem",
 		"alternativa1" : "mulher",
 		"alternativa2" : "pai",
-		"alternativa3" : "pessoa"
+		"alternativa3" : "pessoa",
+		"dica" : "Duas mãos dadas cruzando caminhos para se apoiarem mutuamente."
 	},
 	{
 		"id" : 35,
@@ -487,7 +521,8 @@
 		"correta" : "mulher",
 		"alternativa1" : "homem",
 		"alternativa2" : "mãe",
-		"alternativa3" : "pessoa"
+		"alternativa3" : "pessoa",
+		"dica" : "Duas mãos dadas cruzando caminhos para se apoiarem mutuamente."
 	},
 	{
 		"id" : 36,
@@ -501,7 +536,8 @@
 		"correta" : "pai",
 		"alternativa1" : "mãe",
 		"alternativa2" : "avô",
-		"alternativa3" : "homem"
+		"alternativa3" : "homem",
+		"dica" : "Duas mãos dadas cruzando caminhos para se apoiarem mutuamente."
 	},
 	{
 		"id" : 37,
@@ -515,7 +551,8 @@
 		"correta" : "mãe",
 		"alternativa1" : "pai",
 		"alternativa2" : "mulher",
-		"alternativa3" : "tia"
+		"alternativa3" : "tia",
+		"dica" : "Duas mãos dadas cruzando caminhos para se apoiarem mutuamente."
 	},
 	{
 		"id" : 38,
@@ -529,7 +566,8 @@
 		"correta" : "criança",
 		"alternativa1" : "adulto",
 		"alternativa2" : "bebê",
-		"alternativa3" : "pessoa"
+		"alternativa3" : "pessoa",
+		"dica" : "Duas mãos dadas cruzando caminhos para se apoiarem mutuamente."
 	},
 	{
 		"id" : 39,
@@ -543,7 +581,8 @@
 		"correta" : "amigo",
 		"alternativa1" : "família",
 		"alternativa2" : "vizinho",
-		"alternativa3" : "colega"
+		"alternativa3" : "colega",
+		"dica" : "Duas mãos dadas cruzando caminhos para se apoiarem mutuamente."
 	},
 	{
 		"id" : 40,
@@ -557,7 +596,8 @@
 		"correta" : "força",
 		"alternativa1" : "fraco",
 		"alternativa2" : "osso",
-		"alternativa3" : "músculo"
+		"alternativa3" : "músculo",
+		"dica" : "Duas mãos dadas cruzando caminhos para se apoiarem mutuamente."
 	},
 	{
 		"id" : 41,
@@ -571,7 +611,8 @@
 		"correta" : "ir",
 		"alternativa1" : "vir",
 		"alternativa2" : "ver",
-		"alternativa3" : "entrar"
+		"alternativa3" : "entrar",
+		"dica" : "Duas mãos dadas cruzando caminhos para se apoiarem mutuamente."
 	},
 	{
 		"id" : 42,
@@ -585,7 +626,8 @@
 		"correta" : "vir",
 		"alternativa1" : "ir",
 		"alternativa2" : "voltar",
-		"alternativa3" : "entrar"
+		"alternativa3" : "entrar",
+		"dica" : "Duas mãos dadas cruzando caminhos para se apoiarem mutuamente."
 	},
 	{
 		"id" : 43,
@@ -599,7 +641,8 @@
 		"correta" : "encontrar",
 		"alternativa1" : "ver",
 		"alternativa2" : "ir",
-		"alternativa3" : "falar"
+		"alternativa3" : "falar",
+		"dica" : "Duas mãos dadas cruzando caminhos para se apoiarem mutuamente."
 	},
 	{
 		"id" : 44,
@@ -613,7 +656,8 @@
 		"correta" : "descansar",
 		"alternativa1" : "trabalhar",
 		"alternativa2" : "dormir",
-		"alternativa3" : "parar"
+		"alternativa3" : "parar",
+		"dica" : "Duas mãos dadas cruzando caminhos para se apoiarem mutuamente."
 	},
 	{
 		"id" : 45,
@@ -627,7 +671,8 @@
 		"correta" : "comer",
 		"alternativa1" : "beber",
 		"alternativa2" : "ver",
-		"alternativa3" : "cozinhar"
+		"alternativa3" : "cozinhar",
+		"dica" : "Duas mãos dadas cruzando caminhos para se apoiarem mutuamente."
 	},
 	{
 		"id" : 46,
@@ -641,7 +686,8 @@
 		"correta" : "beber",
 		"alternativa1" : "comer",
 		"alternativa2" : "ver",
-		"alternativa3" : "ouvir"
+		"alternativa3" : "ouvir",
+		"dica" : "Duas mãos dadas cruzando caminhos para se apoiarem mutuamente."
 	},
 	{
 		"id" : 47,
@@ -655,7 +701,8 @@
 		"correta" : "levantar",
 		"alternativa1" : "sentar",
 		"alternativa2" : "andar",
-		"alternativa3" : "parar"
+		"alternativa3" : "parar",
+		"dica" : "Duas mãos dadas cruzando caminhos para se apoiarem mutuamente."
 	},
 	{
 		"id" : 48,
@@ -669,7 +716,8 @@
 		"correta" : "ver",
 		"alternativa1" : "ouvir",
 		"alternativa2" : "ler",
-		"alternativa3" : "falar"
+		"alternativa3" : "falar",
+		"dica" : "Duas mãos dadas cruzando caminhos para se apoiarem mutuamente."
 	},
 	{
 		"id" : 49,
@@ -683,7 +731,8 @@
 		"correta" : "ouvir",
 		"alternativa1" : "ver",
 		"alternativa2" : "ler",
-		"alternativa3" : "falar"
+		"alternativa3" : "falar",
+		"dica" : "Duas mãos dadas cruzando caminhos para se apoiarem mutuamente."
 	},
 	{
 		"id" : 50,
@@ -697,7 +746,8 @@
 		"correta" : "escrever",
 		"alternativa1" : "ler",
 		"alternativa2" : "ver",
-		"alternativa3" : "falar"
+		"alternativa3" : "falar",
+		"dica" : "Duas mãos dadas cruzando caminhos para se apoiarem mutuamente."
 	},
 	{
 		"id" : 51,
@@ -711,7 +761,8 @@
 		"correta" : "ler",
 		"alternativa1" : "escrever",
 		"alternativa2" : "ver",
-		"alternativa3" : "ouvir"
+		"alternativa3" : "ouvir",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 52,
@@ -725,7 +776,8 @@
 		"correta" : "entrar",
 		"alternativa1" : "sair",
 		"alternativa2" : "ir",
-		"alternativa3" : "vir"
+		"alternativa3" : "vir",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 53,
@@ -739,7 +791,8 @@
 		"correta" : "sair",
 		"alternativa1" : "entrar",
 		"alternativa2" : "ir",
-		"alternativa3" : "vir"
+		"alternativa3" : "vir",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 54,
@@ -753,7 +806,8 @@
 		"correta" : "comprar",
 		"alternativa1" : "vender",
 		"alternativa2" : "ver",
-		"alternativa3" : "pegar"
+		"alternativa3" : "pegar",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 55,
@@ -767,7 +821,8 @@
 		"correta" : "estudar",
 		"alternativa1" : "ensinar",
 		"alternativa2" : "ler",
-		"alternativa3" : "ouvir"
+		"alternativa3" : "ouvir",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 56,
@@ -781,7 +836,8 @@
 		"correta" : "ano",
 		"alternativa1" : "mês",
 		"alternativa2" : "dia",
-		"alternativa3" : "tempo"
+		"alternativa3" : "tempo",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 57,
@@ -795,7 +851,8 @@
 		"correta" : "tempo",
 		"alternativa1" : "dia",
 		"alternativa2" : "local",
-		"alternativa3" : "momento"
+		"alternativa3" : "momento",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 58,
@@ -809,7 +866,8 @@
 		"correta" : "minuto",
 		"alternativa1" : "hora",
 		"alternativa2" : "tempo",
-		"alternativa3" : "segundo"
+		"alternativa3" : "segundo",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 59,
@@ -823,7 +881,8 @@
 		"correta" : "cada",
 		"alternativa1" : "todo",
 		"alternativa2" : "sempre",
-		"alternativa3" : "muitos"
+		"alternativa3" : "muitos",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 60,
@@ -837,7 +896,8 @@
 		"correta" : "semana",
 		"alternativa1" : "mês",
 		"alternativa2" : "ano",
-		"alternativa3" : "dia"
+		"alternativa3" : "dia",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 61,
@@ -851,7 +911,8 @@
 		"correta" : "agora",
 		"alternativa1" : "depois",
 		"alternativa2" : "antes",
-		"alternativa3" : "sempre"
+		"alternativa3" : "sempre",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 62,
@@ -865,7 +926,8 @@
 		"correta" : "intervalo",
 		"alternativa1" : "tempo",
 		"alternativa2" : "pausa",
-		"alternativa3" : "momento"
+		"alternativa3" : "momento",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 63,
@@ -879,7 +941,8 @@
 		"correta" : "meio-dia",
 		"alternativa1" : "manhã",
 		"alternativa2" : "noite",
-		"alternativa3" : "hora"
+		"alternativa3" : "hora",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 64,
@@ -893,7 +956,8 @@
 		"correta" : "metade",
 		"alternativa1" : "inteiro",
 		"alternativa2" : "parte",
-		"alternativa3" : "pedaço"
+		"alternativa3" : "pedaço",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 65,
@@ -907,7 +971,8 @@
 		"correta" : "branco",
 		"alternativa1" : "preto",
 		"alternativa2" : "claro",
-		"alternativa3" : "cor"
+		"alternativa3" : "cor",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 66,
@@ -921,7 +986,8 @@
 		"correta" : "nome",
 		"alternativa1" : "palavra",
 		"alternativa2" : "título",
-		"alternativa3" : "apelido"
+		"alternativa3" : "apelido",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 67,
@@ -935,7 +1001,8 @@
 		"correta" : "antes",
 		"alternativa1" : "depois",
 		"alternativa2" : "agora",
-		"alternativa3" : "primeiro"
+		"alternativa3" : "primeiro",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 68,
@@ -949,7 +1016,8 @@
 		"correta" : "vida",
 		"alternativa1" : "morte",
 		"alternativa2" : "tempo",
-		"alternativa3" : "cor"
+		"alternativa3" : "cor",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 69,
@@ -963,7 +1031,8 @@
 		"correta" : "iene",
 		"alternativa1" : "dinheiro",
 		"alternativa2" : "moeda",
-		"alternativa3" : "valor"
+		"alternativa3" : "valor",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 70,
@@ -977,7 +1046,8 @@
 		"correta" : "céu",
 		"alternativa1" : "nuvem",
 		"alternativa2" : "tempo",
-		"alternativa3" : "clima"
+		"alternativa3" : "clima",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 71,
@@ -991,7 +1061,8 @@
 		"correta" : "céu",
 		"alternativa1" : "clima",
 		"alternativa2" : "sol",
-		"alternativa3" : "ar"
+		"alternativa3" : "ar",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 72,
@@ -1005,7 +1076,8 @@
 		"correta" : "energia",
 		"alternativa1" : "saúde",
 		"alternativa2" : "força",
-		"alternativa3" : "ânimo"
+		"alternativa3" : "ânimo",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 73,
@@ -1019,7 +1091,8 @@
 		"correta" : "chuva",
 		"alternativa1" : "neve",
 		"alternativa2" : "vento",
-		"alternativa3" : "clima"
+		"alternativa3" : "clima",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 74,
@@ -1033,7 +1106,8 @@
 		"correta" : "país",
 		"alternativa1" : "cidade",
 		"alternativa2" : "estado",
-		"alternativa3" : "terra"
+		"alternativa3" : "terra",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 75,
@@ -1047,7 +1121,8 @@
 		"correta" : "eletricidade",
 		"alternativa1" : "fogo",
 		"alternativa2" : "onda",
-		"alternativa3" : "máquina"
+		"alternativa3" : "máquina",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 76,
@@ -1061,7 +1136,8 @@
 		"correta" : "livro",
 		"alternativa1" : "caderno",
 		"alternativa2" : "revista",
-		"alternativa3" : "papel"
+		"alternativa3" : "papel",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 77,
@@ -1075,7 +1151,8 @@
 		"correta" : "carro",
 		"alternativa1" : "ônibus",
 		"alternativa2" : "trem",
-		"alternativa3" : "bicicleta"
+		"alternativa3" : "bicicleta",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 78,
@@ -1089,7 +1166,8 @@
 		"correta" : "escola",
 		"alternativa1" : "universidade",
 		"alternativa2" : "classe",
-		"alternativa3" : "prédio"
+		"alternativa3" : "prédio",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 79,
@@ -1103,7 +1181,8 @@
 		"correta" : "empresa",
 		"alternativa1" : "loja",
 		"alternativa2" : "escola",
-		"alternativa3" : "prédio"
+		"alternativa3" : "prédio",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 80,
@@ -1117,7 +1196,8 @@
 		"correta" : "o que",
 		"alternativa1" : "quem",
 		"alternativa2" : "quando",
-		"alternativa3" : "onde"
+		"alternativa3" : "onde",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 81,
@@ -1131,7 +1211,8 @@
 		"correta" : "língua",
 		"alternativa1" : "palavra",
 		"alternativa2" : "voz",
-		"alternativa3" : "som"
+		"alternativa3" : "som",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 82,
@@ -1145,7 +1226,8 @@
 		"correta" : "vaca",
 		"alternativa1" : "boi",
 		"alternativa2" : "animal",
-		"alternativa3" : "carne"
+		"alternativa3" : "carne",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 83,
@@ -1159,7 +1241,8 @@
 		"correta" : "cavalo",
 		"alternativa1" : "vaca",
 		"alternativa2" : "animal",
-		"alternativa3" : "boi"
+		"alternativa3" : "boi",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 84,
@@ -1173,7 +1256,8 @@
 		"correta" : "peixe",
 		"alternativa1" : "carne",
 		"alternativa2" : "frango",
-		"alternativa3" : "comida"
+		"alternativa3" : "comida",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 85,
@@ -1187,7 +1271,8 @@
 		"correta" : "loja",
 		"alternativa1" : "empresa",
 		"alternativa2" : "mercado",
-		"alternativa3" : "restaurante"
+		"alternativa3" : "restaurante",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 86,
@@ -1201,7 +1286,8 @@
 		"correta" : "estação",
 		"alternativa1" : "parada",
 		"alternativa2" : "rua",
-		"alternativa3" : "prédio"
+		"alternativa3" : "prédio",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 87,
@@ -1215,7 +1301,8 @@
 		"correta" : "pequeno",
 		"alternativa1" : "grande",
 		"alternativa2" : "baixo",
-		"alternativa3" : "curto"
+		"alternativa3" : "curto",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 88,
@@ -1229,7 +1316,8 @@
 		"correta" : "alto",
 		"alternativa1" : "baixo",
 		"alternativa2" : "barato",
-		"alternativa3" : "pequeno"
+		"alternativa3" : "pequeno",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 89,
@@ -1243,7 +1331,8 @@
 		"correta" : "barato",
 		"alternativa1" : "caro",
 		"alternativa2" : "perigoso",
-		"alternativa3" : "difícil"
+		"alternativa3" : "difícil",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 90,
@@ -1257,7 +1346,8 @@
 		"correta" : "muito",
 		"alternativa1" : "pouco",
 		"alternativa2" : "alguns",
-		"alternativa3" : "vazio"
+		"alternativa3" : "vazio",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 91,
@@ -1271,7 +1361,8 @@
 		"correta" : "pouco",
 		"alternativa1" : "muito",
 		"alternativa2" : "cheio",
-		"alternativa3" : "todos"
+		"alternativa3" : "todos",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 92,
@@ -1285,7 +1376,8 @@
 		"correta" : "longo",
 		"alternativa1" : "curto",
 		"alternativa2" : "alto",
-		"alternativa3" : "baixo"
+		"alternativa3" : "baixo",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 93,
@@ -1299,7 +1391,8 @@
 		"correta" : "novo",
 		"alternativa1" : "velho",
 		"alternativa2" : "antigo",
-		"alternativa3" : "usado"
+		"alternativa3" : "usado",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 94,
@@ -1313,7 +1406,8 @@
 		"correta" : "antigo",
 		"alternativa1" : "novo",
 		"alternativa2" : "recente",
-		"alternativa3" : "moderno"
+		"alternativa3" : "moderno",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 95,
@@ -1327,7 +1421,8 @@
 		"correta" : "boca",
 		"alternativa1" : "nariz",
 		"alternativa2" : "olho",
-		"alternativa3" : "ouvido"
+		"alternativa3" : "ouvido",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 96,
@@ -1341,7 +1436,8 @@
 		"correta" : "olho",
 		"alternativa1" : "orelha",
 		"alternativa2" : "nariz",
-		"alternativa3" : "boca"
+		"alternativa3" : "boca",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 97,
@@ -1355,7 +1451,8 @@
 		"correta" : "mão",
 		"alternativa1" : "pé",
 		"alternativa2" : "braço",
-		"alternativa3" : "dedo"
+		"alternativa3" : "dedo",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 98,
@@ -1369,7 +1466,8 @@
 		"correta" : "pé",
 		"alternativa1" : "mão",
 		"alternativa2" : "braço",
-		"alternativa3" : "corpo"
+		"alternativa3" : "corpo",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 99,
@@ -1383,7 +1481,8 @@
 		"correta" : "orelha",
 		"alternativa1" : "olho",
 		"alternativa2" : "nariz",
-		"alternativa3" : "boca"
+		"alternativa3" : "boca",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 100,
@@ -1397,7 +1496,8 @@
 		"correta" : "montanha",
 		"alternativa1" : "rio",
 		"alternativa2" : "floresta",
-		"alternativa3" : "campo"
+		"alternativa3" : "campo",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 101,
@@ -1411,7 +1511,8 @@
 		"correta" : "rio",
 		"alternativa1" : "mar",
 		"alternativa2" : "lago",
-		"alternativa3" : "ponte"
+		"alternativa3" : "ponte",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 102,
@@ -1425,7 +1526,8 @@
 		"correta" : "flor",
 		"alternativa1" : "árvore",
 		"alternativa2" : "folha",
-		"alternativa3" : "planta"
+		"alternativa3" : "planta",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 103,
@@ -1439,7 +1541,8 @@
 		"correta" : "dizer",
 		"alternativa1" : "ouvir",
 		"alternativa2" : "ver",
-		"alternativa3" : "falar"
+		"alternativa3" : "falar",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 104,
@@ -1453,7 +1556,8 @@
 		"correta" : "falar",
 		"alternativa1" : "ouvir",
 		"alternativa2" : "dizer",
-		"alternativa3" : "ver"
+		"alternativa3" : "ver",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 105,
@@ -1467,7 +1571,8 @@
 		"correta" : "esforçar",
 		"alternativa1" : "descansar",
 		"alternativa2" : "dormir",
-		"alternativa3" : "parar"
+		"alternativa3" : "parar",
+		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
 	},
 	{
 		"id" : 106,
@@ -1565,7 +1670,8 @@
 		"correta" : "parar",
 		"alternativa1" : "andar",
 		"alternativa2" : "correr",
-		"alternativa3" : "dirigir"
+		"alternativa3" : "dirigir",
+	"dica": "Lembra visualmente o número 5 de cabeça para baixo ou manuscrito."
 	},
 	{
 		"id" : 113,

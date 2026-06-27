@@ -2,62 +2,104 @@
 {% load static %}
 
 {% block content %}
-
 <div class="container mt-4">
 
-    <h2>📚 Biblioteca de Kanjis</h2>
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-end border-b pb-3 mb-4 gap-3">
+        
+        <div class="d-flex flex-column align-items-start gap-2 w-100 w-md-auto">
+            <h2 class="mb-0 text-nowrap">📚 Biblioteca de Kanjis</h2>
+            
+            <!-- Filtro de Nível -->
+            <form method="GET" class="mb-0 w-100 w-md-auto">
+                <!-- Mantém o termo digitado oculto para não perder a pesquisa ao mudar o nível -->
+                <input type="hidden" name="q" value="{{ termo_busca|default:'' }}">
+                
+                <!-- Aumentado para tamanho padrão/grande e com altura fixa de 42px -->
+                <select name="nivel" class="form-select font-weight-bold" style="width: auto; min-width: 160px; height: 42px;" onchange="this.form.submit()">
+                    <option value="">Todos os níveis</option>
+                    <option value="N5" {% if nivel_selecionado == "N5" %}selected{% endif %}>N5 (Iniciante)</option>
+                    <option value="N4" {% if nivel_selecionado == "N4" %}selected{% endif %}>N4 (Básico)</option>
+                    <option value="N3" {% if nivel_selecionado == "N3" %}selected{% endif %}>N3 (Intermediário)</option>
+                    <option value="N2" {% if nivel_selecionado == "N2" %}selected{% endif %}>N2 (Avançado)</option>
+                    <option value="N1" {% if nivel_selecionado == "N1" %}selected{% endif %}>N1 (Fluente)</option>
+                </select>
+            </form>
+        </div>
 
-    <!-- FILTRO -->
-    <form method="GET" class="mb-3">
-        <select name="nivel" class="form-select w-25" onchange="this.form.submit()">
-            <option value="">Todos os níveis</option>
+        <!-- Barra de Pesquisa -->
+        <form method="GET" class="d-flex align-items-center gap-2 w-100 w-md-auto justify-content-md-end mb-0">
+            <input type="hidden" name="nivel" value="{{ nivel_selecionado }}">
+            
+            <input
+                type="text"
+                name="q"
+                class="form-control"
+                style="max-width: 280px; height: 42px;"
+                placeholder="Pesquisar kanji, leitura, significado..."
+                value="{{ termo_busca|default:'' }}">
 
-            <option value="N5" {% if nivel_selecionado == "N5" %}selected{% endif %}>N5</option>
-            <option value="N4" {% if nivel_selecionado == "N4" %}selected{% endif %}>N4</option>
-            <option value="N3" {% if nivel_selecionado == "N3" %}selected{% endif %}>N3</option>
-            <option value="N2" {% if nivel_selecionado == "N2" %}selected{% endif %}>N2</option>
-            <option value="N1" {% if nivel_selecionado == "N1" %}selected{% endif %}>N1</option>
-        </select>
-    </form>
+            <button type="submit" class="btn btn-primary flex-shrink-0 d-flex align-items-center justify-content-center" style="height: 42px; width: 42px;">
+                🔍
+            </button>
+        </form>
+    </div>
 
     <!-- LISTA DE KANJIS -->
     <div class="row">
         {% for k in kanjis %}
-        <div class="col-md-6">
-            <div class="border rounded p-3 mb-3">
-
-                <div style="font-size: 40px; font-weight: bold;">
-                    {{ k.kanji }}
+        <div class="col-md-6 mb-4">
+            <div class="card h-100 p-4 border rounded shadow-sm d-flex flex-column flex-sm-row gap-4 align-items-center">
+                
+                <div style="font-size: 80px; font-weight: bold; line-height: 1; font-family: 'Yu Mincho', 'MS Mincho', serif;" class="text-dark">
+                       {{ k.kanji }}
                 </div>
 
-                <p><strong>Leitura:</strong> {{ k.leitura }}</p>
-                <p><strong>Significado:</strong> {{ k.significado }}</p>
+                <div style="font-size: 14px; color: #495057;" class="flex-grow-1">
+                    <div class="d-flex justify-content-between align-items-center mb-1 text-muted" style="font-size: 12px;">
+                        <span><strong>ID:</strong> #{{ k.id }}</span>
+                        <span class="badge bg-secondary">Nível {{ k.nivel }}</span>
+                    </div>
 
-                <p><strong>Exemplo JP:</strong> {{ k.exemplo_jp }}</p>
-                <p><strong>Romaji:</strong> {{ k.exemplo_romaji }}</p>
-                <p><strong>Português:</strong> {{ k.exemplo_pt }}</p>
+                    <p class="mb-1"><strong>Leitura:</strong> {{ k.leitura }}</p>
+                    <p class="mb-1"><strong>Significado:</strong> {{ k.significado }}</p>
+
+                    {% if k.exemplo_jp %}
+                    <div class="mt-2 pt-2 border-top" style="font-size: 14px; color: #495057;">
+                        <p class="mb-1" style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;">
+                            <strong>EXEMPLO DE USO:</strong>
+                        </p>
+                        <p class="mb-1"><strong>Japonês:</strong> {{ k.exemplo_jp }}</p>
+                        <p class="mb-1"><strong>Romaji:</strong> {{ k.exemplo_romaji }}</p>
+                        <p class="mb-0"><strong>Português:</strong> {{ k.exemplo_pt }}</p>
+                    </div>
+                    {% endif %}
+                </div>
 
             </div>
+        </div>
+        {% empty %}
+        <div class="col-12 text-center text-muted my-5">
+            <h5>Nenhum Kanji encontrado para esta busca. 🏯</h5>
         </div>
         {% endfor %}
     </div>
 
     <!-- PAGINAÇÃO -->
-    <div class="mt-3 d-flex justify-content-center">
+    <div class="mt-4 d-flex justify-content-center">
         <nav>
-            <ul class="pagination">
+            <ul class="pagination mb-0">
 
                 {% if page_obj.has_previous %}
                 <li class="page-item">
                     <a class="page-link"
-                       href="?nivel={{ nivel_selecionado }}&page={{ page_obj.previous_page_number }}">
+                       href="?nivel={{ nivel_selecionado }}&q={{ termo_busca|default:'' }}&page={{ page_obj.previous_page_number }}">
                         Anterior
                     </a>
                 </li>
                 {% endif %}
 
                 <li class="page-item disabled">
-                    <span class="page-link">
+                    <span class="page-link bg-light text-dark">
                         Página {{ page_obj.number }} de {{ page_obj.paginator.num_pages }}
                     </span>
                 </li>
@@ -65,7 +107,7 @@
                 {% if page_obj.has_next %}
                 <li class="page-item">
                     <a class="page-link"
-                       href="?nivel={{ nivel_selecionado }}&page={{ page_obj.next_page_number }}">
+                       href="?nivel={{ nivel_selecionado }}&q={{ termo_busca|default:'' }}&page={{ page_obj.next_page_number }}">
                         Próxima
                     </a>
                 </li>
@@ -77,12 +119,12 @@
 
 </div>
 
-<div class="d-flex justify-content-between align-items-center mb-3">
-    <div style="position: fixed; top: 550px; left: 20px; z-index: 1000;">
-        <a href="{% url 'menu' %}" class="btn btn-outline-secondary">
-            ← Início
-        </a>
-    </div>
+<!-- Botão de Início -->
+<div class="container mt-4 mb-5">
+    <a href="{% url 'menu' %}" class="btn btn-outline-secondary">
+        ← Menu Inicial
+    </a>
 </div>
 
 {% endblock %}
+

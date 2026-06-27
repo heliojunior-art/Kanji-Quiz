@@ -34,12 +34,11 @@ class Command(BaseCommand):
                     "exemplo_jp": item.get("exemplo_jp") or item.get("exemplo"),
                     "exemplo_romaji": item.get("exemplo_romaji"),
                     "exemplo_pt": item.get("exemplo_pt"),
-
-                    # 🔥 mantém compatível com quiz
                     "correta": item.get("correta"),
                     "alternativa1": item.get("alternativa1"),
                     "alternativa2": item.get("alternativa2"),
                     "alternativa3": item.get("alternativa3"),
+                    "dica": item.get("dica", ""),
                 }
             )
 

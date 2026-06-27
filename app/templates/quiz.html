@@ -1,147 +1,175 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<title>Kanji Quiz</title>
-<style>
-    body {
-        font-family: Arial;
-        max-width: 500px;
-        margin: auto;
-        padding: 20px;
-    }
-    .kanji {
-        font-size: 80px;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    .alternativas button {
-        width: 100%;
-        padding: 15px;
-        margin: 8px 0;
-        font-size: 18px;
-        cursor: pointer;
-    }
-    .botao-proximo {
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        padding: 16px 24px;
-        font-size: 20px;
-        border-radius: 12px;
-        float: right;
-        cursor: not-allowed;
-        opacity: 0.5;
-    }
-    .botao-proximo.ativo {
-        cursor: pointer;
-        opacity: 1;
-    }
-    .botao-anterior {
-        background-color: #2196F3;
-        color: white;
-        text-decoration: none; 
-        border: none;
-        padding: 16px 24px;
-        font-size: 20px;
-        border-radius: 12px;
-        float: left;
-        cursor: pointer;
-    }
-    .botao-parar {
-        background-color: #f44336;
-        color: white;
-        border: none;
-        padding: 12px 20px;
-        font-size: 16px;
-        border-radius: 8px;
-        position: fixed;
-        top: 20px;
-        left: 20px;
-        text-decoration: none;
-        z-index: 1000;
-    }
-    .botoes-container {
-        margin-top: 10px;
-        overflow: hidden;
-    }
-</style>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
 
-<!-- Botão Parar Quiz -->
-<a href="{% url 'parar_quiz' quiz.id %}" 
-   class="botao-parar"
-   onclick="return confirm('Tem certeza que deseja parar o quiz?');">
-   Parar Quiz
-</a>
+<div class="d-flex justify-content-center align-items-center py-3 animate-fade-in" style="min-height: 75vh;">
+    
+    <div class="card w-100 p-4 shadow border-0" style="max-width: 520px; background: #ffffff; border-radius: 20px;">
+        
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h5 class="text-muted font-weight-bold mb-0" style="font-size: 16px;">
+                Questão {{ questao_atual }} / {{ total }}
+            </h5>
+            
+            <div class="d-flex gap-2">
+                <button type="button" 
+                        class="btn btn-sm btn-outline-warning font-weight-bold px-3"
+                        style="border-radius: 10px; font-size: 13px;"
+                        data-bs-toggle="modal" 
+                        data-bs-target="#dicaModal">
+                    💡 Dica
+                </button>
 
-<h2>Questão {{ questao_atual }} / {{ total }}</h2>
+                <a href="{% url 'parar_quiz' quiz.id %}" 
+                   class="btn btn-sm btn-outline-danger font-weight-bold px-3 text-nowrap"
+                   style="border-radius: 10px; font-size: 13px;"
+                   onclick="return confirm('Se você sair, o progresso do seu quiz atual será perdido. Tem certeza?');">
+                   Parar Quiz
+                </a>
+            </div>
+        </div>
 
-<div class="kanji">{{ kanji.kanji }}</div>
+        <div class="progress mb-4" style="height: 6px; border-radius: 3px; background-color: #f1f5f9;">
+            <div class="progress-bar" id="barraProgresso" role="progressbar" 
+                 aria-valuenow="{{ questao_atual }}" aria-valuemin="0" aria-valuemax="{{ total }}"
+                 style="background-color: #0d6efd; width: 0%;"></div>
+        </div>
 
-<form method="post" id="quizForm" action="{% url 'responder' quiz.id kanji.id %}">
-    {% csrf_token %}
-    <input type="hidden" name="questao" value="{{ questao_atual }}">
+        <div class="text-center my-4 select-none">
+            <span style="font-size: 90px; font-weight: bold; font-family: 'Yu Mincho', 'MS Mincho', serif; line-height: 1;" class="text-dark d-block">
+                {{ kanji.kanji }}
+            </span>
+        </div>
 
-    <div class="alternativas">
-        {% for alt in alternativas %}
-            <button type="button"
-                    class="alternativa {% if resposta and resposta.alternativa.id == alt.id %}selecionada{% endif %}"
-                    data-id="{{ alt.id }}">
-                {{ alt.texto }}
-            </button>
-        {% endfor %}
+        <form method="post" id="quizForm" action="{% url 'responder' quiz.id kanji.id %}">
+            {% csrf_token %}
+            <input type="hidden" name="questao" value="{{ questao_atual }}">
+
+            <div class="d-flex flex-column gap-2 my-4">
+                {% for alt in alternativas %}
+                    <button type="button"
+                            class="alternativa btn w-100 text-center py-3 border"
+                            style="font-size: 16px; font-weight: 500; border-radius: 12px; background-color: #f8fafc; border-color: #dee2e6; color: #212529; transition: all 0.15s; outline: none;"
+                            data-id="{{ alt.id }}">
+                        {{ alt.texto }}
+                    </button>
+                {% endfor %}
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center border-top pt-3 mt-4">
+                <a href="{% url 'quiz_pergunta' quiz_id=quiz.id questao=questao_atual|add:'-1' %}"
+                   class="btn btn-outline-secondary px-4 py-2 font-weight-bold {% if questao_atual == 1 %}disabled opacity-50{% endif %}"
+                   style="border-radius: 12px; font-size: 15px;">
+                   Anterior
+                </a>
+
+                <button type="submit" 
+                        name="proximo" 
+                        value="1" 
+                        id="proximoBtn" 
+                        class="btn btn-secondary px-4 py-2 font-weight-bold text-white" 
+                        style="border-radius: 12px; font-size: 15px; cursor: not-allowed;" 
+                        disabled>
+                    Próximo
+                </button>
+            </div>
+        </form>
     </div>
+</div>
 
-    <div class="botoes-container">
-        <a href="{% url 'quiz_pergunta' quiz_id=quiz.id questao=questao_atual|add:'-1' %}"
-           class="botao-anterior"
-           {% if questao_atual == 1 %}style="opacity:0.5;pointer-events:none;"{% endif %}>
-           Anterior
-        </a>
-
-        <button type="submit" name="proximo" value="1" id="proximoBtn" class="botao-proximo" disabled>Próximo</button>
+<div class="modal fade" id="dicaModal" tabindex="-1" aria-labelledby="dicaModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: 380px;">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: 18px;">
+            <div class="modal-header border-0 pb-0">
+                <h5 class="modal-title font-weight-bold text-warning" id="dicaModalLabel">💡 Dica de Estudo</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-start py-3" style="font-size: 15px; color: #495057;">
+                {% if kanji.dica %}
+                    <p class="mb-0 text-dark font-medium">{{ kanji.dica }}</p>
+                {% else %}
+                    <p class="mb-2"><strong>Leitura:</strong> <span class="text-dark font-japanese">{{ kanji.leitura }}</span></p>
+                    <p class="mb-0"><strong>Significado:</strong> <span class="text-dark">{{ kanji.significado }}</span></p>
+                {% endif %}
+            </div>
+            <div class="modal-footer border-0 pt-0">
+                <button type="button" class="btn btn-secondary w-100 font-weight-bold" style="border-radius: 10px;" data-bs-dismiss="modal">Entendi!</button>
+            </div>
+        </div>
     </div>
-</form>
-
+</div>
 
 <script>
     const alternativas = document.querySelectorAll('.alternativa');
     const proximoBtn = document.getElementById('proximoBtn');
     const form = document.getElementById('quizForm');
+    const barraProgresso = document.getElementById('barraProgresso');
+
+    const questaoAtual = parseInt("{{ questao_atual }}");
+    const totalQuestoes = parseInt("{{ total }}");
+    if (barraProgresso) {
+        barraProgresso.style.width = ((questaoAtual / totalQuestoes) * 100) + '%';
+    }
 
     let hiddenInput = document.createElement('input');
     hiddenInput.type = 'hidden';
     hiddenInput.name = 'alternativa';
     form.appendChild(hiddenInput);
 
-    const selecionadaBackend = "{{ selecionada }}";
+    function marcarBotao(btn) {
+        alternativas.forEach(b => {
+            b.style.backgroundColor = '#f8fafc';
+            b.style.borderColor = '#dee2e6';
+            b.style.color = '#212529';
+            b.style.boxShadow = 'none';
+        });
 
-    if (selecionadaBackend && selecionadaBackend !== "None") {
+        btn.style.backgroundColor = '#d0f0c0';
+        btn.style.borderColor = '#a3e685';
+        btn.style.color = '#1e3a1e';
+        btn.style.boxShadow = '0 4px 12px rgba(163, 230, 133, 0.2)';
+
+        hiddenInput.value = btn.getAttribute('data-id');
+
+        proximoBtn.disabled = false;
+        proximoBtn.style.backgroundColor = '#198754';
+        proximoBtn.style.borderColor = '#198754';
+        proximoBtn.style.color = '#ffffff';
+        proximoBtn.style.cursor = 'pointer';
+    }
+
+    const selecionadaBackend = "{{ selecionada }}";
+    if (selecionadaBackend && selecionadaBackend !== "None" && selecionadaBackend !== "") {
         alternativas.forEach(btn => {
             if (btn.getAttribute('data-id') === selecionadaBackend) {
-                btn.style.backgroundColor = '#d0f0c0';
-                hiddenInput.value = selecionadaBackend;
-
-                proximoBtn.disabled = false;
-                proximoBtn.classList.add('ativo');
+                marcarBotao(btn);
             }
         });
     }
 
     alternativas.forEach(btn => {
         btn.addEventListener('click', () => {
-            alternativas.forEach(b => b.style.backgroundColor = '');
-            btn.style.backgroundColor = '#d0f0c0';
-
-            hiddenInput.value = btn.getAttribute('data-id');
-
-            proximoBtn.disabled = false;
-            proximoBtn.classList.add('ativo');
+            marcarBotao(btn);
         });
+    });
+
+    let enviarFormulario = false;
+    form.addEventListener('submit', () => { enviarFormulario = true; });
+    window.addEventListener('beforeunload', (event) => {
+        if (enviarFormulario) return;
+        event.preventDefault();
+        event.returnValue = 'Se você sair, o progresso do seu quiz atual será perdido. Tem certeza?';
+        return event.returnValue;
     });
 </script>
 
-</body>
-</html>
+<style>
+    .animate-fade-in {
+        opacity: 0;
+        transform: translateY(12px);
+        animation: fadeSlideIn 0.4s ease-out forwards;
+    }
+    @keyframes fadeSlideIn {
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+{% endblock %}

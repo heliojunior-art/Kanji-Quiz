@@ -3,7 +3,7 @@ from django.utils import timezone
 from .models import Kanji, Alternativa, Resposta, QuizSession
 from django.db import transaction
 from django.core.paginator import Paginator
-from .management.commands.import_kanjis import Command
+from django.db.models import Q
 import random
 
 # -------------------------------
@@ -218,13 +218,22 @@ def quiz_final(request, quiz_id):
 # -------------------------------
 def kanji_list(request):
     nivel = request.GET.get("nivel", "")
+    busca = request.GET.get("q", "").strip()
     page_number = request.GET.get("page", 1)
 
-    if nivel:
-        kanjis = Kanji.objects.filter(nivel=nivel).order_by("id").all()
-    else:
-        kanjis = Kanji.objects.all().order_by("id")
+    kanjis = Kanji.objects.all()
 
+    if nivel:
+        kanjis = kanjis.filter(nivel=nivel)
+
+    if busca:
+        kanjis = kanjis.filter(
+            Q(kanji__icontains=busca) |
+            Q(leitura__icontains=busca) |
+            Q(significado__icontains=busca)
+        )
+
+    kanjis = kanjis.order_by("id")
     paginator = Paginator(kanjis, 30)
     page_obj = paginator.get_page(page_number)
 
@@ -232,4 +241,5 @@ def kanji_list(request):
         "kanjis": page_obj,
         "page_obj": page_obj,
         "nivel_selecionado": nivel,
+        "busca": busca,
     })
