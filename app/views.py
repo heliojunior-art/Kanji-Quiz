@@ -146,6 +146,14 @@ def responder(request, quiz_id, kanji_id):
     if 'proximo' in request.POST:
         questao += 1
         if questao > quiz.quantidade:
+            if quiz.finalizado_em is None:
+                quiz.finalizado_em = timezone.now()
+                quiz.acertos = quiz.respostas.filter(correta=True).count()
+                quiz.save()
+                historico_ids = request.session.get("meu_historico_ids", [])
+                if quiz.id not in historico_ids:
+                    historico_ids.append(quiz.id)
+                    request.session["meu_historico_ids"] = historico_ids
             return redirect("quiz_final", quiz_id=quiz.id)
         return redirect("quiz_pergunta", quiz_id=quiz.id, questao=questao)
 
