@@ -4,7 +4,7 @@ O **Kanji Quiz** é uma aplicação web gamificada desenvolvida para auxiliar es
 
 ## 🔗 Links do Projeto
 - **Página de Informações (GitHub Pages):** https://github.io
-- **Aplicação Online (Render):** https://onrender.com
+- **Aplicação Online (Render):** https://kanji-quiz-d7w2.onrender.com
 
 ## 🚀 Diferenciais Técnicos e Recursos Implementados
 - **Arquitetura Robusta:** Desenvolvido em Django com transações atômicas (`@transaction.atomic`) para garantir a integridade dos dados na gravação de respostas.
@@ -35,6 +35,7 @@ O **Kanji Quiz** é uma aplicação web gamificada desenvolvida para auxiliar es
    ```
 4. **Execute as migrações e importe o banco de dados:**
    ```bash
+   python manage.py makemigrations app
    python manage.py migrate
    python manage.py import_kanjis kanjis.json
    ```
