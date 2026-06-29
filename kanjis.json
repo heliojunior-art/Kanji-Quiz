@@ -3,17 +3,6 @@
 		"id" : 1,
 		"kanji" : "一",
 		"nivel" : "N5",
-<<<<<<< HEAD
-		"leitura" : "いち (ichi) / ひと(つ) (hito(tsu))",
-		"significado" : "um",
-		"exemplo_jp" : "りんごを一つください。",
-		"exemplo_romaji" : "Ringo o hitotsu kudasai.",
-		"exemplo_pt" : "Por favor, me dê uma maçã.",
-		"correta" : "um",
-		"alternativa1" : "dois",
-		"alternativa2" : "três",
-		"alternativa3" : "quatro"
-=======
 		"leitura" : "いち (ichi) / ひと (hito)",
 		"significado" : "Um",
 		"exemplo_jp" : "りんごを一つください。",
@@ -24,23 +13,11 @@
 		"alternativa2" : "Três",
 		"alternativa3" : "Quatro",
 		"dica" : "Apenas um único traço horizontal."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 2,
 		"kanji" : "二",
 		"nivel" : "N5",
-<<<<<<< HEAD
-		"leitura" : "に (ni) / ふた(つ) (futa(tsu))",
-		"significado" : "dois",
-		"exemplo_jp" : "二人います。",
-		"exemplo_romaji" : "Futari imasu.",
-		"exemplo_pt" : "Há duas pessoas.",
-		"correta" : "dois",
-		"alternativa1" : "três",
-		"alternativa2" : "um",
-		"alternativa3" : "cinco"
-=======
 		"leitura" : "に (ni) / ふた (futa)",
 		"significado" : "Dois",
 		"exemplo_jp" : "本を二冊買いました。",
@@ -51,23 +28,11 @@
 		"alternativa2" : "Um",
 		"alternativa3" : "Cinco",
 		"dica" : "Dois traços horizontais paralelos."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 3,
 		"kanji" : "三",
 		"nivel" : "N5",
-<<<<<<< HEAD
-		"leitura" : "さん (san) / み(っ) (mi(tsu))",
-		"significado" : "três",
-		"exemplo_jp" : "三本あります。",
-		"exemplo_romaji" : "San-bon arimasu.",
-		"exemplo_pt" : "Há três objetos longos.",
-		"correta" : "três",
-		"alternativa1" : "quatro",
-		"alternativa2" : "muitos",
-		"alternativa3" : "seis"
-=======
 		"leitura" : "さん (san) / み (mi)",
 		"significado" : "Três",
 		"exemplo_jp" : "三日待ってください。",
@@ -78,23 +43,11 @@
 		"alternativa2" : "Dois",
 		"alternativa3" : "Seis",
 		"dica": "Três traços horizontais empilhados."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 4,
 		"kanji" : "四",
 		"nivel" : "N5",
-<<<<<<< HEAD
-		"leitura" : "よん, し (yon, shi) / よ(っ) (yo(tsu))",
-		"significado" : "quatro",
-		"exemplo_jp" : "四時です。",
-		"exemplo_romaji" : "Yo-ji desu.",
-		"exemplo_pt" : "São quatro horas.",
-		"correta" : "quatro",
-		"alternativa1" : "cinco",
-		"alternativa2" : "hora",
-		"alternativa3" : "tempo"
-=======
 		"leitura" : "し (shi) / よん (yon)",
 		"significado" : "Quatro",
 		"exemplo_jp" : "四月は春です。",
@@ -105,23 +58,11 @@
 		"alternativa2" : "Três",
 		"alternativa3" : "Seis",
 		"dica": "Uma caixa com quatro cantos e duas pernas lá dentro."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 5,
 		"kanji" : "五",
 		"nivel" : "N5",
-<<<<<<< HEAD
-		"leitura" : "ご (go) / いつ(つ) (itsu(tsu))",
-		"significado" : "cinco",
-		"exemplo_jp" : "五人の学生です。",
-		"exemplo_romaji" : "Go-nin no gakusei desu.",
-		"exemplo_pt" : "São cinco estudantes.",
-		"correta" : "cinco",
-		"alternativa1" : "seis",
-		"alternativa2" : "quatro",
-		"alternativa3" : "quantidade"
-=======
 		"leitura" : "ご (go) / いつ (itsu)",
 		"significado" : "Cinco",
 		"exemplo_jp" : "五枚の皿があります。",
@@ -132,23 +73,11 @@
 		"alternativa2" : "Quatro",
 		"alternativa3" : "Sete",
 		"dica": "Observe a forma do caractere, conseguirá ver a silhueta de um número."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 6,
 		"kanji" : "六",
 		"nivel" : "N5",
-<<<<<<< HEAD
-		"leitura" : "ろく (roku) / む(っ) (mu(tsu))",
-		"significado" : "seis",
-		"exemplo_jp" : "六時に起きます。",
-		"exemplo_romaji" : "Roku-ji ni okimasu.",
-		"exemplo_pt" : "Acordo às seis.",
-		"correta" : "seis",
-		"alternativa1" : "sete",
-		"alternativa2" : "hora",
-		"alternativa3" : "tempo"
-=======
 		"leitura" : "ろく (roku) / む (mu)",
 		"significado" : "Seis",
 		"exemplo_jp" : "六時に起きます。",
@@ -159,23 +88,11 @@
 		"alternativa2" : "Cinco",
 		"alternativa3" : "Oito",
 		"dica": "Imagine uma pessoa com Uma cabeça, o corpo esticado e quatro extremidades."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 7,
 		"kanji" : "七",
 		"nivel" : "N5",
-<<<<<<< HEAD
-		"leitura" : "なな, しち (nana, shichi) / なな(つ) (nana(tsu))",
-		"significado" : "sete",
-		"exemplo_jp" : "七日です。",
-		"exemplo_romaji" : "Nanoka desu.",
-		"exemplo_pt" : "É dia sete.",
-		"correta" : "sete",
-		"alternativa1" : "oito",
-		"alternativa2" : "data",
-		"alternativa3" : "três"
-=======
 		"leitura" : "しち (shichi) / なな (nana)",
 		"significado" : "Sete",
 		"exemplo_jp" : "日本の七月は暑いです。",
@@ -186,23 +103,11 @@
 		"alternativa2" : "Seis",
 		"alternativa3" : "Nove",
 		"dica": "Se você girar o caractere de ponta-cabeça, verá a silhueta de um número."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 8,
 		"kanji" : "八",
 		"nivel" : "N5",
-<<<<<<< HEAD
-		"leitura" : "はち (hachi) / や(っ) (ya(tsu))",
-		"significado" : "oito",
-		"exemplo_jp" : "八人います。",
-		"exemplo_romaji" : "Hachi-nin imasu.",
-		"exemplo_pt" : "Há oito pessoas.",
-		"correta" : "oito",
-		"alternativa1" : "nove",
-		"alternativa2" : "quantidade",
-		"alternativa3" : "quatro"
-=======
 		"leitura" : "はち (hachi) / や (ya)",
 		"significado" : "Oito",
 		"exemplo_jp" : "八百屋で果物を買いました。",
@@ -213,23 +118,11 @@
 		"alternativa2" : "Sete",
 		"alternativa3" : "Seis",
 		"dica": "Dois traços que se abrem para formar a base de um quadrado de quatro lados."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 9,
 		"kanji" : "九",
 		"nivel" : "N5",
-<<<<<<< HEAD
-		"leitura" : "きゅう (kyū) / ここの(つ) (kokono(tsu))",
-		"significado" : "nove",
-		"exemplo_jp" : "九月です。",
-		"exemplo_romaji" : "Ku-gatsu desu.",
-		"exemplo_pt" : "É setembro.",
-		"correta" : "nove",
-		"alternativa1" : "dez",
-		"alternativa2" : "mês",
-		"alternativa3" : "data"
-=======
 		"leitura" : "きゅう, く (kyū, ku) / ここの (kokono)",
 		"significado" : "Nove",
 		"exemplo_jp" : "九月になりました。",
@@ -240,23 +133,12 @@
 		"alternativa2" : "Oito",
 		"alternativa3" : "Sete",
 		"dica": "Parece uma letra 'n' estilizada."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 10,
 		"kanji" : "十",
 		"nivel" : "N5",
 		"leitura" : "じゅう (jū) / とお (tō)",
-<<<<<<< HEAD
-		"significado" : "dez",
-		"exemplo_jp" : "十時です。",
-		"exemplo_romaji" : "Jū-ji desu.",
-		"exemplo_pt" : "São dez horas.",
-		"correta" : "dez",
-		"alternativa1" : "cem",
-		"alternativa2" : "número",
-		"alternativa3" : "mil"
-=======
 		"significado" : "Dez",
 		"exemplo_jp" : "十人が集まりました。",
 		"exemplo_romaji" : "Jūnin ga atsumarimashita.",
@@ -266,23 +148,12 @@
 		"alternativa2" : "Cem",
 		"alternativa3" : "Mil",
 		"dica": "É maior que dez e menor que mil."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 11,
 		"kanji" : "百",
 		"nivel" : "N5",
 		"leitura" : "ひゃく (hyaku)",
-<<<<<<< HEAD
-		"significado" : "cem",
-		"exemplo_jp" : "百円です。",
-		"exemplo_romaji" : "Hyaku-en desu.",
-		"exemplo_pt" : "São cem ienes.",
-		"correta" : "cem",
-		"alternativa1" : "mil",
-		"alternativa2" : "dez mil",
-		"alternativa3" : "dinheiro"
-=======
 		"significado" : "Cem",
 		"exemplo_jp" : "百円ショップに行きます。",
 		"exemplo_romaji" : "Hyakuen shoppu ni ikimasu.",
@@ -292,23 +163,12 @@
 		"alternativa2" : "Dez mil",
 		"alternativa3" : "Dez",
 		"dica": "O sol (日) ganhou uma linha no topo e ficou sem espaço para subir."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 12,
 		"kanji" : "千",
 		"nivel" : "N5",
 		"leitura" : "せん (sen)",
-<<<<<<< HEAD
-		"significado" : "mil",
-		"exemplo_jp" : "千円あります。",
-		"exemplo_romaji" : "Sen-en arimasu.",
-		"exemplo_pt" : "Tenho mil ienes.",
-		"correta" : "mil",
-		"alternativa1" : "cem",
-		"alternativa2" : "valor",
-		"alternativa3" : "dez mil"
-=======
 		"significado" : "Mil",
 		"exemplo_jp" : "千円札があります。",
 		"exemplo_romaji" : "Sensen satsu ga arimasu.",
@@ -318,23 +178,12 @@
 		"alternativa2" : "Dez",
 		"alternativa3" : "Dez mil",
 		"dica": "É maior que cem e menor que dez mil."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 13,
 		"kanji" : "万",
 		"nivel" : "N5",
 		"leitura" : "まん (man)",
-<<<<<<< HEAD
-		"significado" : "dez mil",
-		"exemplo_jp" : "一万円です。",
-		"exemplo_romaji" : "Ichi-man en desu.",
-		"exemplo_pt" : "São dez mil ienes.",
-		"correta" : "dez mil",
-		"alternativa1" : "mil",
-		"alternativa2" : "iene",
-		"alternativa3" : "cem"
-=======
 		"significado" : "Dez mil",
 		"exemplo_jp" : "一万円を払いました。",
 		"exemplo_romaji" : "Ichimanen o haraimashita.",
@@ -344,23 +193,12 @@
 		"alternativa2" : "Dez",
 		"alternativa3" : "Cem",
 		"dica": "Depois de mil, vem este número."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 14,
 		"kanji" : "日",
 		"nivel" : "N5",
 		"leitura" : "にち, じつ (nichi, jitsu) / ひ (hi)",
-<<<<<<< HEAD
-		"significado" : "dia, sol",
-		"exemplo_jp" : "今日はいい日です。",
-		"exemplo_romaji" : "Kyō wa ii hi desu.",
-		"exemplo_pt" : "Hoje é um bom dia.",
-		"correta" : "dia",
-		"alternativa1" : "mês",
-		"alternativa2" : "ano",
-		"alternativa3" : "tempo"
-=======
 		"significado" : "Dia, Sol",
 		"exemplo_jp" : "日曜日は休みです。",
 		"exemplo_romaji" : "Nichiyōbi wa yasumi desu.",
@@ -370,23 +208,12 @@
 		"alternativa2" : "Hora",
 		"alternativa3" : "Segundo",
 		"dica": "É uma unidade de tempo de 24 horas."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 15,
 		"kanji" : "月",
 		"nivel" : "N5",
 		"leitura" : "げつ, がつ (getsu, gatsu) / つき (tsuki)",
-<<<<<<< HEAD
-		"significado" : "lua, mês",
-		"exemplo_jp" : "月がきれいです。",
-		"exemplo_romaji" : "Tsuki ga kirei desu.",
-		"exemplo_pt" : "A lua está bonita.",
-		"correta" : "lua",
-		"alternativa1" : "sol",
-		"alternativa2" : "estrela",
-		"alternativa3" : "tempo"
-=======
 		"significado" : "Lua, Mês",
 		"exemplo_jp" : "月がきれいです。",
 		"exemplo_romaji" : "Tsuki ga kirei desu.",
@@ -396,23 +223,12 @@
 		"alternativa2" : "Estrela",
 		"alternativa3" : "Dia",
 		"dica": "É o satélite da Terra."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 16,
 		"kanji" : "火",
 		"nivel" : "N5",
 		"leitura" : "か (ka) / ひ (hi)",
-<<<<<<< HEAD
-		"significado" : "fogo",
-		"exemplo_jp" : "火を使います。",
-		"exemplo_romaji" : "Hi o tsukaimasu.",
-		"exemplo_pt" : "Uso fogo.",
-		"correta" : "fogo",
-		"alternativa1" : "água",
-		"alternativa2" : "luz",
-		"alternativa3" : "calor"
-=======
 		"significado" : "Fogo",
 		"exemplo_jp" : "火曜日に会いましょう。",
 		"exemplo_romaji" : "Kayoubi ni aimashō.",
@@ -422,23 +238,12 @@
 		"alternativa2" : "Terra",
 		"alternativa3" : "Madeira",
 		"dica": "É usado para cozinhar e aquecer."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 17,
 		"kanji" : "水",
 		"nivel" : "N5",
 		"leitura" : "すい (sui) / みず (mizu)",
-<<<<<<< HEAD
-		"significado" : "água",
-		"exemplo_jp" : "水を飲みます。",
-		"exemplo_romaji" : "Mizu o nomimasu.",
-		"exemplo_pt" : "Bebo água.",
-		"correta" : "água",
-		"alternativa1" : "suco",
-		"alternativa2" : "fogo",
-		"alternativa3" : "líquido"
-=======
 		"significado" : "Água",
 		"exemplo_jp" : "水を飲みます。",
 		"exemplo_romaji" : "Mizu o nomimasu.",
@@ -448,23 +253,12 @@
 		"alternativa2" : "Fogo",
 		"alternativa3" : "Arvoré",
 		"dica": "Pode ser encontrada em rios, lagos e oceanos."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 18,
 		"kanji" : "木",
 		"nivel" : "N5",
 		"leitura" : "もく (moku) / き (ki)",
-<<<<<<< HEAD
-		"significado" : "árvore",
-		"exemplo_jp" : "大きい木です。",
-		"exemplo_romaji" : "Ōkii ki desu.",
-		"exemplo_pt" : "É uma árvore grande.",
-		"correta" : "árvore",
-		"alternativa1" : "flor",
-		"alternativa2" : "planta",
-		"alternativa3" : "metal"
-=======
 		"significado" : "Árvore, Madeira",
 		"exemplo_jp" : "木の下で休みます",
 		"exemplo_romaji" : "Ki no shita de yasumimasu.",
@@ -474,23 +268,12 @@
 		"alternativa2" : "Água",
 		"alternativa3" : "Terra",
 		"dica": "Muitas delas juntas formam uma floresta."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 19,
 		"kanji" : "金",
 		"nivel" : "N5",
 		"leitura" : "きん (kin) / かね (kane)",
-<<<<<<< HEAD
-		"significado" : "dinheiro, ouro",
-		"exemplo_jp" : "お金があります。",
-		"exemplo_romaji" : "O-kane ga arimasu.",
-		"exemplo_pt" : "Tenho dinheiro.",
-		"correta" : "ouro",
-		"alternativa1" : "preço",
-		"alternativa2" : "valor",
-		"alternativa3" : "prata"
-=======
 		"significado" : "Dinheiro, Ouro",
 		"exemplo_jp" : "お金がありません。",
 		"exemplo_romaji" : "Okane ga arimasen.",
@@ -500,23 +283,12 @@
 		"alternativa2" : "Fogo",
 		"alternativa3" : "Madeira",
 		"dica": "Representa um metal muito valioso e de cor amarela."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 20,
 		"kanji" : "土",
 		"nivel" : "N5",
 		"leitura" : "ど (do) / つち (tsuchi)",
-<<<<<<< HEAD
-		"significado" : "terra, solo",
-		"exemplo_jp" : "土の道です。",
-		"exemplo_romaji" : "Tsuchi no michi desu.",
-		"exemplo_pt" : "É um caminho de terra.",
-		"correta" : "terra",
-		"alternativa1" : "areia",
-		"alternativa2" : "pedra",
-		"alternativa3" : "chão"
-=======
 		"significado" : "Terra, Solo",
 		"exemplo_jp" : "土を掘ります。",
 		"exemplo_romaji" : "Tsuchi o horimasu.",
@@ -526,23 +298,12 @@
 		"alternativa2" : "Fogo",
 		"alternativa3" : "Montanha",
 		"dica": "É onde as plantas criam raízes e crescem."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 21,
 		"kanji" : "上",
 		"nivel" : "N5",
 		"leitura" : "じょう (jō) / うえ (ue)",
-<<<<<<< HEAD
-		"significado" : "acima",
-		"exemplo_jp" : "上にあります。",
-		"exemplo_romaji" : "Ue ni arimasu.",
-		"exemplo_pt" : "Está em cima.",
-		"correta" : "acima",
-		"alternativa1" : "embaixo",
-		"alternativa2" : "lado",
-		"alternativa3" : "frente"
-=======
 		"significado" : "Cima, Topo",
 		"exemplo_jp" : "机の上に本があります。",
 		"exemplo_romaji" : "Tsukue no ue ni hon ga arimasu.",
@@ -552,23 +313,12 @@
 		"alternativa2" : "Esquerda",
 		"alternativa3" : "Direita",
 		"dica": "A direção do elevador quando ele sobe."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 22,
 		"kanji" : "下",
 		"nivel" : "N5",
 		"leitura" : "か (ka) / した (shita)",
-<<<<<<< HEAD
-		"significado" : "abaixo",
-		"exemplo_jp" : "下にあります。",
-		"exemplo_romaji" : "Shita ni arimasu.",
-		"exemplo_pt" : "Está embaixo.",
-		"correta" : "abaixo",
-		"alternativa1" : "acima",
-		"alternativa2" : "fora",
-		"alternativa3" : "lado"
-=======
 		"significado" : "Baixo, Abaixo",
 		"exemplo_jp" : "木の下に猫がいます。",
 		"exemplo_romaji" : "Ki no shita ni neko ga imasu.",
@@ -578,23 +328,12 @@
 		"alternativa2" : "Esquerda",
 		"alternativa3" : "Direita",
 		"dica": "É o oposto de cima."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 23,
 		"kanji" : "右",
 		"nivel" : "N5",
 		"leitura" : "う (u) / みぎ (migi)",
-<<<<<<< HEAD
-		"significado" : "direita",
-		"exemplo_jp" : "右に曲がります。",
-		"exemplo_romaji" : "Migi ni magarimasu.",
-		"exemplo_pt" : "Vire à direita.",
-		"correta" : "direita",
-		"alternativa1" : "esquerda",
-		"alternativa2" : "frente",
-		"alternativa3" : "atrás"
-=======
 		"significado" : "Direita",
 		"exemplo_jp" : "右に曲がってください。",
 		"exemplo_romaji" : "Migi ni magatte kudasai.",
@@ -604,23 +343,12 @@
 		"alternativa2" : "Cima",
 		"alternativa3" : "Baixo",
 		"dica": "A seta → aponta para este lado."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 24,
 		"kanji" : "左",
 		"nivel" : "N5",
 		"leitura" : "さ (sa) / ひだり (hidari)",
-<<<<<<< HEAD
-		"significado" : "esquerda",
-		"exemplo_jp" : "左にあります。",
-		"exemplo_romaji" : "Hidari ni arimasu.",
-		"exemplo_pt" : "Está à esquerda.",
-		"correta" : "esquerda",
-		"alternativa1" : "direita",
-		"alternativa2" : "frente",
-		"alternativa3" : "lado"
-=======
 		"significado" : "Esquerda",
 		"exemplo_jp" : "左を見てください。",
 		"exemplo_romaji" : "Hidari o mite kudasai.",
@@ -630,23 +358,12 @@
 		"alternativa2" : "Cima",
 		"alternativa3" : "Baixo",
 		"dica": "É o lado onde fica o coração das pessoas."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 25,
 		"kanji" : "外",
 		"nivel" : "N5",
 		"leitura" : "がい (gai) / そと (soto)",
-<<<<<<< HEAD
-		"significado" : "fora",
-		"exemplo_jp" : "外に出ます。",
-		"exemplo_romaji" : "Soto ni demasu.",
-		"exemplo_pt" : "Saio para fora.",
-		"correta" : "fora",
-		"alternativa1" : "dentro",
-		"alternativa2" : "lado",
-		"alternativa3" : "frente"
-=======
 		"significado" : "Fora, Exterior",
 		"exemplo_jp" : "外は寒いですか？",
 		"exemplo_romaji" : "Soto wa samui desu ka?",
@@ -656,23 +373,12 @@
 		"alternativa2" : "Atrás",
 		"alternativa3" : "Frente",
 		"dica": "Quando você sai de casa, está neste lugar."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 26,
 		"kanji" : "中",
 		"nivel" : "N5",
 		"leitura" : "ちゅう (chū) / なか (naka)",
-<<<<<<< HEAD
-		"significado" : "dentro, meio",
-		"exemplo_jp" : "中に入ります。",
-		"exemplo_romaji" : "Naka ni hairimasu.",
-		"exemplo_pt" : "Entro dentro.",
-		"correta" : "dentro",
-		"alternativa1" : "fora",
-		"alternativa2" : "acima",
-		"alternativa3" : "lado"
-=======
 		"significado" : "Dentro, Meio",
 		"exemplo_jp" : "箱の中に何がありますか？",
 		"exemplo_romaji" : "Hako no naka ni nani ga arimasu ka?",
@@ -682,23 +388,12 @@
 		"alternativa2" : "Frente",
 		"alternativa3" : "Atrás"	,
 		"dica" : "Ao abrir uma caixa, você vê o que está aqui."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 27,
 		"kanji" : "前",
 		"nivel" : "N5",
 		"leitura" : "ぜん (zen) / まえ (mae)",
-<<<<<<< HEAD
-		"significado" : "frente, antes",
-		"exemplo_jp" : "前に立ちます。",
-		"exemplo_romaji" : "Mae ni tachimasu.",
-		"exemplo_pt" : "Fico na frente.",
-		"correta" : "frente",
-		"alternativa1" : "atrás",
-		"alternativa2" : "lado",
-		"alternativa3" : "depois"
-=======
 		"significado" : "Frente, Antes",
 		"exemplo_jp" : "駅の前で待ちます。",
 		"exemplo_romaji" : "Eki no mae de machimasu.",
@@ -708,23 +403,11 @@
 		"alternativa2" : "Dentro",
 		"alternativa3" : "Fora",
 		"dica" : "É a direção à qual você olha ao caminhar."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 28,
 		"kanji" : "後",
 		"nivel" : "N5",
-<<<<<<< HEAD
-		"leitura" : "ご (go) / あと (ato)",
-		"significado" : "depois, atrás",
-		"exemplo_jp" : "後で行きます。",
-		"exemplo_romaji" : "Ato de ikimasu.",
-		"exemplo_pt" : "Vou depois.",
-		"correta" : "atrás",
-		"alternativa1" : "antes",
-		"alternativa2" : "agora",
-		"alternativa3" : "sempre"
-=======
 		"leitura" : "ご (go) / あと, うし(ろ) (ato, ushi(ro))",
 		"significado" : "Atrás, Depois",
 		"exemplo_jp" : "ご飯の後できちんと片付けます。",
@@ -735,23 +418,12 @@
 		"alternativa2" : "Fora",
 		"alternativa3" : "Dentro",
 		"dica" : "É a direção que fica nas suas costas."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 29,
 		"kanji" : "北",
 		"nivel" : "N5",
 		"leitura" : "ほく (hoku) / きた (kita)",
-<<<<<<< HEAD
-		"significado" : "norte",
-		"exemplo_jp" : "北に行きます。",
-		"exemplo_romaji" : "Kita ni ikimasu.",
-		"exemplo_pt" : "Vou para o norte.",
-		"correta" : "norte",
-		"alternativa1" : "sul",
-		"alternativa2" : "leste",
-		"alternativa3" : "oeste"
-=======
 		"significado" : "Norte",
 		"exemplo_jp" : "日本の北には北海道があります。",
 		"exemplo_romaji" : "Nihon no kita ni wa Hokkaidō ga arimasu.",
@@ -761,23 +433,12 @@
 		"alternativa2" : "Leste",
 		"alternativa3" : "Oeste",
 		"dica" : "É a direção apontada pela agulha vermelha de uma bússola."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 30,
 		"kanji" : "南",
 		"nivel" : "N5",
 		"leitura" : "なん (nan) / みなみ (minami)",
-<<<<<<< HEAD
-		"significado" : "sul",
-		"exemplo_jp" : "南にあります。",
-		"exemplo_romaji" : "Minami ni arimasu.",
-		"exemplo_pt" : "Fica ao sul.",
-		"correta" : "sul",
-		"alternativa1" : "norte",
-		"alternativa2" : "leste",
-		"alternativa3" : "oeste"
-=======
 		"significado" : "Sul",
 		"exemplo_jp" : "南の島に行きたいです。",
 		"exemplo_romaji" : "Minami no shima ni ikitai desu.",
@@ -787,23 +448,12 @@
 		"alternativa2" : "Leste",
 		"alternativa3" : "Oeste",
 		"dica" : "É a direção contrária ao norte."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 31,
 		"kanji" : "東",
 		"nivel" : "N5",
 		"leitura" : "とう (tō) / ひがし (higashi)",
-<<<<<<< HEAD
-		"significado" : "leste",
-		"exemplo_jp" : "東へ行きます。",
-		"exemplo_romaji" : "Higashi e ikimasu.",
-		"exemplo_pt" : "Vou para o leste.",
-		"correta" : "leste",
-		"alternativa1" : "oeste",
-		"alternativa2" : "norte",
-		"alternativa3" : "sul"
-=======
 		"significado" : "Leste",
 		"exemplo_jp" : "東京は日本の東にあります。",
 		"exemplo_romaji" : "Tōkyō wa Nihon no higashi ni arimasu.",
@@ -813,23 +463,12 @@
 		"alternativa2" : "Norte",
 		"alternativa3" : "Sul",
 		"dica" : "É a direção onde o Sol nasce."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 32,
 		"kanji" : "西",
 		"nivel" : "N5",
 		"leitura" : "せい (sei) / にし (nishi)",
-<<<<<<< HEAD
-		"significado" : "oeste",
-		"exemplo_jp" : "西にあります。",
-		"exemplo_romaji" : "Nishi ni arimasu.",
-		"exemplo_pt" : "Fica a oeste.",
-		"correta" : "oeste",
-		"alternativa1" : "leste",
-		"alternativa2" : "norte",
-		"alternativa3" : "sul"
-=======
 		"significado" : "Oeste",
 		"exemplo_jp" : "太陽は西に沈みます。",
 		"exemplo_romaji" : "Taiyō wa nishi ni shizumimasu.",
@@ -839,23 +478,12 @@
 		"alternativa2" : "Norte",
 		"alternativa3" : "Sul",
 		"dica" : "É a direção do pôr do Sol."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 33,
 		"kanji" : "人",
 		"nivel" : "N5",
 		"leitura" : "じん, にん (jin, nin) / ひと (hito)",
-<<<<<<< HEAD
-		"significado" : "pessoa",
-		"exemplo_jp" : "人が多いです。",
-		"exemplo_romaji" : "Hito ga ōi desu.",
-		"exemplo_pt" : "Há muitas pessoas.",
-		"correta" : "pessoa",
-		"alternativa1" : "homem",
-		"alternativa2" : "mulher",
-		"alternativa3" : "criança"
-=======
 		"significado" : "Pessoa",
 		"exemplo_jp" : "あの人は私の先生です。",
 		"exemplo_romaji" : "Ano hito wa watashi no sensei desu.",
@@ -865,23 +493,12 @@
 		"alternativa2" : "Mãe",
 		"alternativa3" : "Amigo",
 		"dica" : "Você é um exemplo disso."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 34,
 		"kanji" : "男",
 		"nivel" : "N5",
 		"leitura" : "だん (dan) / おとこ (otoko)",
-<<<<<<< HEAD
-		"significado" : "homem",
-		"exemplo_jp" : "男の人です。",
-		"exemplo_romaji" : "Otoko no hito desu.",
-		"exemplo_pt" : "É um homem.",
-		"correta" : "homem",
-		"alternativa1" : "mulher",
-		"alternativa2" : "pai",
-		"alternativa3" : "pessoa"
-=======
 		"significado" : "Homem",
 		"exemplo_jp" : "あの男の人は誰ですか?",
 		"exemplo_romaji" : "Ano otoko no hito wa dare desuka?",
@@ -891,23 +508,12 @@
 		"alternativa2" : "Pai",
 		"alternativa3" : "Mãe",
 		"dica" : "É uma pessoa do sexo masculino."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 35,
 		"kanji" : "女",
 		"nivel" : "N5",
 		"leitura" : "じょ (jo) / おんな (onna)",
-<<<<<<< HEAD
-		"significado" : "mulher",
-		"exemplo_jp" : "女の人です。",
-		"exemplo_romaji" : "Onna no hito desu.",
-		"exemplo_pt" : "É uma mulher.",
-		"correta" : "mulher",
-		"alternativa1" : "homem",
-		"alternativa2" : "mãe",
-		"alternativa3" : "pessoa"
-=======
 		"significado" : "Mulher",
 		"exemplo_jp" : "女の子が走っています。",
 		"exemplo_romaji" : "Onna no ko ga hashitte imasu.",
@@ -917,23 +523,12 @@
 		"alternativa2" : "Mãe",
 		"alternativa3" : "Pai",
 		"dica" : "É uma pessoa do sexo feminino."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 36,
 		"kanji" : "父",
 		"nivel" : "N5",
 		"leitura" : "ふ (fu) / ちち (chichi)",
-<<<<<<< HEAD
-		"significado" : "pai",
-		"exemplo_jp" : "父は会社員です。",
-		"exemplo_romaji" : "Chichi wa kaishain desu.",
-		"exemplo_pt" : "Meu pai é funcionário.",
-		"correta" : "pai",
-		"alternativa1" : "mãe",
-		"alternativa2" : "avô",
-		"alternativa3" : "homem"
-=======
 		"significado" : "Pai",
 		"exemplo_jp" : "私の父は40歳です。",
 		"exemplo_romaji" : "Watashi no chichi wa yonjūssai desu.",
@@ -943,23 +538,12 @@
 		"alternativa2" : "Mulher",
 		"alternativa3" : "Homem",
 		"dica" : "É o marido da mãe."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 37,
 		"kanji" : "母",
 		"nivel" : "N5",
 		"leitura" : "ぼ (bo) / はは (haha)",
-<<<<<<< HEAD
-		"significado" : "mãe",
-		"exemplo_jp" : "母が料理します。",
-		"exemplo_romaji" : "Haha ga ryōri shimasu.",
-		"exemplo_pt" : "Minha mãe cozinha.",
-		"correta" : "mãe",
-		"alternativa1" : "pai",
-		"alternativa2" : "mulher",
-		"alternativa3" : "tia"
-=======
 		"significado" : "Mãe",
 		"exemplo_jp" : "母の料理は美味しいです。",
 		"exemplo_romaji" : "Haha no ryōri wa oishii desu.",
@@ -969,23 +553,12 @@
 		"alternativa2" : "Mulher",
 		"alternativa3" : "Homem",
 		"dica" : "É a mulher que cuida dos filhos."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 38,
 		"kanji" : "子",
 		"nivel" : "N5",
 		"leitura" : "し (shi) / こ (ko)",
-<<<<<<< HEAD
-		"significado" : "criança",
-		"exemplo_jp" : "子どもがいます。",
-		"exemplo_romaji" : "Kodomo ga imasu.",
-		"exemplo_pt" : "Há crianças.",
-		"correta" : "criança",
-		"alternativa1" : "adulto",
-		"alternativa2" : "bebê",
-		"alternativa3" : "pessoa"
-=======
 		"significado" : "Criança",
 		"exemplo_jp" : "子供達が元気に遊んでいます。",
 		"exemplo_romaji" : "Kodomotachi ga genki ni asonde imasu.",
@@ -995,23 +568,12 @@
 		"alternativa2" : "Mãe",
 		"alternativa3" : "Pai",
 		"dica" : "É a fase da vida antes da adolescência."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 39,
 		"kanji" : "友",
 		"nivel" : "N5",
 		"leitura" : "ゆう (yū) / とも (tomo)",
-<<<<<<< HEAD
-		"significado" : "amigo",
-		"exemplo_jp" : "友だちと行きます。",
-		"exemplo_romaji" : "Tomodachi to ikimasu.",
-		"exemplo_pt" : "Vou com um amigo.",
-		"correta" : "amigo",
-		"alternativa1" : "família",
-		"alternativa2" : "vizinho",
-		"alternativa3" : "colega"
-=======
 		"significado" : "Amigo",
 		"exemplo_jp" : "友達と映画を見ました。",
 		"exemplo_romaji" : "Tomodachi to eiga o mimashita.",
@@ -1021,23 +583,12 @@
 		"alternativa2" : "Mãe",
 		"alternativa3" : "Pai",
 		"dica" : "Você costuma encontrar essa pessoa na escola ou no trabalho."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 40,
 		"kanji" : "力",
 		"nivel" : "N5",
 		"leitura" : "りょく (ryoku) / ちから (chikara)",
-<<<<<<< HEAD
-		"significado" : "força",
-		"exemplo_jp" : "力があります。",
-		"exemplo_romaji" : "Chikara ga arimasu.",
-		"exemplo_pt" : "Tem força.",
-		"correta" : "força",
-		"alternativa1" : "fraco",
-		"alternativa2" : "osso",
-		"alternativa3" : "músculo"
-=======
 		"significado" : "Força, Poder",
 		"exemplo_jp" : "この仕事には力が必要です。",
 		"exemplo_romaji" : "Kono shigoto ni wa chikara ga hitsuyō desu.",
@@ -1047,23 +598,12 @@
 		"alternativa2" : "Caminho",
 		"alternativa3" : "Velocidade",
 		"dica" : "Quando carregar o objeto pesado, você precisa usar isso."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 41,
 		"kanji" : "行",
 		"nivel" : "N5",
 		"leitura" : "こう (kō) / い(く) (i(ku))",
-<<<<<<< HEAD
-		"significado" : "ir",
-		"exemplo_jp" : "学校へ行きます。",
-		"exemplo_romaji" : "Gakkō e ikimasu.",
-		"exemplo_pt" : "Vou à escola.",
-		"correta" : "ir",
-		"alternativa1" : "vir",
-		"alternativa2" : "ver",
-		"alternativa3" : "entrar"
-=======
 		"significado" : "Ir, Caminhar",
 		"exemplo_jp" : "明日、学校に行きます。",
 		"exemplo_romaji" : "Ashita, gakkō ni ikimasu.",
@@ -1073,23 +613,12 @@
 		"alternativa2" : "Retornar",
 		"alternativa3" : "Parar",
 		"dica" : "Você faz isso para chegar a outro lugar."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 42,
 		"kanji" : "来",
 		"nivel" : "N5",
 		"leitura" : "らい (rai) / く(る) (ku(ru))",
-<<<<<<< HEAD
-		"significado" : "vir",
-		"exemplo_jp" : "日本に来ます。",
-		"exemplo_romaji" : "Nihon ni kimasu.",
-		"exemplo_pt" : "Vem ao Japão.",
-		"correta" : "vir",
-		"alternativa1" : "ir",
-		"alternativa2" : "voltar",
-		"alternativa3" : "entrar"
-=======
 		"significado" : "Vir, Chegar",
 		"exemplo_jp" : "友達が家に遊びに来ます。",
 		"exemplo_romaji" : "Tomodachi ga ie ni asobi ni kimasu.",
@@ -1099,23 +628,12 @@
 		"alternativa2" : "Sair",
 		"alternativa3" : "Parar",
 		"dica" : "É o oposto de ir."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 43,
 		"kanji" : "会",
 		"nivel" : "N5",
 		"leitura" : "かい (kai) / あ(う) (a(u))",
-<<<<<<< HEAD
-		"significado" : "encontrar",
-		"exemplo_jp" : "友だちに会います。",
-		"exemplo_romaji" : "Tomodachi ni aimasu.",
-		"exemplo_pt" : "Encontro um amigo.",
-		"correta" : "encontrar",
-		"alternativa1" : "ver",
-		"alternativa2" : "ir",
-		"alternativa3" : "falar"
-=======
 		"significado" : "Encontrar, Reunir",
 		"exemplo_jp" : "友だちに会います。",
 		"exemplo_romaji" : "駅で友達に会いました。",
@@ -1125,7 +643,6 @@
 		"alternativa2" : "Ouvir",
 		"alternativa3" : "Olhar",
 		"dica" : "É o primeiro passo de conhecer alguém."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 44,
@@ -1133,15 +650,6 @@
 		"nivel" : "N5",
 		"leitura" : "きゅう (kyū) / やす(む) (yasu(mu))",
 		"significado" : "descansar",
-<<<<<<< HEAD
-		"exemplo_jp" : "今日は休みます。",
-		"exemplo_romaji" : "Kyō wa yasumimasu.",
-		"exemplo_pt" : "Hoje descanso.",
-		"correta" : "descansar",
-		"alternativa1" : "trabalhar",
-		"alternativa2" : "dormir",
-		"alternativa3" : "parar"
-=======
 		"exemplo_jp" : "少し休みましょう",
 		"exemplo_romaji" : "Sukoshi yasumimashō",
 		"exemplo_pt" : "Vamos descansar um pouco",
@@ -1150,23 +658,12 @@
 		"alternativa2" : "Correr",
 		"alternativa3" : "Estudar",
 		"dica" : "Uma pessoa encostada em uma árvore está...?"
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 45,
 		"kanji" : "食",
 		"nivel" : "N5",
 		"leitura" : "しょく (shoku) / た(べる) (ta(beru))",
-<<<<<<< HEAD
-		"significado" : "comer",
-		"exemplo_jp" : "ご飯を食べます。",
-		"exemplo_romaji" : "Gohan o tabemasu.",
-		"exemplo_pt" : "Como arroz.",
-		"correta" : "comer",
-		"alternativa1" : "beber",
-		"alternativa2" : "ver",
-		"alternativa3" : "cozinhar"
-=======
 		"significado" : "Comer, Alimentar",
 		"exemplo_jp" : "朝ご飯を食べましたか？",
 		"exemplo_romaji" : "Asagohan o tabemashita ka?",
@@ -1176,23 +673,12 @@
 		"alternativa2" : "Comprar",
 		"alternativa3" : "Vender",
 		"dica" : "Você faz isso quando está com fome."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 46,
 		"kanji" : "飲",
 		"nivel" : "N5",
 		"leitura" : "いん (in) / の(む) (no(mu))",
-<<<<<<< HEAD
-		"significado" : "beber",
-		"exemplo_jp" : "水を飲みます。",
-		"exemplo_romaji" : "Mizu o nomimasu.",
-		"exemplo_pt" : "Bebo água.",
-		"correta" : "beber",
-		"alternativa1" : "comer",
-		"alternativa2" : "ver",
-		"alternativa3" : "ouvir"
-=======
 		"significado" : "Beber",
 		"exemplo_jp" : "お水を飲みます。",
 		"exemplo_romaji" : "Omizu o nomimasu.",
@@ -1202,23 +688,12 @@
 		"alternativa2" : "Comprar",
 		"alternativa3" : "Vender",
 		"dica" : "Você faz isso quando está com sede."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 47,
 		"kanji" : "立",
 		"nivel" : "N5",
 		"leitura" : "りつ (ritsu) / た(つ) (ta(tsu))",
-<<<<<<< HEAD
-		"significado" : "levantar",
-		"exemplo_jp" : "ここに立ちます。",
-		"exemplo_romaji" : "Koko ni tachimasu.",
-		"exemplo_pt" : "Fico em pé aqui.",
-		"correta" : "levantar",
-		"alternativa1" : "sentar",
-		"alternativa2" : "andar",
-		"alternativa3" : "parar"
-=======
 		"significado" : "Levantar, Ficar de pé",
 		"exemplo_jp" : "立ってください。",
 		"exemplo_romaji" : "Tatte kudasai.",
@@ -1228,23 +703,12 @@
 		"alternativa2" : "Andar",
 		"alternativa3" : "Deitar",
 		"dica" : "Você faz isso ao sair da cama."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 48,
 		"kanji" : "見",
 		"nivel" : "N5",
 		"leitura" : "けん (ken) / み(る) (mi(ru))",
-<<<<<<< HEAD
-		"significado" : "ver",
-		"exemplo_jp" : "映画を見ます。",
-		"exemplo_romaji" : "Eiga o mimasu.",
-		"exemplo_pt" : "Vejo um filme.",
-		"correta" : "ver",
-		"alternativa1" : "ouvir",
-		"alternativa2" : "ler",
-		"alternativa3" : "falar"
-=======
 		"significado" : "Ver, Assistir",
 		"exemplo_jp" : "昨日、面白い映画を見ました。",
 		"exemplo_romaji" : "Kinou, omoshiroi eiga o mimashita.",
@@ -1254,23 +718,12 @@
 		"alternativa2" : "Escrever",
 		"alternativa3" : "Falar",
 		"dica" : "Você faz isso com os olhos."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 49,
 		"kanji" : "聞",
 		"nivel" : "N5",
 		"leitura" : "ぶん (bun) / き(く) (ki(ku))",
-<<<<<<< HEAD
-		"significado" : "ouvir",
-		"exemplo_jp" : "音楽を聞きます。",
-		"exemplo_romaji" : "Ongaku o kikimasu.",
-		"exemplo_pt" : "Ouço música.",
-		"correta" : "ouvir",
-		"alternativa1" : "ver",
-		"alternativa2" : "ler",
-		"alternativa3" : "falar"
-=======
 		"significado" : "Ouvir, Escutar, Perguntar",
 		"exemplo_jp" : "音楽を聞くのが好きです。",
 		"exemplo_romaji" : "Ongaku o kiku no ga suki desu.",
@@ -1280,23 +733,12 @@
 		"alternativa2" : "Ler",
 		"alternativa3" : "Falar",
 		"dica" : "Você faz isso ao prestar atenção em uma música."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 50,
 		"kanji" : "書",
 		"nivel" : "N5",
 		"leitura" : "しょ (sho) / か(く) (ka(ku))",
-<<<<<<< HEAD
-		"significado" : "escrever",
-		"exemplo_jp" : "名前を書きます。",
-		"exemplo_romaji" : "Namae o kakimasu.",
-		"exemplo_pt" : "Escrevo o nome.",
-		"correta" : "escrever",
-		"alternativa1" : "ler",
-		"alternativa2" : "ver",
-		"alternativa3" : "falar"
-=======
 		"significado" : "Escrever",
 		"exemplo_jp" : "漢字を書きます。",
 		"exemplo_romaji" : "Kanji o kakimasu.",
@@ -1306,23 +748,12 @@
 		"alternativa2" : "Ouvir",
 		"alternativa3" : "Falar",
 		"dica" : "Você faz isso com um lápis ou uma caneta."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 51,
 		"kanji" : "読",
 		"nivel" : "N5",
 		"leitura" : "どく (doku) / よ(む) (yo(mu))",
-<<<<<<< HEAD
-		"significado" : "ler",
-		"exemplo_jp" : "本を読みます。",
-		"exemplo_romaji" : "Hon o yomimasu.",
-		"exemplo_pt" : "Leio um livro.",
-		"correta" : "ler",
-		"alternativa1" : "escrever",
-		"alternativa2" : "ver",
-		"alternativa3" : "ouvir"
-=======
 		"significado" : "Ler",
 		"exemplo_jp" : "本を読みます。",
 		"exemplo_romaji" : "Hon o yomimasu.",
@@ -1332,23 +763,12 @@
 		"alternativa2" : "Ver",
 		"alternativa3" : "Ouvir",
 		"dica" : "Você faz isso com um livro."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 52,
 		"kanji" : "入",
 		"nivel" : "N5",
 		"leitura" : "にゅう (nyū) / はい(る) (hai(ru))",
-<<<<<<< HEAD
-		"significado" : "entrar",
-		"exemplo_jp" : "中に入ります。",
-		"exemplo_romaji" : "Naka ni hairimasu.",
-		"exemplo_pt" : "Entro dentro.",
-		"correta" : "entrar",
-		"alternativa1" : "sair",
-		"alternativa2" : "ir",
-		"alternativa3" : "vir"
-=======
 		"significado" : "Entrar, Colocar",
 		"exemplo_jp" : "部屋に入ってください。",
 		"exemplo_romaji" : "Heya ni haitte kudasai.",
@@ -1358,23 +778,12 @@
 		"alternativa2" : "Subir",
 		"alternativa3" : "Descer",
 		"dica" : "É uma ação para estar dentro de um lugar."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 53,
 		"kanji" : "出",
 		"nivel" : "N5",
 		"leitura" : "しゅつ (shutsu) / で(る) (de(ru))",
-<<<<<<< HEAD
-		"significado" : "sair",
-		"exemplo_jp" : "外に出ます。",
-		"exemplo_romaji" : "Soto ni demasu.",
-		"exemplo_pt" : "Saio para fora.",
-		"correta" : "sair",
-		"alternativa1" : "entrar",
-		"alternativa2" : "ir",
-		"alternativa3" : "vir"
-=======
 		"significado" : "Sair, Enviar",
 		"exemplo_jp" : "家を出ます。",
 		"exemplo_romaji" : "Ie o demasu.",
@@ -1384,23 +793,12 @@
 		"alternativa2" : "Subir",
 		"alternativa3" : "Descer",
 		"dica" : "É o oposto de entrar"
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 54,
 		"kanji" : "買",
 		"nivel" : "N5",
 		"leitura" : "ばい (bai) / か(う) (ka(u))",
-<<<<<<< HEAD
-		"significado" : "comprar",
-		"exemplo_jp" : "パンを買います。",
-		"exemplo_romaji" : "Pan o kaimasu.",
-		"exemplo_pt" : "Compro pão.",
-		"correta" : "comprar",
-		"alternativa1" : "vender",
-		"alternativa2" : "ver",
-		"alternativa3" : "pegar"
-=======
 		"significado" : "Comprar",
 		"exemplo_jp" : "パンを買います。",
 		"exemplo_romaji" : "Pan o kaimasu.",
@@ -1410,23 +808,12 @@
 		"alternativa2" : "Sair",
 		"alternativa3" : "Entrar",
 		"dica" : "Você faz isso quando levar o produto de uma loja."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 55,
 		"kanji" : "学",
 		"nivel" : "N5",
 		"leitura" : "がく (gaku) / まな(ぶ) (mana(bu))",
-<<<<<<< HEAD
-		"significado" : "estudar",
-		"exemplo_jp" : "日本語を学びます。",
-		"exemplo_romaji" : "Nihongo o manabimasu.",
-		"exemplo_pt" : "Estudo japonês.",
-		"correta" : "estudar",
-		"alternativa1" : "ensinar",
-		"alternativa2" : "ler",
-		"alternativa3" : "ouvir"
-=======
 		"significado" : "Estudar",
 		"exemplo_jp" : "大学で日本語を学びます。",
 		"exemplo_romaji" : "Daigaku de nihongo o manabimasu.",
@@ -1436,23 +823,12 @@
 		"alternativa2" : "Brincar",
 		"alternativa3" : "Trabalhar",
 		"dica" : "Você faz isso antes de uma prova."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 56,
 		"kanji" : "年",
 		"nivel" : "N5",
 		"leitura" : "ねん (nen) / とし (toshi)",
-<<<<<<< HEAD
-		"significado" : "ano",
-		"exemplo_jp" : "今年はいい年です。",
-		"exemplo_romaji" : "Kotoshi wa ii toshi desu.",
-		"exemplo_pt" : "Este ano é bom.",
-		"correta" : "ano",
-		"alternativa1" : "mês",
-		"alternativa2" : "dia",
-		"alternativa3" : "tempo"
-=======
 		"significado" : "Ano",
 		"exemplo_jp" : "2026年は馬年です。",
 		"exemplo_romaji" : "Nisen nijū rokunen wa umadoshi desu.",
@@ -1462,23 +838,12 @@
 		"alternativa2" : "Semana",
 		"alternativa3" : "Hora",
 		"dica" : "Tem doze meses."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 57,
 		"kanji" : "時",
 		"nivel" : "N5",
 		"leitura" : "じ (ji) / とき (toki)",
-<<<<<<< HEAD
-		"significado" : "hora, tempo",
-		"exemplo_jp" : "今は時です。",
-		"exemplo_romaji" : "Ima wa toki desu.",
-		"exemplo_pt" : "Agora é a hora.",
-		"correta" : "tempo",
-		"alternativa1" : "dia",
-		"alternativa2" : "local",
-		"alternativa3" : "momento"
-=======
 		"significado" : "Hora, Tempo",
 		"exemplo_jp" : "今、何時ですか？",
 		"exemplo_romaji" : "Ima, nanji desu ka?",
@@ -1488,23 +853,11 @@
 		"alternativa2" : "Ano",
 		"alternativa3" : "Semana",
 		"dica" : "É o que o relógio mostra."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 58,
 		"kanji" : "分",
 		"nivel" : "N5",
-<<<<<<< HEAD
-		"leitura" : "ふん, ぶん (fun, bun) / わ(ける) (wa(keru))",
-		"significado" : "minuto, dividir",
-		"exemplo_jp" : "十分あります。",
-		"exemplo_romaji" : "Jū-bun arimasu.",
-		"exemplo_pt" : "Há dez minutos.",
-		"correta" : "minuto",
-		"alternativa1" : "hora",
-		"alternativa2" : "tempo",
-		"alternativa3" : "segundo"
-=======
 		"leitura" : "ふん, ぷん (fun, pun) / わ(ける) (wa(keru))",
 		"significado" : "Minuto, Dividir, Entender",
 		"exemplo_jp" : "あと五分待ってください。",
@@ -1515,23 +868,12 @@
 		"alternativa2" : "Semana",
 		"alternativa3" : "Segundo",
 		"dica" : "O ponteiro maior do relógio mede essa unidade."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 59,
 		"kanji" : "毎",
 		"nivel" : "N5",
 		"leitura" : "まい (mai)",
-<<<<<<< HEAD
-		"significado" : "cada",
-		"exemplo_jp" : "毎日勉強します。",
-		"exemplo_romaji" : "Mainichi benkyō shimasu.",
-		"exemplo_pt" : "Estudo todos os dias.",
-		"correta" : "cada",
-		"alternativa1" : "todo",
-		"alternativa2" : "sempre",
-		"alternativa3" : "muitos"
-=======
 		"significado" : "Cada, Todo",
 		"exemplo_jp" : "毎日日本語を勉強します。",
 		"exemplo_romaji" : "Mainichi nihongo o benkyō shimasu.",
@@ -1541,23 +883,12 @@
 		"alternativa2" : "Hoje",
 		"alternativa3" : "Ontem",
 		"dica" : "É comum antes de palavras como dia, mês e ano."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 60,
 		"kanji" : "週",
 		"nivel" : "N5",
 		"leitura" : "しゅう (shū)",
-<<<<<<< HEAD
-		"significado" : "semana",
-		"exemplo_jp" : "来週行きます。",
-		"exemplo_romaji" : "Raishū ikimasu.",
-		"exemplo_pt" : "Vou na próxima semana.",
-		"correta" : "semana",
-		"alternativa1" : "mês",
-		"alternativa2" : "ano",
-		"alternativa3" : "dia"
-=======
 		"significado" : "Semana",
 		"exemplo_jp" : "来週、旅行に行きます。",
 		"exemplo_romaji" : "Raishū, ryokō ni ikimasu.",
@@ -1567,23 +898,12 @@
 		"alternativa2" : "Ano",
 		"alternativa3" : "Dia",
 		"dica" : "Tem sete dias."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 61,
 		"kanji" : "今",
 		"nivel" : "N5",
 		"leitura" : "こん (kon) / いま (ima)",
-<<<<<<< HEAD
-		"significado" : "agora",
-		"exemplo_jp" : "今行きます。",
-		"exemplo_romaji" : "Ima ikimasu.",
-		"exemplo_pt" : "Vou agora.",
-		"correta" : "agora",
-		"alternativa1" : "depois",
-		"alternativa2" : "antes",
-		"alternativa3" : "sempre"
-=======
 		"significado" : "Agora, Atual",
 		"exemplo_jp" : "今、忙しいですか？",
 		"exemplo_romaji" : "Ima, isogashii desu ka?",
@@ -1593,23 +913,12 @@
 		"alternativa2" : "Antes",
 		"alternativa3" : "Futuro",
 		"dica" : "Não é ontem nem amanhã."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 62,
 		"kanji" : "間",
 		"nivel" : "N5",
 		"leitura" : "かん (kan) / あいだ (aida)",
-<<<<<<< HEAD
-		"significado" : "intervalo",
-		"exemplo_jp" : "時間の間です。",
-		"exemplo_romaji" : "Jikan no aida desu.",
-		"exemplo_pt" : "É um intervalo de tempo.",
-		"correta" : "intervalo",
-		"alternativa1" : "tempo",
-		"alternativa2" : "pausa",
-		"alternativa3" : "momento"
-=======
 		"significado" : "Entre, Intervalo",
 		"exemplo_jp" : "木と木の間に鳥がいます。",
 		"exemplo_romaji" : "Ki to ki no aida ni tori ga imasu.",
@@ -1619,23 +928,12 @@
 		"alternativa2" : "Atrás",
 		"alternativa3" : "Frente",
 		"dica" : "Fica no meio de dois objetos ou pessoas."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 63,
 		"kanji" : "午",
 		"nivel" : "N5",
 		"leitura" : "ご (go)",
-<<<<<<< HEAD
-		"significado" : "meio-dia",
-		"exemplo_jp" : "午後です。",
-		"exemplo_romaji" : "Gogo desu.",
-		"exemplo_pt" : "É tarde.",
-		"correta" : "meio-dia",
-		"alternativa1" : "manhã",
-		"alternativa2" : "noite",
-		"alternativa3" : "hora"
-=======
 		"significado" : "Meio-dia",
 		"exemplo_jp" : "午後から雨が降るそうです。",
 		"exemplo_romaji" : "Gogo kara ame ga furu sō desu.",
@@ -1645,23 +943,11 @@
 		"alternativa2" : "Noite",
 		"alternativa3" : "Madrugada",
 		"dica" : "Separa o período da manhã e da tarde."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 64,
 		"kanji" : "半",
 		"nivel" : "N5",
-<<<<<<< HEAD
-		"leitura" : "はん (han)",
-		"significado" : "metade",
-		"exemplo_jp" : "半分ください。",
-		"exemplo_romaji" : "Hanbun kudasai.",
-		"exemplo_pt" : "Me dê metade.",
-		"correta" : "metade",
-		"alternativa1" : "inteiro",
-		"alternativa2" : "parte",
-		"alternativa3" : "pedaço"
-=======
 		"leitura" : "はん (han) / なか(ば) (naka(ba))",
 		"significado" : "Metade",
 		"exemplo_jp" : "二時半に会いましょう。",
@@ -1672,23 +958,11 @@
 		"alternativa2" : "Dobro",
 		"alternativa3" : "Quarto",
 		"dica" : "É a parte de algo dividido em duas partes iguais."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 65,
 		"kanji" : "白",
 		"nivel" : "N5",
-<<<<<<< HEAD
-		"leitura" : "はく (haku) / しろ(い) (shiro(i))",
-		"significado" : "branco",
-		"exemplo_jp" : "白い紙です。",
-		"exemplo_romaji" : "Shiroi kami desu.",
-		"exemplo_pt" : "É papel branco.",
-		"correta" : "branco",
-		"alternativa1" : "preto",
-		"alternativa2" : "claro",
-		"alternativa3" : "cor"
-=======
 		"leitura" : "はく (haku) / しろ (shiro)",
 		"significado" : "Branco",
 		"exemplo_jp" : "白い犬が吠えています。",
@@ -1699,23 +973,12 @@
 		"alternativa2" : "Vermelho",
 		"alternativa3" : "Azul",
 		"dica" : "É a cor da neve."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 66,
 		"kanji" : "名",
 		"nivel" : "N5",
 		"leitura" : "めい (mei) / な (na)",
-<<<<<<< HEAD
-		"significado" : "nome",
-		"exemplo_jp" : "名前を書きます。",
-		"exemplo_romaji" : "Namae o kakimasu.",
-		"exemplo_pt" : "Escrevo o nome.",
-		"correta" : "nome",
-		"alternativa1" : "palavra",
-		"alternativa2" : "título",
-		"alternativa3" : "apelido"
-=======
 		"significado" : "Nome",
 		"exemplo_jp" : "お名前は何ですか？",
 		"exemplo_romaji" : "Onamae wa nan desu ka?",
@@ -1725,23 +988,12 @@
 		"alternativa2" : "Pessoa",
 		"alternativa3" : "País",
 		"dica" : "É usado para chamar alguém."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 67,
 		"kanji" : "先",
 		"nivel" : "N5",
 		"leitura" : "せん (sen) / さき (saki)",
-<<<<<<< HEAD
-		"significado" : "antes, anterior",
-		"exemplo_jp" : "先生が来ます。",
-		"exemplo_romaji" : "Sensei ga kimasu.",
-		"exemplo_pt" : "O professor vem.",
-		"correta" : "antes",
-		"alternativa1" : "depois",
-		"alternativa2" : "agora",
-		"alternativa3" : "primeiro"
-=======
 		"significado" : "Anterior, À frente",
 		"exemplo_jp" : "お先に失礼します。",
 		"exemplo_romaji" : "Osaki ni shitsurei shimasu.",
@@ -1751,23 +1003,11 @@
 		"alternativa2" : "Agora",
 		"alternativa3" : "Atrás",
 		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 68,
 		"kanji" : "生",
 		"nivel" : "N5",
-<<<<<<< HEAD
-		"leitura" : "せい (sei) / い(きる) (i(kiru))",
-		"significado" : "vida, nascer",
-		"exemplo_jp" : "学生です。",
-		"exemplo_romaji" : "Gakusei desu.",
-		"exemplo_pt" : "Sou estudante.",
-		"correta" : "vida",
-		"alternativa1" : "morte",
-		"alternativa2" : "tempo",
-		"alternativa3" : "cor"
-=======
 		"leitura" : "せい (sei) / う(まれる), い(きる) (u(mareru), i(kiru))",
 		"significado" : "Vida, Nascer",
 		"exemplo_jp" : "日本で生まれました。",
@@ -1778,23 +1018,11 @@
 		"alternativa2" : "Estudar",
 		"alternativa3" : "Trabalhar",
 		"dica" : "É o processo de crescer, respirar e existir."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 69,
 		"kanji" : "円",
 		"nivel" : "N5",
-<<<<<<< HEAD
-		"leitura" : "えん (en)",
-		"significado" : "iene, círculo",
-		"exemplo_jp" : "百円です。",
-		"exemplo_romaji" : "Hyaku-en desu.",
-		"exemplo_pt" : "São cem ienes.",
-		"correta" : "iene",
-		"alternativa1" : "dinheiro",
-		"alternativa2" : "moeda",
-		"alternativa3" : "valor"
-=======
 		"leitura" : "えん (en) / まる(い) (maru(i))",
 		"significado" : "Iene, Redondo",
 		"exemplo_jp" : "この本は千円です。",
@@ -1805,23 +1033,12 @@
 		"alternativa2" : "Livro",
 		"alternativa3" : "Papel",
 		"dica" : "É a moeda do Japão."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 70,
 		"kanji" : "空",
 		"nivel" : "N5",
 		"leitura" : "くう (kū) / そら (sora)",
-<<<<<<< HEAD
-		"significado" : "céu",
-		"exemplo_jp" : "空が青いです。",
-		"exemplo_romaji" : "Sora ga aoi desu.",
-		"exemplo_pt" : "O céu está azul.",
-		"correta" : "céu",
-		"alternativa1" : "nuvem",
-		"alternativa2" : "tempo",
-		"alternativa3" : "clima"
-=======
 		"significado" : "Céu, Vazio",
 		"exemplo_jp" : "今日の空はとても青い。",
 		"exemplo_romaji" : "Kyō no sora wa totemo aoi.",
@@ -1831,23 +1048,11 @@
 		"alternativa2" : "Mar",
 		"alternativa3" : "Montanha",
 		"dica" : "Os aviões voam neste lugar."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 71,
 		"kanji" : "天",
 		"nivel" : "N5",
-<<<<<<< HEAD
-		"leitura" : "てん (ten)",
-		"significado" : "céu",
-		"exemplo_jp" : "天気がいいです。",
-		"exemplo_romaji" : "Tenki ga ii desu.",
-		"exemplo_pt" : "O tempo está bom.",
-		"correta" : "céu",
-		"alternativa1" : "clima",
-		"alternativa2" : "sol",
-		"alternativa3" : "ar"
-=======
 		"leitura" : "てん (ten) / あま (ama)",
 		"significado" : "Céu / Paraíso",
 		"exemplo_jp" : "明日は天気がいいでしょう。",
@@ -1858,23 +1063,11 @@
 		"alternativa2" : "Chuva",
 		"alternativa3" : "Terra",
 		"dica" : "É o espaço acima do céu que vemos."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 72,
 		"kanji" : "気",
 		"nivel" : "N5",
-<<<<<<< HEAD
-		"leitura" : "き (ki)",
-		"significado" : "energia, espírito",
-		"exemplo_jp" : "元気です。",
-		"exemplo_romaji" : "Genki desu.",
-		"exemplo_pt" : "Estou bem.",
-		"correta" : "energia",
-		"alternativa1" : "saúde",
-		"alternativa2" : "força",
-		"alternativa3" : "ânimo"
-=======
 		"leitura" : "き, け (ki, ke)",
 		"significado" : "Energia, Espírito, Mente",
 		"exemplo_jp" : "お元気ですか？",
@@ -1885,23 +1078,12 @@
 		"alternativa2" : "Doença",
 		"alternativa3" : "Tempo",
 		"dica" : "Está relacionado ao estado de ânimo de uma pessoa."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 73,
 		"kanji" : "雨",
 		"nivel" : "N5",
 		"leitura" : "う (u) / あめ (ame)",
-<<<<<<< HEAD
-		"significado" : "chuva",
-		"exemplo_jp" : "雨が降ります。",
-		"exemplo_romaji" : "Ame ga furimasu.",
-		"exemplo_pt" : "Chove.",
-		"correta" : "chuva",
-		"alternativa1" : "neve",
-		"alternativa2" : "vento",
-		"alternativa3" : "clima"
-=======
 		"significado" : "Chuva",
 		"exemplo_jp" : "突然、雨が降り出しました。",
 		"exemplo_romaji" : "Totsuzen, ame ga furidashimashita.",
@@ -1911,23 +1093,12 @@
 		"alternativa2" : "Vento",
 		"alternativa3" : "Nuvem",
 		"dica" : "Você usa guarda-chuva quando isso acontece."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 74,
 		"kanji" : "国",
 		"nivel" : "N5",
 		"leitura" : "こく (koku) / くに (kuni)",
-<<<<<<< HEAD
-		"significado" : "país",
-		"exemplo_jp" : "日本は国です。",
-		"exemplo_romaji" : "Nihon wa kuni desu.",
-		"exemplo_pt" : "O Japão é um país.",
-		"correta" : "país",
-		"alternativa1" : "cidade",
-		"alternativa2" : "estado",
-		"alternativa3" : "terra"
-=======
 		"significado" : "País, Nação",
 		"exemplo_jp" : "あなたの国はどこですか？",
 		"exemplo_romaji" : "Anata no kuni wa doko desu ka?",
@@ -1937,23 +1108,12 @@
 		"alternativa2" : "Estado",
 		"alternativa3" : "Mundo",
 		"dica" : "É onde as pessoas vivem sob as mesmas leis."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 75,
 		"kanji" : "電",
 		"nivel" : "N5",
 		"leitura" : "でん (den)",
-<<<<<<< HEAD
-		"significado" : "eletricidade",
-		"exemplo_jp" : "電車に乗ります。",
-		"exemplo_romaji" : "Densha ni norimasu.",
-		"exemplo_pt" : "Pego o trem.",
-		"correta" : "eletricidade",
-		"alternativa1" : "fogo",
-		"alternativa2" : "onda",
-		"alternativa3" : "máquina"
-=======
 		"significado" : "Eletricidade",
 		"exemplo_jp" : "電車で東京へ行きます。",
 		"exemplo_romaji" : "Densha de Tōkyō e ikimasu.",
@@ -1963,23 +1123,11 @@
 		"alternativa2" : "Água",
 		"alternativa3" : "Trem",
 		"dica" : "É usado em máquinas como TV, computador e celular."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 76,
 		"kanji" : "本",
 		"nivel" : "N5",
-<<<<<<< HEAD
-		"leitura" : "ほん (hon)",
-		"significado" : "livro",
-		"exemplo_jp" : "本を読みます。",
-		"exemplo_romaji" : "Hon o yomimasu.",
-		"exemplo_pt" : "Leio um livro.",
-		"correta" : "livro",
-		"alternativa1" : "caderno",
-		"alternativa2" : "revista",
-		"alternativa3" : "papel"
-=======
 		"leitura" : "ほん (hon) / もと (moto)",
 		"significado" : "Livro / Origem / Base",
 		"exemplo_jp" : "毎日、本を読みます。",
@@ -1990,23 +1138,12 @@
 		"alternativa2" : "Árvore",
 		"alternativa3" : "Água",
 		"dica" : "Você pode ver isso na biblioteca."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 77,
 		"kanji" : "車",
 		"nivel" : "N5",
 		"leitura" : "しゃ (sha) / くるま (kuruma)",
-<<<<<<< HEAD
-		"significado" : "carro",
-		"exemplo_jp" : "車で行きます。",
-		"exemplo_romaji" : "Kuruma de ikimasu.",
-		"exemplo_pt" : "Vou de carro.",
-		"correta" : "carro",
-		"alternativa1" : "ônibus",
-		"alternativa2" : "trem",
-		"alternativa3" : "bicicleta"
-=======
 		"significado" : "Carro, Veículo",
 		"exemplo_jp" : "駅の前に車を止めました。",
 		"exemplo_romaji" : "Eki no mae ni kuruma o tomemashita.",
@@ -2016,23 +1153,12 @@
 		"alternativa2" : "Cavalo",
 		"alternativa3" : "Bicicleta",
 		"dica" : "Tem quatro rodas na maioria dos modelos."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 78,
 		"kanji" : "校",
 		"nivel" : "N5",
 		"leitura" : "こう (kō)",
-<<<<<<< HEAD
-		"significado" : "escola",
-		"exemplo_jp" : "学校です。",
-		"exemplo_romaji" : "Gakkō desu.",
-		"exemplo_pt" : "É uma escola.",
-		"correta" : "escola",
-		"alternativa1" : "universidade",
-		"alternativa2" : "classe",
-		"alternativa3" : "prédio"
-=======
 		"significado" : "Escola",
 		"exemplo_jp" : "学校は楽しかったですか？",
 		"exemplo_romaji" : "Gakkō wa tanoshikatta desu ka?",
@@ -2042,23 +1168,11 @@
 		"alternativa2" : "Hospital",
 		"alternativa3" : "Templo",
 		"dica" : "Professores trabalham neste lugar."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 79,
 		"kanji" : "社",
 		"nivel" : "N5",
-<<<<<<< HEAD
-		"leitura" : "しゃ (sha)",
-		"significado" : "empresa",
-		"exemplo_jp" : "会社に行きます。",
-		"exemplo_romaji" : "Kaisha ni ikimasu.",
-		"exemplo_pt" : "Vou à empresa.",
-		"correta" : "empresa",
-		"alternativa1" : "loja",
-		"alternativa2" : "escola",
-		"alternativa3" : "prédio"
-=======
 		"leitura" : "しゃ (sha) / やしろ (yashiro)",
 		"significado" : "Empresa / Santuário / Sociedade",
 		"exemplo_jp" : "明日も会社へ行きます。",
@@ -2069,23 +1183,12 @@
 		"alternativa2" : "Escola",
 		"alternativa3" : "Hospital",
 		"dica" : "Neste lugar as pessoas trabalham juntas e realizam negócios."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 80,
 		"kanji" : "何",
 		"nivel" : "N5",
 		"leitura" : "なん (nan) / なに (nani)",
-<<<<<<< HEAD
-		"significado" : "o que",
-		"exemplo_jp" : "何ですか。",
-		"exemplo_romaji" : "Nan desu ka.",
-		"exemplo_pt" : "O que é?",
-		"correta" : "o que",
-		"alternativa1" : "quem",
-		"alternativa2" : "quando",
-		"alternativa3" : "onde"
-=======
 		"significado" : "O quê, Qual",
 		"exemplo_jp" : "これは何ですか？",
 		"exemplo_romaji" : "Kore wa nan desu ka?",
@@ -2095,23 +1198,12 @@
 		"alternativa2" : "Quando",
 		"alternativa3" : "Onde",
 		"dica" : "É usado quando você quer perguntar algo desconhecido."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 81,
 		"kanji" : "語",
 		"nivel" : "N5",
 		"leitura" : "ご (go) / かた(る) (kata(ru))",
-<<<<<<< HEAD
-		"significado" : "língua",
-		"exemplo_jp" : "日本語を話します。",
-		"exemplo_romaji" : "Nihongo o hanashimasu.",
-		"exemplo_pt" : "Falo japonês.",
-		"correta" : "língua",
-		"alternativa1" : "palavra",
-		"alternativa2" : "voz",
-		"alternativa3" : "som"
-=======
 		"significado" : "Idioma / Palavra / Contar",
 		"exemplo_jp" : "英語を話すことができます。",
 		"exemplo_romaji" : "Eigo o hanasu koto ga dekimasu.",
@@ -2121,23 +1213,12 @@
 		"alternativa2" : "País",
 		"alternativa3" : "Música",
 		"dica" : "Você usa isso para se comunicar com as pessoas."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 82,
 		"kanji" : "牛",
 		"nivel" : "N5",
 		"leitura" : "ぎゅう (gyū) / うし (ushi)",
-<<<<<<< HEAD
-		"significado" : "vaca",
-		"exemplo_jp" : "牛がいます。",
-		"exemplo_romaji" : "Ushi ga imasu.",
-		"exemplo_pt" : "Há uma vaca.",
-		"correta" : "vaca",
-		"alternativa1" : "boi",
-		"alternativa2" : "animal",
-		"alternativa3" : "carne"
-=======
 		"significado" : "Vaca, Boi",
 		"exemplo_jp" : "毎日、牛乳を飲みます。",
 		"exemplo_romaji" : "Mainichi, Gyūnyū o nomimasu.",
@@ -2147,23 +1228,12 @@
 		"alternativa2" : "Cachorro",
 		"alternativa3" : "Gato",
 		"dica" : "É um animal que produz leite."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 83,
 		"kanji" : "馬",
 		"nivel" : "N5",
 		"leitura" : "ば (ba) / うま (uma)",
-<<<<<<< HEAD
-		"significado" : "cavalo",
-		"exemplo_jp" : "馬を見ます。",
-		"exemplo_romaji" : "Uma o mimasu.",
-		"exemplo_pt" : "Vejo um cavalo.",
-		"correta" : "cavalo",
-		"alternativa1" : "vaca",
-		"alternativa2" : "animal",
-		"alternativa3" : "boi"
-=======
 		"significado" : "Cavalo",
 		"exemplo_jp" : "北海道で馬に乗りました。",
 		"exemplo_romaji" : "Hokkaidō de uma ni norimashita.",
@@ -2173,23 +1243,12 @@
 		"alternativa2" : "Gato",
 		"alternativa3" : "Vaca",
 		"dica" : "É um animal usado para corrida e transporte."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 84,
 		"kanji" : "魚",
 		"nivel" : "N5",
 		"leitura" : "ぎょ (gyo) / さかな (sakana)",
-<<<<<<< HEAD
-		"significado" : "peixe",
-		"exemplo_jp" : "魚を食べます。",
-		"exemplo_romaji" : "Sakana o tabemasu.",
-		"exemplo_pt" : "Como peixe.",
-		"correta" : "peixe",
-		"alternativa1" : "carne",
-		"alternativa2" : "frango",
-		"alternativa3" : "comida"
-=======
 		"significado" : "Peixe",
 		"exemplo_jp" : "私は魚の料理が好きです。",
 		"exemplo_romaji" : "Watashi wa sakana no ryōri ga suki desu.",
@@ -2199,23 +1258,12 @@
 		"alternativa2" : "Pássaro",
 		"alternativa3" : "Inseto",
 		"dica" : "Para sushi e sashimi usam esse animal."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 85,
 		"kanji" : "店",
 		"nivel" : "N5",
 		"leitura" : "てん (ten) / みせ (mise)",
-<<<<<<< HEAD
-		"significado" : "loja",
-		"exemplo_jp" : "店に行きます。",
-		"exemplo_romaji" : "Mise ni ikimasu.",
-		"exemplo_pt" : "Vou à loja.",
-		"correta" : "loja",
-		"alternativa1" : "empresa",
-		"alternativa2" : "mercado",
-		"alternativa3" : "restaurante"
-=======
 		"significado" : "Loja, Comércio",
 		"exemplo_jp" : "新しい店がオープンしました。",
 		"exemplo_romaji" : "Atarashii mise ga opun shimashita.",
@@ -2225,23 +1273,12 @@
 		"alternativa2" : "Casa",
 		"alternativa3" : "Estação",
 		"dica" : "É um lugar onde você compra coisas."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 86,
 		"kanji" : "駅",
 		"nivel" : "N5",
 		"leitura" : "えき (eki)",
-<<<<<<< HEAD
-		"significado" : "estação",
-		"exemplo_jp" : "駅に行きます。",
-		"exemplo_romaji" : "Eki ni ikimasu.",
-		"exemplo_pt" : "Vou à estação.",
-		"correta" : "estação",
-		"alternativa1" : "parada",
-		"alternativa2" : "rua",
-		"alternativa3" : "prédio"
-=======
 		"significado" : "Estação (Trem/Metrô)",
 		"exemplo_jp" : "次の駅で降ります。",
 		"exemplo_romaji" : "Tsugi no eki de orimasu.",
@@ -2251,23 +1288,12 @@
 		"alternativa2" : "Parque",
 		"alternativa3" : "Hotel",
 		"dica" : "É onde os trens param para embarque e desembarque."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 87,
 		"kanji" : "小",
 		"nivel" : "N5",
 		"leitura" : "しょう (shō) / ちい(さい) (chii(sai))",
-<<<<<<< HEAD
-		"significado" : "pequeno",
-		"exemplo_jp" : "小さい犬です。",
-		"exemplo_romaji" : "Chiisai inu desu.",
-		"exemplo_pt" : "É um cachorro pequeno.",
-		"correta" : "pequeno",
-		"alternativa1" : "grande",
-		"alternativa2" : "baixo",
-		"alternativa3" : "curto"
-=======
 		"significado" : "Pequeno",
 		"exemplo_jp" : "小さなカバンを買いました。",
 		"exemplo_romaji" : "Chiisana kaban o kaimashita.",
@@ -2277,23 +1303,12 @@
 		"alternativa2" : "Baixo",
 		"alternativa3" : "Alto",
 		"dica" : "Algo menor em tamanho."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 88,
 		"kanji" : "高",
 		"nivel" : "N5",
 		"leitura" : "こう (kō) / たか(い) (taka(i))",
-<<<<<<< HEAD
-		"significado" : "alto, caro",
-		"exemplo_jp" : "この山は高いです。",
-		"exemplo_romaji" : "Kono yama wa takai desu.",
-		"exemplo_pt" : "Esta montanha é alta.",
-		"correta" : "alto",
-		"alternativa1" : "baixo",
-		"alternativa2" : "barato",
-		"alternativa3" : "pequeno"
-=======
 		"significado" : "Alto, Caro",
 		"exemplo_jp" : "日本の物価は高いですか？",
 		"exemplo_romaji" : "Nihon no bukka wa takai desu ka?",
@@ -2303,23 +1318,12 @@
 		"alternativa2" : "Grande",
 		"alternativa3" : "Pequeno",
 		"dica" : "Uma posição longe do chão."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 89,
 		"kanji" : "安",
 		"nivel" : "N5",
 		"leitura" : "あん (an) / やす(い) (yasu(i))",
-<<<<<<< HEAD
-		"significado" : "barato, seguro",
-		"exemplo_jp" : "この店は安いです。",
-		"exemplo_romaji" : "Kono mise wa yasui desu.",
-		"exemplo_pt" : "Esta loja é barata.",
-		"correta" : "barato",
-		"alternativa1" : "caro",
-		"alternativa2" : "perigoso",
-		"alternativa3" : "difícil"
-=======
 		"significado" : "Barato, Seguro",
 		"exemplo_jp" : "このカメラは本当に安いです。",
 		"exemplo_romaji" : "Kono kamera wa hontō ni yasui desu.",
@@ -2329,23 +1333,12 @@
 		"alternativa2" : "Alto",
 		"alternativa3" : "Baixo",
 		"dica" : "Usa isso quando tem preço baixo."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 90,
 		"kanji" : "多",
 		"nivel" : "N5",
 		"leitura" : "た (ta) / おお(い) (ō(i))",
-<<<<<<< HEAD
-		"significado" : "muito, muitos",
-		"exemplo_jp" : "人が多いです。",
-		"exemplo_romaji" : "Hito ga ōi desu.",
-		"exemplo_pt" : "Há muitas pessoas.",
-		"correta" : "muito",
-		"alternativa1" : "pouco",
-		"alternativa2" : "alguns",
-		"alternativa3" : "vazio"
-=======
 		"significado" : "Muito",
 		"exemplo_jp" : "この街には人が多いです。",
 		"exemplo_romaji" : "Kono machi ni wa hito ga ōi desu.",
@@ -2355,23 +1348,11 @@
 		"alternativa2" : "Grande",
 		"alternativa3" : "Pequeno",
 		"dica" : "Quando há grande quantidade de algo."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 91,
 		"kanji" : "少",
 		"nivel" : "N5",
-<<<<<<< HEAD
-		"leitura" : "しょう (shō) / すく(ない) (suku(nai))",
-		"significado" : "pouco",
-		"exemplo_jp" : "水が少ないです。",
-		"exemplo_romaji" : "Mizu ga sukunai desu.",
-		"exemplo_pt" : "Há pouca água.",
-		"correta" : "pouco",
-		"alternativa1" : "muito",
-		"alternativa2" : "cheio",
-		"alternativa3" : "todos"
-=======
 		"leitura" : "しょう (shō) / すく(ない), すこ(し) (suku(nai), suko(shi))",
 		"significado" : "Pouco / Alguns",
 		"exemplo_jp" : "砂糖を少し入れてください。",
@@ -2382,23 +1363,12 @@
 		"alternativa2" : "Grande ",
 		"alternativa3" : "Pequeno",
 		"dica" : "Há poucas pessoas ou coisas."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 92,
 		"kanji" : "長",
 		"nivel" : "N5",
 		"leitura" : "ちょう (chō) / なが(い) (naga(i))",
-<<<<<<< HEAD
-		"significado" : "longo",
-		"exemplo_jp" : "この道は長いです。",
-		"exemplo_romaji" : "Kono michi wa nagai desu.",
-		"exemplo_pt" : "Esta estrada é longa.",
-		"correta" : "longo",
-		"alternativa1" : "curto",
-		"alternativa2" : "alto",
-		"alternativa3" : "baixo"
-=======
 		"significado" : "Longo, Comprido, Líder",
 		"exemplo_jp" : "彼は髪が長いです。",
 		"exemplo_romaji" : "Kare wa kami ga nagai desu.",
@@ -2408,23 +1378,12 @@
 		"alternativa2" : "Alto",
 		"alternativa3" : "Baixo",
 		"dica" : "É usado para coisas esticadas ou extensas."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 93,
 		"kanji" : "新",
 		"nivel" : "N5",
 		"leitura" : "しん (shin) / あたら(しい) (atara(shii))",
-<<<<<<< HEAD
-		"significado" : "novo",
-		"exemplo_jp" : "新しい本です。",
-		"exemplo_romaji" : "Atarashii hon desu.",
-		"exemplo_pt" : "É um livro novo.",
-		"correta" : "novo",
-		"alternativa1" : "velho",
-		"alternativa2" : "antigo",
-		"alternativa3" : "usado"
-=======
 		"significado" : "Novo",
 		"exemplo_jp" : "新しいスマホが欲しいです。",
 		"exemplo_romaji" : "Atarashii sumaho ga hoshii desu.",
@@ -2434,23 +1393,12 @@
 		"alternativa2" : "Antigo",
 		"alternativa3" : "Usado",
 		"dica" : "Um produto recém-lançado pode ser isso."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 94,
 		"kanji" : "古",
 		"nivel" : "N5",
 		"leitura" : "こ (ko) / ふる(い) (furu(i))",
-<<<<<<< HEAD
-		"significado" : "antigo",
-		"exemplo_jp" : "古い家です。",
-		"exemplo_romaji" : "Furui ie desu.",
-		"exemplo_pt" : "É uma casa antiga.",
-		"correta" : "antigo",
-		"alternativa1" : "novo",
-		"alternativa2" : "recente",
-		"alternativa3" : "moderno"
-=======
 		"significado" : "Velho, Antigo",
 		"exemplo_jp" : "これは古いお寺の建物です。",
 		"exemplo_romaji" : "Kore wa furui otera no tatemono desu.",
@@ -2460,23 +1408,12 @@
 		"alternativa2" : "Fresco",
 		"alternativa3" : "Moderno",
 		"dica" : "Algo que existe há muito tempo."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 95,
 		"kanji" : "口",
 		"nivel" : "N5",
 		"leitura" : "こう (kō) / くち (kuchi)",
-<<<<<<< HEAD
-		"significado" : "boca",
-		"exemplo_jp" : "口を開けます。",
-		"exemplo_romaji" : "Kuchi o akemasu.",
-		"exemplo_pt" : "Abro a boca.",
-		"correta" : "boca",
-		"alternativa1" : "nariz",
-		"alternativa2" : "olho",
-		"alternativa3" : "ouvido"
-=======
 		"significado" : "Boca / Entrada",
 		"exemplo_jp" : "改札口はどっちですか？",
 		"exemplo_romaji" : "Kaisatsuguchi wa docchi desu ka?",
@@ -2486,23 +1423,12 @@
 		"alternativa2" : "Olho",
 		"alternativa3" : "Orelha",
 		"dica" : "Você abre isso para comer e beber."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 96,
 		"kanji" : "目",
 		"nivel" : "N5",
 		"leitura" : "もく (moku) / め (me)",
-<<<<<<< HEAD
-		"significado" : "olho",
-		"exemplo_jp" : "目が大きいです。",
-		"exemplo_romaji" : "Me ga ōkii desu.",
-		"exemplo_pt" : "Os olhos são grandes.",
-		"correta" : "olho",
-		"alternativa1" : "orelha",
-		"alternativa2" : "nariz",
-		"alternativa3" : "boca"
-=======
 		"significado" : "Olho",
 		"exemplo_jp" : "目が赤くなっていますよ。",
 		"exemplo_romaji" : "Me ga akaku natte imasu yo.",
@@ -2512,23 +1438,12 @@
 		"alternativa2" : "Mão",
 		"alternativa3" : "Boca",
 		"dica" : "Você usa isso para ver."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 97,
 		"kanji" : "手",
 		"nivel" : "N5",
 		"leitura" : "しゅ (shu) / て (te)",
-<<<<<<< HEAD
-		"significado" : "mão",
-		"exemplo_jp" : "手を洗います。",
-		"exemplo_romaji" : "Te o araimasu.",
-		"exemplo_pt" : "Lavo as mãos.",
-		"correta" : "mão",
-		"alternativa1" : "pé",
-		"alternativa2" : "braço",
-		"alternativa3" : "dedo"
-=======
 		"significado" : "Mão",
 		"exemplo_jp" : "ご飯の前に手を洗います。",
 		"exemplo_romaji" : "Gohan no mae ni te o araimasu.",
@@ -2538,23 +1453,11 @@
 		"alternativa2" : "Boca",
 		"alternativa3" : "Olho",
 		"dica" : "É usada para pegar, segurar e tocar coisas."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 98,
 		"kanji" : "足",
 		"nivel" : "N5",
-<<<<<<< HEAD
-		"leitura" : "そく (soku) / あし (ashi)",
-		"significado" : "pé, perna",
-		"exemplo_jp" : "足が痛いです。",
-		"exemplo_romaji" : "Ashi ga itai desu.",
-		"exemplo_pt" : "Meu pé dói.",
-		"correta" : "pé",
-		"alternativa1" : "mão",
-		"alternativa2" : "braço",
-		"alternativa3" : "corpo"
-=======
 		"leitura" : "そく (soku) / あし, た(す) (ashi, ta(su))",
 		"significado" : "Pé, Perna",
 		"exemplo_jp" : "今日はたくさん足を動かした。",
@@ -2565,23 +1468,12 @@
 		"alternativa2" : "Cabeça",
 		"alternativa3" : "Orelha",
 		"dica" : "Você usa isso para andar e correr."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 99,
 		"kanji" : "耳",
 		"nivel" : "N5",
 		"leitura" : "じ (ji) / みみ (mimi)",
-<<<<<<< HEAD
-		"significado" : "orelha",
-		"exemplo_jp" : "耳で聞きます。",
-		"exemplo_romaji" : "Mimi de kikimasu.",
-		"exemplo_pt" : "Ouço com a orelha.",
-		"correta" : "orelha",
-		"alternativa1" : "olho",
-		"alternativa2" : "nariz",
-		"alternativa3" : "boca"
-=======
 		"significado" : "Orelha, Ouvido",
 		"exemplo_jp" : "耳が痛いです。",
 		"exemplo_romaji" : "Mimi ga itai desu.",
@@ -2591,23 +1483,12 @@
 		"alternativa2" : "Nariz",
 		"alternativa3" : "Boca",
 		"dica" : "Quando escutar a música você usa isso"
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 100,
 		"kanji" : "山",
 		"nivel" : "N5",
 		"leitura" : "さん (san) / やま (yama)",
-<<<<<<< HEAD
-		"significado" : "montanha",
-		"exemplo_jp" : "山に行きます。",
-		"exemplo_romaji" : "Yama ni ikimasu.",
-		"exemplo_pt" : "Vou à montanha.",
-		"correta" : "montanha",
-		"alternativa1" : "rio",
-		"alternativa2" : "floresta",
-		"alternativa3" : "campo"
-=======
 		"significado" : "Montanha",
 		"exemplo_jp" : "週末に山へ登ります。",
 		"exemplo_romaji" : "Shūmatsu ni yama e noborimasu.",
@@ -2617,23 +1498,12 @@
 		"alternativa2" : "Céu",
 		"alternativa3" : "Mar",
 		"dica" : "Pode ser coberta de neve no inverno."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 101,
 		"kanji" : "川",
 		"nivel" : "N5",
 		"leitura" : "せん (sen) / かわ (kawa)",
-<<<<<<< HEAD
-		"significado" : "rio",
-		"exemplo_jp" : "川がきれいです。",
-		"exemplo_romaji" : "Kawa ga kirei desu.",
-		"exemplo_pt" : "O rio é bonito.",
-		"correta" : "rio",
-		"alternativa1" : "mar",
-		"alternativa2" : "lago",
-		"alternativa3" : "ponte"
-=======
 		"significado" : "Rio",
 		"exemplo_jp" : "川の近くでキャンプをします。",
 		"exemplo_romaji" : "Kawa no chikaku de kyanpu o shimasu.",
@@ -2643,23 +1513,12 @@
 		"alternativa2" : "Terra",
 		"alternativa3" : "Montanha",
 		"dica" : "É um fluxo natural de água que pode ser encontrado na floresta."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 102,
 		"kanji" : "花",
 		"nivel" : "N5",
 		"leitura" : "か (ka) / はな (hana)",
-<<<<<<< HEAD
-		"significado" : "flor",
-		"exemplo_jp" : "花が咲きます。",
-		"exemplo_romaji" : "Hana ga sakimasu.",
-		"exemplo_pt" : "A flor floresce.",
-		"correta" : "flor",
-		"alternativa1" : "árvore",
-		"alternativa2" : "folha",
-		"alternativa3" : "planta"
-=======
 		"significado" : "Flor",
 		"exemplo_jp" : "庭にきれいな花が咲きました。",
 		"exemplo_romaji" : "Niwa ni kireina hana ga sakimashita.",
@@ -2669,23 +1528,11 @@
 		"alternativa2" : "Folha",
 		"alternativa3" : "Fruta",
 		"dica" : "É uma parte colorida e cheirosa das plantas."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 103,
 		"kanji" : "言",
 		"nivel" : "N5",
-<<<<<<< HEAD
-		"leitura" : "げん (gen) / い(う) (i(u))",
-		"significado" : "dizer, palavra",
-		"exemplo_jp" : "本当のことを言います。",
-		"exemplo_romaji" : "Hontō no koto o iimasu.",
-		"exemplo_pt" : "Digo a verdade.",
-		"correta" : "dizer",
-		"alternativa1" : "ouvir",
-		"alternativa2" : "ver",
-		"alternativa3" : "falar"
-=======
 		"leitura" : "げん, ごん (gen, gon) / い(う) (i(u))",
 		"significado" : "Dizer, Falar, Palavra",
 		"exemplo_jp" : "あの方は何と言いましたか？",
@@ -2696,23 +1543,12 @@
 		"alternativa2" : "Ler",
 		"alternativa3" : "Escrever",
 		"dica" : "É o ato de expressar ideias com palavras."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 104,
 		"kanji" : "話",
 		"nivel" : "N5",
 		"leitura" : "わ (wa) / はな(す) (hana(su))",
-<<<<<<< HEAD
-		"significado" : "falar, conversa",
-		"exemplo_jp" : "友だちと話します。",
-		"exemplo_romaji" : "Tomodachi to hanashimasu.",
-		"exemplo_pt" : "Converso com um amigo.",
-		"correta" : "falar",
-		"alternativa1" : "ouvir",
-		"alternativa2" : "dizer",
-		"alternativa3" : "ver"
-=======
 		"significado" : "Conversar, Contar",
 		"exemplo_jp" : "日本語で話しましょう。",
 		"exemplo_romaji" : "Nihongo de hanashimashō.",
@@ -2722,7 +1558,6 @@
 		"alternativa2" : "Cantar",
 		"alternativa3" : "Pensar",
 		"dica" : "É a ação usada para se comunicar com alguém."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 105,
@@ -2736,12 +1571,8 @@
 		"correta" : "esforçar",
 		"alternativa1" : "descansar",
 		"alternativa2" : "dormir",
-<<<<<<< HEAD
-		"alternativa3" : "parar"
-=======
 		"alternativa3" : "parar",
 		"dica" : "Uma orelha (耳) encostada discretamente na fresta de um grande portão (門)."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 	},
 	{
 		"id" : 106,
@@ -2839,12 +1670,8 @@
 		"correta" : "parar",
 		"alternativa1" : "andar",
 		"alternativa2" : "correr",
-<<<<<<< HEAD
-		"alternativa3" : "dirigir"
-=======
 		"alternativa3" : "dirigir",
-	"dica": "Lembra visualmente o número 5 de cabeça para baixo ou manuscrito."
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
+		"dica": "Lembra visualmente o número 5 de cabeça para baixo ou manuscrito."
 	},
 	{
 		"id" : 113,
@@ -12233,11 +11060,7 @@
 		"leitura" : "きょう (kyō) / とも (tomo)",
 		"significado" : "junto",
 		"exemplo_jp" : "共に行きましょう。",
-<<<<<<< HEAD
-		"exemplo_romaji" : "Tomo ni ikimashou.",
-=======
 		"exemplo_romaji" : "Tomo ni ikimashō.",
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
 		"exemplo_pt" : "Vamos juntos.",
 		"correta" : "junto",
 		"alternativa1" : "separado",
