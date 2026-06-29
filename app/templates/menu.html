@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="d-flex flex-column justify-content-center align-items-center py-4 fade-slide" style="min-height: 80vh; gap: 25px;">
+    <div class="card w-100 p-4 shadow-sm border" style="max-width: 500px; background: #ffffff;"> 
+        <h2 class="text-center font-weight-bold mb-4 text-dark" style="font-size: 24px;">
+            Iniciar Quiz 🎯
+        </h2>
+
+        {% if erro %}
+        <div class="alert alert-danger text-center rounded-3 mb-4 py-2" style="font-size: 14px;">
+            {{ erro }}
+        </div>
+        {% endif %}
+
+        <form method="post" action="">
+            {% csrf_token %}
+            
+            <div class="mb-3">
+                <label class="form-label text-muted font-weight-bold small text-uppercase" style="letter-spacing: 0.5px;">
+                    Selecione o nível:
+                </label>
+                <select name="nivel" class="form-select form-select-lg" style="font-size: 16px; border-radius: 12px; cursor: pointer;">
+                    <option value="N5">N5 (Iniciante)</option>
+                    <option value="N4">N4 (Básico)</option>
+                    <option value="N3">N3 (Intermediário)</option>
+                    <option value="N2">N2 (Avançado)</option>
+                    <option value="N1">N1 (Fluente)</option>
+                </select>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label text-muted font-weight-bold small text-uppercase" style="letter-spacing: 0.5px;">
+                    Quantidade de Kanjis:
+                </label>
+                <select name="quantidade" class="form-select form-select-lg" style="font-size: 16px; border-radius: 12px; cursor: pointer;">
+                    <option value="10">10 Questões</option>
+                    <option value="20">20 Questões</option>
+                    <option value="30">30 Questões</option>
+                </select>
+            </div>
+
+            <button class="btn btn-primary w-100 py-3 font-weight-bold shadow-sm mb-3" 
+                    style="font-size: 18px; border-radius: 14px; background-color: #0d6efd; border-color: #0d6efd;">
+                🚀 Começar Quiz
+            </button>
+        </form>
+
+        <div class="d-flex align-items-center my-2">
+            <hr class="flex-grow-1 my-0 text-muted opacity-25">
+            <span class="mx-3 text-muted text-uppercase font-weight-bold" style="font-size: 11px; letter-spacing: 1px;">Ou consulte</span>
+            <hr class="flex-grow-1 my-0 text-muted opacity-25">
+        </div>
+
+        <a href="{% url 'biblioteca' %}" class="btn btn-light w-100 py-3 font-weight-bold border text-secondary" 
+           style="font-size: 16px; border-radius: 14px; background-color: #f8fafc;">
+            📖 Biblioteca de Kanjis
+        </a>
+    </div>
+
+    <div class="card w-100 p-4 shadow-sm border" style="max-width: 500px; background: #ffffff;">
+        <h3 class="font-weight-bold mb-3 text-dark" style="font-size: 18px; letter-spacing: 0.5px;">
+            📊 Últimos Quizes Realizados
+        </h3>
+
+        <div class="d-flex flex-column gap-2 w-100">
+            {% for q in historico %}
+                <div class="p-3 border rounded-3 d-flex justify-content-between align-items-center bg-light w-100">
+                    
+                    <div>
+                        <span class="badge bg-primary me-2">Nível {{ q.nivel }}</span>
+                        <strong class="text-dark">{{ q.acertos }} / {{ q.quantidade }} acertos</strong>
+                        <small class="d-block text-muted mt-1" style="font-size: 12px;">
+                            Realizado em: {{ q.finalizado_em|default:q.criado_em|date:"d/m/Y H:i" }}
+                        </small>
+                    </div>
+            
+                    <div class="text-end d-flex flex-column align-items-end justify-content-center gap-1">
+                        <span class="badge font-weight-bold px-2.5 py-1.5 
+                              {% if q.porcentagem >= 70 %} text-success bg-success-subtle
+                              {% elif q.porcentagem >= 50 %} text-warning bg-warning-subtle
+                              {% else %} text-danger bg-danger-subtle {% endif %}" 
+                              style="font-size: 14px; border-radius: 8px; min-width: 60px; text-align: center;">
+                            {{ q.porcentagem }}%
+                        </span>
+
+                        <a href="{% url 'quiz_final' q.id %}" class="small text-decoration-none font-weight-bold text-primary mt-1" style="font-size: 13px; white-space: nowrap;">
+                            Revisar →
+                        </a>
+                    </div>
+
+                </div>
+            {% empty %}
+                <p class="text-muted text-center py-3 mb-0" style="font-size: 14px;">
+                    Nenhum quiz finalizado encontrado. Complete um treino para ver seu histórico!
+                </p>
+            {% endfor %}
+        </div>
+    </div>
+
+</div>
+{% endblock %}

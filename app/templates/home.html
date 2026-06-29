@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container d-flex flex-column justify-content-center align-items-center text-center py-5 animate-fade-in" style="min-height: 80vh;">
+
+    <h1 class="display-2 font-weight-bold mb-1 text-dark tracking-widest" style="font-family: 'Yu Mincho', 'MS Mincho', serif; font-weight: 800;">
+        漢字クイズ
+    </h1>
+
+    <!-- Subtítulo e Slogan Captivante -->
+    <h3 class="h5 text-muted mb-2 text-uppercase tracking-wider" style="letter-spacing: 2px;">
+        — Kanji Quiz —
+    </h3>
+    <p class="text-secondary mb-5 max-w-md" style="font-size: 18px; max-width: 500px;">
+        Domine os ideogramas japoneses do N5 ao N1 de forma prática, rápida e totalmente gratuita.
+    </p>
+
+    <!-- Botão Iniciar Estilo Gamificado (Preservado e Otimizado para Clique) -->
+    <div class="mb-5">
+        <a href="{% url 'menu' %}" 
+           class="btn text-white font-weight-bold px-5 py-3 shadow transition-all"
+           style="
+                background-color: #58cc02;
+                font-size: 26px;
+                border-radius: 18px;
+                box-shadow: 0 6px 0 #46a302 !important;
+                display: inline-block;
+                text-decoration: none;
+           "
+           onmousedown="this.style.transform='translateY(4px)'; this.style.boxShadow='0 2px 0 #46a302'"
+           onmouseup="this.style.transform='none'; this.style.boxShadow='0 6px 0 #46a302'"
+           onmouseleave="this.style.transform='none'; this.style.boxShadow='0 6px 0 #46a302'">
+            ▶ Iniciar Treino
+        </a>
+    </div>
+
+    <!-- Seção de Estatísticas do App (Gera autoridade e atrai o usuário) -->
+    <div class="row w-100 justify-content-center border-top pt-5 mt-2" style="max-width: 700px;">
+        <div class="col-6 col-md-4 mb-3">
+            <h4 class="h2 font-weight-bold mb-0 text-dark">1.447</h4>
+            <small class="text-muted text-uppercase font-weight-bold" style="font-size: 11px;">Kanjis Cadastrados</small>
+        </div>
+        <div class="col-6 col-md-4 mb-3">
+            <h4 class="h2 font-weight-bold mb-0 text-primary" style="color: #4f46e5 !important;">5 Níveis</h4>
+            <small class="text-muted text-uppercase font-weight-bold" style="font-size: 11px;">Do JLPT N5 ao N1</small>
+        </div>
+        <div class="col-12 col-md-4 mb-3">
+            <h4 class="h2 font-weight-bold mb-0 text-success" style="color: #58cc02 !important;">100%</h4>
+            <small class="text-muted text-uppercase font-weight-bold" style="font-size: 11px;">Focado em Resultados</small>
+        </div>
+    </div>
+
+</div>
+
+<!-- Injeção rápida de estilo para suavizar a animação de entrada (se não houver no CSS global) -->
+<style>
+    .animate-fade-in {
+        opacity: 0;
+        transform: translateY(15px);
+        animation: fadeSlideIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    @keyframes fadeSlideIn {
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+{% endblock %}

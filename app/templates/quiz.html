@@ -1,0 +1,298 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="d-flex justify-content-center align-items-center py-3 animate-fade-in" style="min-height: 75vh;">
+    <div class="card w-100 p-4 shadow border-0" style="max-width: 520px; background: #ffffff; border-radius: 20px;">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+            <div class="flex-grow-1 min-w-0">
+                <h5 class="text-muted mb-0 text-nowrap" style="font-size: 15px; font-weight: 400; letter-spacing: -0.3px;">
+                    Questão {{ questao_atual }} / {{ total }}
+                </h5>
+            </div>
+            
+            <div class="d-flex align-items-center gap-2 ms-auto">
+                <button type="button" 
+                        class="btn btn-sm btn-outline-warning px-2.5 rounded-3 d-flex align-items-center justify-content-center gap-1"
+                        style="font-size: 13px; height: 34px; min-width: 68px; font-weight: 400;"
+                        onclick="abrirDicaCustomizada()">
+                    💡 Dica
+                </button>
+
+                <a href="{% url 'parar_quiz' quiz.id %}" 
+                   id="btnPararQuiz"
+                   class="btn btn-sm btn-outline-danger px-2.5 text-nowrap rounded-3 d-flex align-items-center justify-content-center"
+                   style="font-size: 13px; height: 34px; font-weight: 400;">
+                    Parar Quiz
+                </a>
+            </div>
+        </div>
+
+        <div class="progress mb-4" style="height: 6px; border-radius: 3px; background-color: #f1f5f9;">
+            <div class="progress-bar" id="barraProgresso" role="progressbar" 
+                 aria-valuenow="{{ questao_atual }}" aria-valuemin="0" aria-valuemax="{{ total }}"
+                 style="background-color: #0d6efd; width: 0%;"></div>
+        </div>
+
+        <div class="text-center my-4 select-none">
+            <span style="font-size: 90px; font-weight: bold; font-family: 'Yu Mincho', 'MS Mincho', serif; line-height: 1;" class="text-dark d-block">
+                {{ kanji.kanji }}
+            </span>
+        </div>
+
+        <form method="post" id="quizForm" action="{% url 'responder' quiz.id kanji.id %}">
+            {% csrf_token %}
+            <input type="hidden" name="questao" value="{{ questao_atual }}">
+
+            <div class="d-flex flex-column gap-2 my-4">
+                {% for alt in alternativas %}
+                    <button type="button"
+                            class="alternativa btn w-100 text-center py-3 border"
+                            style="font-size: 16px; font-weight: 500; border-radius: 12px; background-color: #f8fafc; border-color: #dee2e6; color: #212529; transition: all 0.15s; outline: none;"
+                            data-id="{{ alt.id }}">
+                        {{ alt.texto }}
+                    </button>
+                {% endfor %}
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center border-top pt-3 mt-4">
+                <a href="{% url 'quiz_pergunta' quiz_id=quiz.id questao=questao_atual|add:'-1' %}"
+                   class="btn btn-outline-secondary px-4 py-2 font-weight-bold {% if questao_atual == 1 %}disabled opacity-50{% endif %}"
+                   style="border-radius: 12px; font-size: 15px;">
+                   Anterior
+                </a>
+
+                <button type="submit" 
+                        name="proximo" 
+                        value="1" 
+                        id="proximoBtn" 
+                        class="btn btn-secondary px-4 py-2 font-weight-bold text-white" 
+                        style="border-radius: 12px; font-size: 15px; cursor: not-allowed;" 
+                        disabled>
+                    Próximo
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="modalDicaCustom" class="modal-custom-overlay" style="display: none;">
+    <div class="modal-custom-card">
+        <div class="modal-custom-header">
+            <h5 class="modal-custom-title">💡 Dica de Estudo</h5>
+            <button type="button" class="modal-custom-close-x" onclick="fecharDicaCustomizada()">✕</button>
+        </div>
+        <div class="modal-custom-body">
+            <p id="textoDicaCustom" style="margin: 0; white-space: pre-wrap; font-size: 15px; color: #334155; line-height: 1.5;"></p>
+        </div>
+        <div class="modal-custom-footer">
+            <button type="button" class="btn btn-primary w-100 font-weight-bold py-2.5" style="border-radius: 12px;" onclick="fecharDicaCustomizada()">
+                Entendi!
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+    const alternativas = document.querySelectorAll('.alternativa');
+    const proximoBtn = document.getElementById('proximoBtn');
+    const form = document.getElementById('quizForm');
+    const barraProgresso = document.getElementById('barraProgresso');
+    const anteriorBtn = document.querySelector('.btn-outline-secondary');
+    const modalDicaCustom = document.getElementById('modalDicaCustom');
+    const textoDicaCustom = document.getElementById('textoDicaCustom');
+    const btnPararQuiz = document.getElementById('btnPararQuiz');
+
+    let permitirNavegacao = false;
+
+    if (btnPararQuiz) {
+        btnPararQuiz.addEventListener('click', (event) => {
+            event.preventDefault(); // Interrompe o link para o JavaScript assumir
+            
+            const desejaSair = confirm('Se você sair, o progresso do seu quiz atual será perdido. Tem certeza?');
+            if (desejaSair) {
+                permitirNavegacao = true; // Desativa todas as travas do navegador de uma vez
+                window.location.href = btnPararQuiz.getAttribute('href'); // Redireciona diretamente
+            }
+        });
+    }
+
+    function abrirDicaCustomizada() {
+        const dicaDoBanco = "{{ kanji.dica|escapejs }}";
+        const leitura = "{{ kanji.leitura|escapejs }}";
+        const significado = "{{ kanji.significado|escapejs }}";
+
+        if (dicaDoBanco && dicaDoBanco !== "None" && dicaDoBanco.trim() !== "") {
+            textoDicaCustom.textContent = dicaDoBanco;
+        } else {
+            textoDicaCustom.innerHTML = `<strong>Leitura:</strong> ${leitura}<br><br><strong>Significado:</strong> ${significado}`;
+        }
+
+        modalDicaCustom.style.display = 'flex';
+    }
+
+    function fecharDicaCustomizada() {
+        modalDicaCustom.style.display = 'none';
+    }
+
+    window.addEventListener('click', (e) => {
+        if (e.target === modalDicaCustom) {
+            fecharDicaCustomizada();
+        }
+    });
+
+    const questaoAtual = parseInt("{{ questao_atual }}");
+    const totalQuestoes = parseInt("{{ total }}");
+    if (barraProgresso) {
+        barraProgresso.style.width = ((questaoAtual / totalQuestoes) * 100) + '%';
+    }
+
+    let hiddenInput = document.createElement('input');
+    hiddenInput.type = 'hidden';
+    hiddenInput.name = 'alternativa';
+    form.appendChild(hiddenInput);
+
+    function marcarBotao(btn) {
+        alternativas.forEach(b => {
+            b.style.backgroundColor = '#f8fafc';
+            b.style.borderColor = '#dee2e6';
+            b.style.color = '#212529';
+            b.style.boxShadow = 'none';
+        });
+
+        btn.style.backgroundColor = '#d0f0c0';
+        btn.style.borderColor = '#a3e685';
+        btn.style.color = '#1e3a1e';
+        btn.style.boxShadow = '0 4px 12px rgba(163, 230, 133, 0.2)';
+
+        hiddenInput.value = btn.getAttribute('data-id');
+
+        proximoBtn.disabled = false;
+        proximoBtn.style.backgroundColor = '#198754';
+        proximoBtn.style.borderColor = '#198754';
+        proximoBtn.style.color = '#ffffff';
+        proximoBtn.style.cursor = 'pointer';
+    }
+
+    const selecionadaBackend = "{{ selecionada }}";
+    if (selecionadaBackend && selecionadaBackend !== "None" && selecionadaBackend !== "") {
+        alternativas.forEach(btn => {
+            if (btn.getAttribute('data-id') === selecionadaBackend) {
+                marcarBotao(btn);
+            }
+        });
+    }
+
+    alternativas.forEach(btn => {
+        btn.addEventListener('click', () => {
+            marcarBotao(btn);
+        });
+    });
+
+    form.addEventListener('submit', () => { 
+        permitirNavegacao = true; 
+    });
+
+    if (anteriorBtn) {
+        anteriorBtn.addEventListener('click', () => {
+            permitirNavegacao = true;
+        });
+    }
+
+    window.history.pushState({ quiz: true }, "", window.location.href);
+
+    window.addEventListener('popstate', function (event) {
+        if (permitirNavegacao) return;
+
+        window.history.pushState({ quiz: true }, "", window.location.href);
+
+        const desejaSair = confirm('Se você sair, o progresso do seu quiz atual será perdido. Tem certeza?');
+        if (desejaSair) {
+            permitirNavegacao = true;
+            window.location.href = "{% url 'parar_quiz' quiz.id %}";
+        }
+    });
+
+    // Trava 2: Captura o fechamento abrupto ou cliques rápidos no botão voltar do Chrome
+    window.addEventListener('beforeunload', (event) => {
+        if (permitirNavegacao) return;
+        
+        event.preventDefault();
+        event.returnValue = ''; 
+    });
+</script>
+
+<style>
+    .modal-custom-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(15, 23, 42, 0.4);
+        backdrop-filter: blur(2px); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        padding: 20px;
+    }
+
+    .modal-custom-card {
+        background-color: #ffffff;
+        width: 100%;
+        max-width: 400px;
+        border-radius: 20px;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        padding: 24px;
+        animation: scaleUp 0.2s ease-out forwards;
+    }
+
+    .modal-custom-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+    }
+
+    .modal-custom-title {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 700;
+        color: #eab308;
+    }
+
+    .modal-custom-close-x {
+        background: none;
+        border: none;
+        font-size: 18px;
+        color: #94a3b8;
+        cursor: pointer;
+        padding: 0;
+        line-height: 1;
+        transition: color 0.15s;
+    }
+
+    .modal-custom-close-x:hover {
+        color: #475569;
+    }
+
+    .modal-custom-body {
+        margin-bottom: 24px;
+    }
+
+    .animate-fade-in {
+        opacity: 0;
+        transform: translateY(12px);
+        animation: fadeSlideIn 0.4s ease-out forwards;
+    }
+
+    @keyframes fadeSlideIn {
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes scaleUp {
+        from { transform: scale(0.95); opacity: 0; }
+        to { transform: scale(1); opacity: 1; }
+    }
+</style>
+{% endblock %}

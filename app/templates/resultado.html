@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="d-flex justify-content-center align-items-center py-4 animate-fade-in" style="min-height: 75vh;">
+    <div class="card w-100 p-4 shadow border-0" style="max-width: 540px; background: #ffffff; border-radius: 20px;">
+        <h1 class="text-center font-weight-bold mb-4 text-dark" style="font-size: 28px;">
+            Resultado do Quiz 🏆
+        </h1>
+
+        <div class="text-center mb-4 px-2">
+            {% if porcentagem == 100 %}
+                <h4 class="text-success font-weight-bold mb-1">🎉 Perfeito! Incrível!</h4>
+                <p class="text-muted small mb-0">Você dominou todos os Kanjis deste round. Domínio absoluto! 👑</p>
+            {% elif porcentagem >= 70 %}
+                <h4 class="text-success font-weight-bold mb-1">🌟 Muito bem! Ótimo resultado!</h4>
+                <p class="text-muted small mb-0">Sua leitura está afiada. Mais um pouco e você alcança a perfeição!</p>
+            {% elif porcentagem >= 50 %}
+                <h4 class="text-warning font-weight-bold mb-1">📚 Bom trabalho!</h4>
+                <p class="text-muted small mb-0">Você já memorizou metade! Que tal mais uma rodada para fixar o restante?</p>
+            {% else %}
+                <h4 class="text-danger font-weight-bold mb-1">💪 Não desanime!</h4>
+                <p class="text-muted small mb-0">A jornada do Kanji exige prática. Tente novamente, você vai melhorar! 🏯</p>
+            {% endif %}
+        </div>
+
+        <div class="row g-2 text-center mb-4">
+            <div class="col-4">
+                <div class="p-2 bg-light border rounded-3">
+                    <small class="text-muted d-block font-weight-bold text-uppercase" style="font-size: 10px;">Acertos</small>
+                    <span class="font-weight-bold text-primary" style="font-size: 16px;">{{ quiz.acertos }} / {{ quiz.quantidade }}</span>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="p-2 bg-light border rounded-3">
+                    <small class="text-muted d-block font-weight-bold text-uppercase" style="font-size: 10px;">Desempenho</small>
+                    <span class="font-weight-bold text-success" style="font-size: 16px;">{{ porcentagem }}%</span>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="p-2 bg-light border rounded-3">
+                    <small class="text-muted d-block font-weight-bold text-uppercase" style="font-size: 10px;">Tempo</small>
+                    <span class="font-weight-bold text-warning" style="font-size: 16px;">{{ tempo }}</span>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-3 opacity-25">
+
+        <h4 class="h6 font-weight-bold text-secondary mb-3 text-uppercase" style="letter-spacing: 0.5px; font-size: 12px;">
+            Detalhes das respostas
+        </h4>
+
+        <div class="d-flex flex-column gap-3" style="max-height: 400px; overflow-y: auto; padding-right: 4px;">
+            {% for r in resumo %}
+                <div class="p-3 border rounded-3 d-flex align-items-center gap-3 {% if r.acertou %}border-success bg-opacity-10 bg-success{% else %}border-danger bg-opacity-10 bg-danger{% endif %}" 
+                     style="--bs-bg-opacity: 0.03;">
+                    
+                    <div class="d-flex align-items-center justify-content-center bg-white border rounded-3 font-japanese select-none font-weight-bold" 
+                         style="width: 65px; height: 65px; font-size: 38px; min-width: 65px;">
+                        {{ r.kanji.kanji }}
+                    </div>
+
+                    <div class="flex-grow-1" style="font-size: 14px; color: #212529;">
+                        <div class="mb-1">
+                            {% if r.acertou %}
+                                <span class="badge bg-success font-weight-bold">✔ Correto</span>
+                            {% else %}
+                                <span class="badge bg-danger font-weight-bold">✘ Errado</span>
+                            {% endif %}
+                        </div>
+                        
+                        <p class="mb-0"><strong>Você escolheu:</strong> {{ r.escolhida.texto }}</p>
+                        {% if not r.acertou %}
+                            <p class="mb-0 text-success"><strong>Alternativa correta:</strong> {{ r.correta_texto }}</p>
+                        {% endif %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="text-center mt-4 pt-2 border-top">
+            <a href="{% url 'menu' %}"
+               class="btn text-white font-weight-bold w-100 py-3 shadow-sm"
+               style="
+                    background-color: #58cc02;
+                    font-size: 18px;
+                    border-radius: 14px;
+                    box-shadow: 0 4px 0 #46a302 !important;
+                    text-decoration: none;
+               "
+               onmousedown="this.style.transform='translateY(2px)'; this.style.boxShadow='0 2px 0 #46a302'"
+               onmouseup="this.style.transform='none'; this.style.boxShadow='0 4px 0 #46a302'"
+               onmouseleave="this.style.transform='none'; this.style.boxShadow='0 4px 0 #46a302'">
+                🔄 Jogar Novamente
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+    history.pushState(null, null, window.location.href);
+    window.addEventListener('popstate', function () {
+        window.location.href = "{% url 'menu' %}";
+    });
+</script>
+
+<style>
+    .animate-fade-in {
+        opacity: 0;
+        transform: translateY(12px);
+        animation: fadeSlideIn 0.5s ease-out forwards;
+    }
+    @keyframes fadeSlideIn {
+        to { opacity: 1; transform: translateY(0); }
+    }
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+</style>
+{% endblock %}
