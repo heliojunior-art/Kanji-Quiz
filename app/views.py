@@ -34,7 +34,9 @@ def menu(request):
         )
         return redirect("quiz_pergunta", **{"quiz_id": quiz.id, "questao": 1})
 
-    return render(request, "menu.html")
+    historico = QuizSession.objects.filter(respostas__isnull=False).distinct().order_by("-id")[:5]
+    
+    return render(request, "menu.html", {"historico": historico})
 
 
 # -------------------------------
