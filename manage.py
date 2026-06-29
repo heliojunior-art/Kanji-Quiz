@@ -5,11 +5,7 @@ import sys
 
 def main():
     """Run administrative tasks."""
-<<<<<<< HEAD
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'KanjiQuiz.settings')
-=======
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'QuizKanji.settings')
->>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
