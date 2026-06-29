@@ -33,8 +33,9 @@ def menu(request):
             ordem_kanjis=ordem_kanjis
         )
         return redirect("quiz_pergunta", **{"quiz_id": quiz.id, "questao": 1})
-
-    historico = QuizSession.objects.filter(respostas__isnull=False).distinct().order_by("-id")[:5]
+    
+    historico_ids = request.session.get("meu_historico_ids", [])
+    historico = QuizSession.objects.filter(id__in=historico_ids).order_by("-id")[:5]
     
     return render(request, "menu.html", {"historico": historico})
 
