@@ -15,6 +15,10 @@ class Kanji(models.Model):
     alternativa1 = models.CharField(max_length=255, blank=True, null=True)
     alternativa2 = models.CharField(max_length=255, blank=True, null=True)
     alternativa3 = models.CharField(max_length=255, blank=True, null=True)
+<<<<<<< HEAD
+=======
+    dica = models.TextField(blank=True, null=True)          
+>>>>>>> a2b52ac1f04430b32f7788be431403b21ff2a311
     
     def __str__(self):
         return self.kanji
