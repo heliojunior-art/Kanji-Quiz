@@ -2,9 +2,28 @@ from django.contrib import admin
 from django.shortcuts import render, redirect
 from django.urls import path
 from django import forms
+from django.db.models.signals import post_migrate
 import json
 from .models import Kanji, Alternativa, QuizSession, Resposta
 
+# ======================================================================
+# 🔑 CRIAÇÃO AUTOMÁTICA DE USUÁRIO (Sincronizado via Sinais)
+# ======================================================================
+def criar_admin_automatico(sender, **kwargs):
+    """Garante a fabricação do administrador na nuvem de forma limpa e sem travar"""
+    try:
+        from django.contrib.auth.models import User
+        if not User.objects.filter(username="helio").exists():
+            User.objects.create_superuser("helio", "heliojunior@edu.unifil.br", "3352")
+    except Exception:
+        pass
+
+# Conecta o sinal imediatamente no momento em que o admin é lido pelo Django
+post_migrate.connect(criar_admin_automatico)
+
+# ======================================================================
+# 📋 PAINEL ADMINISTRATIVO E FORMULÁRIOS
+# ======================================================================
 class UploadJSONForm(forms.Form):
     arquivo = forms.FileField(label="Selecione o arquivo kanjis.json")
 
