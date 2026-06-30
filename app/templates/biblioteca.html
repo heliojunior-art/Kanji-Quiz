@@ -9,12 +9,10 @@
         <div class="d-flex flex-column align-items-start gap-2 w-100 w-md-auto">
             <h2 class="mb-0 text-nowrap">📚 Biblioteca de Kanjis</h2>
             
-            <!-- Filtro de Nível -->
+            <!-- FILTRO DE NÍVEL -->
             <form method="GET" class="mb-0 w-100 w-md-auto">
-                <!-- Mantém o termo digitado oculto para não perder a pesquisa ao mudar o nível -->
                 <input type="hidden" name="q" value="{{ termo_busca|default:'' }}">
                 
-                <!-- Aumentado para tamanho padrão/grande e com altura fixa de 42px -->
                 <select name="nivel" class="form-select font-weight-bold" style="width: auto; min-width: 160px; height: 42px;" onchange="this.form.submit()">
                     <option value="">Todos os níveis</option>
                     <option value="N5" {% if nivel_selecionado == "N5" %}selected{% endif %}>N5 (Iniciante)</option>
@@ -26,7 +24,7 @@
             </form>
         </div>
 
-        <!-- Barra de Pesquisa -->
+        <!-- BARRA DE PESQUISA -->
         <form method="GET" class="d-flex align-items-center gap-2 w-100 w-md-auto justify-content-md-end mb-0">
             <input type="hidden" name="nivel" value="{{ nivel_selecionado }}">
             
@@ -119,7 +117,7 @@
 
 </div>
 
-<!-- Botão de Início -->
+<!-- BOTÃO DE INÍCIO -->
 <div class="container mt-4 mb-5">
     <a href="{% url 'menu' %}" class="btn btn-outline-secondary">
         ← Menu Inicial

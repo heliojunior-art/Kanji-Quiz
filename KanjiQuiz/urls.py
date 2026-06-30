@@ -7,13 +7,13 @@ urlpatterns = [
     path('menu/', views.menu, name='menu'), 
     path('admin/', admin.site.urls),
 
-    # Quiz
+    # QUIZ
     path('quiz/<int:quiz_id>/<int:questao>/', views.quiz_pergunta, name='quiz_pergunta'),
     path("responder/<int:quiz_id>/<int:kanji_id>/", views.responder, name="responder"),
     path("resultado/<int:quiz_id>/", views.quiz_final, name="quiz_final"),
     path('parar_quiz/<int:quiz_id>/', views.parar_quiz, name='parar_quiz'),
     path('resultado/<int:quiz_id>/', views.quiz_final, name='quiz_final'),
 
-    # Biblioteca
+    # BIBLIOTECA
     path("biblioteca/", views.kanji_list, name="biblioteca"),
 ]

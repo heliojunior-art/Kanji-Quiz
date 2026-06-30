@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Kanji(models.Model):
+    # PARA KANJI
     kanji = models.CharField(max_length=10, unique=True)
     nivel = models.CharField(max_length=10)
     leitura = models.CharField(max_length=255, blank=True, null=True)
@@ -10,7 +11,7 @@ class Kanji(models.Model):
     exemplo_romaji = models.CharField(max_length=255, blank=True, null=True)
     exemplo_pt = models.CharField(max_length=255, blank=True, null=True)
 
-    # Para quiz
+    # PARA QUIZ
     correta = models.CharField(max_length=255, blank=True, null=True)
     alternativa1 = models.CharField(max_length=255, blank=True, null=True)
     alternativa2 = models.CharField(max_length=255, blank=True, null=True)
