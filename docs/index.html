@@ -1,51 +1,52 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanji Quiz - Informações do Projeto</title>
-    <link href="https://jsdelivr.net" rel="stylesheet">
-    <style>
-        body { background: #f4f6f9; color: #334155; }
-        .hero { background: #212529; color: #ffffff; padding: 60px 0; border-bottom: 5px solid #58cc02; }
-        .card-preview { border-radius: 20px; border: none; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); }
-    </style>
-</head>
-<body>
+from django.contrib import admin
+from django.shortcuts import render, redirect
+from django.urls import path
+from django import forms
+import json
+from .models import Kanji, Alternativa
 
-    <!-- Hero Section -->
-    <header class="hero text-center">
-        <div class="container">
-            <h1 class="display-4 fw-bold">📘 Kanji Quiz</h1>
-            <p class="lead opacity-75 mt-2">Apresentação Técnica e Apresentação de Requisitos</p>
-            <div class="mt-4">
-                <a href="https://onrender.com" target="_blank" class="btn btn-success btn-lg fw-bold px-4 py-2 me-2" style="border-radius: 12px; background-color: #58cc02; border-color: #58cc02;">🚀 Acessar Aplicação Online</a>
-                <a href="https://github.com" target="_blank" class="btn btn-outline-light btn-lg fw-bold px-4 py-2" style="border-radius: 12px;">💻 Código-Fonte no GitHub</a>
-            </div>
-        </div>
-    </header>
+class UploadJSONForm(forms.Form):
+    arquivo = forms.FileField()
 
-    <main class="container my-5" style="max-width: 800px;">
-        <div class="card card-preview p-4 bg-white mb-4">
-            <h2 class="h4 fw-bold text-dark border-bottom pb-2 mb-3">📋 Sobre o Projeto</h2>
-            <p>O <strong>Kanji Quiz</strong> é uma plataforma gamificada de alto desempenho projetada para auxiliar estudantes da língua japonesa a dominarem os 1.447 Kanjis oficiais exigidos no exame internacional JLPT. O projeto atende com rigor a todos os requisitos funcionais e não-funcionais estabelecidos no escopo inicial de desenvolvimento.</p>
-        </div>
+@admin.register(Kanji)
+class KanjiAdmin(admin.ModelAdmin):
+    list_display = ("kanji", "leitura", "significado", "nivel")
+    search_fields = ("kanji", "leitura", "significado")
 
-        <div class="card card-preview p-4 bg-white mb-4">
-            <h2 class="h4 fw-bold text-dark border-bottom pb-2 mb-3">🛠️ Diferenciais Técnicos Atendidos</h2>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item bg-transparent px-0">✔ <strong>Estrutura Django com SQLite:</strong> Persistência de dados íntegra utilizando transações atômicas para salvar sessões e respostas.</li>
-                <li class="list-group-item bg-transparent px-0">✔ <strong>Design Otimizado:</strong> Interface construída sob demanda usando Bootstrap v5 para garantir usabilidade rápida em computadores e celulares.</li>
-                <li class="list-group-item bg-transparent px-0">✔ <strong>Segurança de Fluxo de Jogo:</strong> Filtros JavaScript integrados que interceptam o botão voltar do navegador, impedindo perdas acidentais de progresso.</li>
-                <li class="list-group-item bg-transparent px-0">✔ <strong>Mecanismo de Dicas em Tempo Real:</strong> Modais customizados em CSS/JS puro livres de quebras que oferecem suporte focado ao estudante.</li>
-                <li class="list-group-item bg-transparent px-0">✔ <strong>Histórico de Desempenho Inteligente:</strong> Painel de estatísticas isolado por sessões privadas de navegação e com autolimpeza automática ao fechar o app.</li>
-            </ul>
-        </div>
-    </main>
+    def get_urls(self):
+        urls = super().get_urls()
+        urls_extra = [
+            path("importar-json/", self.admin_site.admin_view(self.importar_json))
+        ]
+        return urls_extra + urls
 
-    <footer class="text-center text-muted py-4 small border-top bg-white">
-        <p class="mb-0">© 2026 Kanji Quiz. Apresentação final de projeto concluída.</p>
-    </footer>
+    def importar_json(self, request):
+        if request.method == "POST":
+            form = UploadJSONForm(request.POST, request.FILES)
+            if form.is_valid():
+                arquivo = json.load(request.FILES["arquivo"])
+                for item in arquivo:
+                    kanji = Kanji.objects.create(
+                        caractere=item.get("kanji"),
+                        leitura=item.get("leitura"),
+                        significado=item.get("significado"),
+                        nivel=item.get("nivel"),
+                        exemplo_jp=item.get("exemplo_jp") or item.get("exemplo"),
+                        exemplo_romaji=item.get("exemplo_romaji"),
+                        exemplo_pt=item.get("exemplo_pt")
+                    )
 
-</body>
-</html>
+                    # criar alternativas se presentes no JSON
+                    for alt in item.get("alternativas", []):
+                        Alternativa.objects.create(
+                            kanji=kanji,
+                            texto=alt.get("texto"),
+                            correta=bool(alt.get("correta"))
+                        )
+
+                self.message_user(request, "Importação concluída!")
+                return redirect("..")
+        else:
+            form = UploadJSONForm()
+
+        return render(request, "admin/importar_json.html", {"form": form})
