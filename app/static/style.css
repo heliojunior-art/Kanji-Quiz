@@ -1,0 +1,39 @@
+@import url('https://googleapis.com');
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #334155;
+    text-align: center;
+}
+
+.kanji {
+    font-size: 6rem;
+    font-weight: 900;
+    /* ⚡ 'Noto Serif JP' adicionada no topo da prioridade */
+    font-family: "Noto Serif JP", "Yu Mincho", "MS Mincho", "Hiragino Mincho ProN", serif;
+    line-height: 1.1;
+    display: inline-block;
+}
+
+.alternativa.selecionada {
+    background-color: #d0f0c0 !important;
+    border-color: #a3e685 !important;
+    color: #1e3a1e !important;
+    box-shadow: 0 4px 12px rgba(163, 230, 133, 0.2) !important;
+}
+
+.fade-slide {
+    animation: fadeSlideIn 0.25s ease-out forwards;
+}
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
