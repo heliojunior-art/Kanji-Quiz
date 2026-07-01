@@ -3,7 +3,7 @@
 O **Kanji Quiz** é uma aplicação web gamificada desenvolvida para auxiliar estudantes da língua japonesa a memorizarem de forma ativa e contextualizada os 1.447 caracteres oficiais exigidos no exame de proficiência **JLPT (N5 ao N1)**.
 
 ## 🔗 Links do Projeto
-- **Página de Informações (GitHub Pages):** https://heliojunior-art.github.io/Kanji-Quiz/
+- **Página de Informações (GitHub Pages):** https://heliojunior-art.github.io
 - **Aplicação Online (Render):** https://kanji-quiz-d7w2.onrender.com
 
 ## 🚀 Diferenciais Técnicos e Recursos Implementados
@@ -19,7 +19,7 @@ O **Kanji Quiz** é uma aplicação web gamificada desenvolvida para auxiliar es
 1. **Clone o repositório:**
    ```bash
    git clone https://github.com/heliojunior-art/Kanji-Quiz.git
-   cd nome-do-repositorio
+   cd Kanji-Quiz
    ```
 2. **Ative o ambiente virtual:**
    ```bash
