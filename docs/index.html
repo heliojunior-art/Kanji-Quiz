@@ -6,7 +6,6 @@
     <title>Kanji Quiz - Central do Projeto</title>
     
     <style>
-        /* 🌊 CSS PURO DE ALTA PERFORMANCE (Centralização garantida sem travar) */
         body { 
             background-color: #f8fafc; 
             color: #334155;
@@ -15,11 +14,9 @@
             padding: 0;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Centraliza horizontalmente */
             justify-content: center;
         }
 
-        /* Contêiner central com largura máxima controlada */
         .wrapper {
             width: 100%;
             max-width: 650px;
@@ -27,7 +24,6 @@
             box-sizing: border-box;
         }
 
-        /* Cabeçalho compacto e centralizado */
         .hero { 
             background: #1e293b; 
             color: #ffffff; 
@@ -48,7 +44,6 @@
             font-size: 14px;
         }
 
-        /* Cards elegantes com espaçamento interno menor */
         .card-clean { 
             border-radius: 12px; 
             border: 1px solid #e2e8f0; 
@@ -56,7 +51,6 @@
             padding: 20px;
             margin-bottom: 16px;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            text-align: left; /* Mantém o texto alinhado à esquerda dentro do card */
         }
         .card-clean h2 {
             margin-top: 0;
@@ -72,7 +66,6 @@
             line-height: 1.5;
         }
 
-        /* Grupo de botões ajustados */
         .btn-group {
             display: flex;
             flex-wrap: wrap;
@@ -110,7 +103,6 @@
             background-color: #f1f5f9;
         }
 
-        /* Lista de passos compacta do guia */
         .step-item {
             display: flex;
             gap: 12px;
@@ -145,7 +137,6 @@
             color: #64748b;
         }
 
-        /* Rodapé centralizado UniFil */
         footer {
             text-align: center;
             padding: 30px 20px;
@@ -170,37 +161,32 @@
 </head>
 <body>
 
-    <!-- Cabeçalho Centralizado -->
     <header class="hero">
         <h1>📘 Kanji Quiz</h1>
-        <p>Apresentação Técnica, Modo de Uso e Portfólio</p>
+        <p>Apresentação, Aplicação e Modo de Uso</p>
     </header>
 
-    <!-- Área de Conteúdo Centralizada -->
     <div class="wrapper">
         
-        <!-- 👤 SEÇÃO 1: Sobre o Desenvolvedor -->
         <div class="card-clean">
             <h2>👤 Sobre o Desenvolvedor</h2>
             <p>
-                Olá! Meu nome é Hélio Junior. Sou desenvolvedor desta aplicação web voltada para o treino e memorização de Kanjis (ideogramas japoneses), criada como um projeto de extensão universitária. Nesta página, apresento os detalhes e o funcionamento da aplicação desenvolvida.
+                Olá! Meu nome é Hélio Junior. Sou desenvolvedor desta aplicação web voltada para o treino e memorização de Kanjis (ideogramas japoneses), criada como um projeto de extensão do curso Análise e Desenvolvimento de Sistemas da UniFil. Nesta página, apresento os detalhes e o funcionamento da aplicação desenvolvida.
             </p>
         </div>
 
-        <!-- 📋 SEÇÃO 2: Sobre o Projeto e URLs Oficiais -->
         <div class="card-clean">
             <h2>📋 Sobre a Aplicação</h2>
             <p>
-                O <strong>Kanji Quiz</strong> é uma aplicação gamificada em formato de quiz projetada para o treino e a memorização dos 1.447 caracteres de Kanjis mais utilizados, englobando leitura, significado e exemplos de uso em sentenças. Adicionalmente, a plataforma disponibiliza uma biblioteca de consulta para suporte aos estudos. Dessa forma, o ecossistema atua diretamente no auxílio à aprendizagem da língua japonesa voltada aos exames do <strong>JLPT (do nível N5 ao N1)</strong>. O sistema foi desenvolvido em Python através do framework Django, garantindo conformidade com todos os requisitos funcionais propostos.
+                O <strong>Kanji Quiz</strong> é uma aplicação gamificada em formato de quiz projetada para o treino e a memorização dos 1.447 caracteres de Kanjis mais utilizados, englobando leitura, significado e exemplos de uso em sentenças. Adicionalmente, a plataforma disponibiliza uma biblioteca de consulta para suporte aos estudos. Dessa forma, o aplicativo atua diretamente no auxílio à aprendizagem da língua japonesa voltada aos exames do <strong>JLPT (do nível N5 ao N1)</strong>. O sistema foi desenvolvido em Python através do framework Django, garantindo conformidade com todos os requisitos funcionais e não funcionais.
             </p>
             
             <div class="btn-group">
-                <a href="https://onrender.com" target="_blank" class="btn-success-clean">🚀 Abrir Aplicativo Online</a>
-                <a href="https://github.com" target="_blank" class="btn-clean btn-outline-clean">💻 Código-Fonte no GitHub</a>
+                <a href="https://kanji-quiz-d7w2.onrender.com" target="_blank" class="btn-success-clean">🚀 Abrir Aplicativo Online</a>
+                <a href="https://github.com/heliojunior-art/Kanji-Quiz" target="_blank" class="btn-clean btn-outline-clean">💻 Código-Fonte no GitHub</a>
             </div>
         </div>
 
-        <!-- 📖 SEÇÃO 3: Guia do Aplicativo -->
         <div class="card-clean">
             <h2>📖 Guia do Aplicativo</h2>
             
@@ -231,7 +217,6 @@
 
     </div>
 
-    <!-- Rodapé Centralizado UniFil -->
     <footer>
         <p class="unifil-sub">© 2026 Kanji Quiz · UniFil - Centro Universitário Filadélfia</p>
     </footer>
