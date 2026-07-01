@@ -18,7 +18,7 @@ O **Kanji Quiz** é uma aplicação web gamificada desenvolvida para auxiliar es
 
 1. **Clone o repositório:**
    ```bash
-   git clone https://github.com/heliojunior-art/Kanji-Quiz.git
+   git clone https://github.com/heliojunior-art/Kanji-Quiz
    cd Kanji-Quiz
    ```
 2. **Ative o ambiente virtual:**
