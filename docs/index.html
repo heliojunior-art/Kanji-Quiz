@@ -5,133 +5,235 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kanji Quiz - Central do Projeto</title>
     
-    
     <style>
+        /* 🌊 CSS PURO DE ALTA PERFORMANCE (Centralização garantida sem travar) */
         body { 
             background-color: #f8fafc; 
             color: #334155;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centraliza horizontalmente */
+            justify-content: center;
         }
-        /* Cabeçalho moderno com contraste elegante */
+
+        /* Contêiner central com largura máxima controlada */
+        .wrapper {
+            width: 100%;
+            max-width: 650px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Cabeçalho compacto e centralizado */
         .hero { 
             background: #1e293b; 
             color: #ffffff; 
-            padding: 50px 0; 
+            padding: 35px 20px; 
             border-bottom: 4px solid #58cc02; 
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
         }
-        /* Estrutura em cards com sombreamento leve */
+        .hero h1 {
+            margin: 0 0 5px 0;
+            font-size: 26px;
+            font-weight: 700;
+        }
+        .hero p {
+            margin: 0;
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        /* Cards elegantes com espaçamento interno menor */
         .card-clean { 
-            border-radius: 14px; 
+            border-radius: 12px; 
             border: 1px solid #e2e8f0; 
             background-color: #ffffff;
-            padding: 24px;
-            margin-bottom: 24px;
+            padding: 20px;
+            margin-bottom: 16px;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            text-align: left; /* Mantém o texto alinhado à esquerda dentro do card */
+        }
+        .card-clean h2 {
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #1e293b;
+        }
+        .card-clean p {
+            margin: 0;
+            font-size: 13.5px;
+            color: #475569;
+            line-height: 1.5;
+        }
+
+        /* Grupo de botões ajustados */
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 16px;
+            padding-top: 14px;
+            border-top: 1px solid #f1f5f9;
         }
         .btn-success-clean {
             background-color: #58cc02;
             color: #ffffff;
             font-weight: 600;
-            border-radius: 10px;
-            padding: 10px 24px;
+            border-radius: 8px;
+            padding: 10px 20px;
             border: none;
+            text-decoration: none;
+            font-size: 13.5px;
             transition: background 0.15s ease;
         }
         .btn-success-clean:hover {
             background-color: #46a302;
-            color: #ffffff;
+        }
+        .btn-outline-clean {
+            border: 1px solid #cbd5e1;
+            color: #475569;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 9px 20px;
+            background: #ffffff;
+            text-decoration: none;
+            font-size: 13.5px;
+            transition: all 0.15s ease;
+        }
+        .btn-outline-clean:hover {
+            background-color: #f1f5f9;
+        }
+
+        /* Lista de passos compacta do guia */
+        .step-item {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 14px;
+            align-items: start;
+        }
+        .step-item:last-child {
+            margin-bottom: 0;
         }
         .step-number {
             background-color: #f1f5f9;
             color: #475569;
             font-weight: 700;
-            width: 28px;
-            height: 28px;
+            width: 24px;
+            height: 24px;
             border-radius: 50%;
             display: inline-flex;
             align-items: center;
             justify-content: center;
+            font-size: 12px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .step-content strong {
+            display: block;
+            font-size: 13.5px;
+            color: #1e293b;
+            margin-bottom: 2px;
+        }
+        .step-content reset {
+            font-size: 13px;
+            color: #64748b;
+        }
+
+        /* Rodapé centralizado UniFil */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            border-top: 1px solid #e2e8f0;
+            background-color: #ffffff;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 20px;
+        }
+        footer .unifil-title {
+            margin: 0 0 4px 0;
+            font-weight: 700;
             font-size: 14px;
+            color: #1e293b;
+        }
+        footer .unifil-sub {
+            margin: 0;
+            font-size: 11.5px;
+            color: #64748b;
         }
     </style>
 </head>
 <body>
 
-    <!-- Hero Section Centralizada e Profissional -->
-    <header class="hero text-center mb-4">
-        <div class="container px-4" style="max-width: 700px;">
-            <span style="font-size: 48px; display: block; margin-bottom: 10px;">📘</span>
-            <h1 class="h2 fw-bold mb-2">Kanji Quiz</h1>
-            <p class="text-white-50 small mb-0">Apresentação Técnica, Modo de Uso e Portfólio</p>
-        </div>
+    <!-- Cabeçalho Centralizado -->
+    <header class="hero">
+        <h1>📘 Kanji Quiz</h1>
+        <p>Apresentação Técnica, Modo de Uso e Portfólio</p>
     </header>
 
-    <!-- Conteúdo Técnico Principal -->
-    <main class="container my-4" style="max-width: 700px;">
+    <!-- Área de Conteúdo Centralizada -->
+    <div class="wrapper">
         
-        <!-- 👤 SEÇÃO 1: Sobre o Desenvolvedor (Topo) -->
+        <!-- 👤 SEÇÃO 1: Sobre o Desenvolvedor -->
         <div class="card-clean">
-            <h2 class="h5 fw-bold text-dark mb-3">👤 Sobre o Desenvolvedor</h2>
-            <p class="text-secondary small lh-base mb-0">
-                Olá! Meu nome é Hélio Junior. Sou desenvolvedor desta aplicação web voltada para o treino e memorização de Kanjis (ideogramas japoneses), criada como um projeto de extensão do curso Análise e Desenvolvimento de Sistemas da UniFil. Nesta página, apresento os detalhes e o funcionamento da aplicação desenvolvida.
+            <h2>👤 Sobre o Desenvolvedor</h2>
+            <p>
+                Olá! Meu nome é Hélio Junior. Sou desenvolvedor desta aplicação web voltada para o treino e memorização de Kanjis (ideogramas japoneses), criada como um projeto de extensão universitária. Nesta página, apresento os detalhes e o funcionamento da aplicação desenvolvida.
             </p>
         </div>
 
         <!-- 📋 SEÇÃO 2: Sobre o Projeto e URLs Oficiais -->
         <div class="card-clean">
-            <h2 class="h5 fw-bold text-dark mb-3">📋 Sobre a Aplicação</h2>
-            <p class="text-secondary small lh-base mb-3">
-                O <strong>Kanji Quiz</strong> é uma aplicação gamificada em formato de quiz projetada para o treino e a memorização dos 1.447 caracteres de Kanjis mais utilizados, englobando leitura, significado e exemplos de uso em sentenças. Adicionalmente, a plataforma disponibiliza uma biblioteca de consulta para suporte aos estudos. Dessa forma, o ecossistema atua diretamente no auxílio à aprendizagem da língua japonesa voltada aos exames do <strong>JLPT (do nível N5 ao N1)</strong>. O sistema foi desenvolvido em Python através do framework Django, garantindo conformidade com todos os requisitos funcionais propostos. 
-            </p>
-            <p class="text-secondary small mb-4">
-                Para acessar a aplicação online ou visualizar o código-fonte estruturado, utilize os links oficiais abaixo:
+            <h2>📋 Sobre a Aplicação</h2>
+            <p>
+                O <strong>Kanji Quiz</strong> é uma aplicação gamificada em formato de quiz projetada para o treino e a memorização dos 1.447 caracteres de Kanjis mais utilizados, englobando leitura, significado e exemplos de uso em sentenças. Adicionalmente, a plataforma disponibiliza uma biblioteca de consulta para suporte aos estudos. Dessa forma, o ecossistema atua diretamente no auxílio à aprendizagem da língua japonesa voltada aos exames do <strong>JLPT (do nível N5 ao N1)</strong>. O sistema foi desenvolvido em Python através do framework Django, garantindo conformidade com todos os requisitos funcionais propostos.
             </p>
             
-            <!-- Botões Oficiais de Acesso Atualizados -->
-            <div class="d-flex flex-wrap gap-3 pt-3 border-top">
-                <a href="https://onrender.com" target="_blank" class="btn btn-success-clean text-decoration-none">🚀 Abrir Aplicativo Online</a>
-                <!-- 👑 Endereço corrigido para visualização direta no GitHub -->
-                <a href="https://github.com/heliojunior-art/Kanji-Quiz" target="_blank" class="btn btn-sm px-4 rounded-3 text-decoration-none d-flex align-items-center justify-content-center" style="border: 1px solid #cbd5e1; color: #475569; font-weight: 600; height: 44px;">💻 Código-Fonte no GitHub</a>
+            <div class="btn-group">
+                <a href="https://onrender.com" target="_blank" class="btn-success-clean">🚀 Abrir Aplicativo Online</a>
+                <a href="https://github.com" target="_blank" class="btn-clean btn-outline-clean">💻 Código-Fonte no GitHub</a>
             </div>
         </div>
 
-        <!-- 📖 SEÇÃO 3: Guia do Aplicativo / Modo de Uso (Final) -->
+        <!-- 📖 SEÇÃO 3: Guia do Aplicativo -->
         <div class="card-clean">
-            <h2 class="h5 fw-bold text-dark mb-3">📖 Guia do Aplicativo</h2>
+            <h2>📖 Guia do Aplicativo</h2>
             
-            <div class="d-flex flex-column gap-3">
-                <div class="d-flex gap-3 align-items-start">
-                    <span class="step-number flex-shrink-0">1</span>
-                    <div>
-                        <strong class="text-dark d-block small">Configuração do Treino</strong>
-                        <span class="text-muted small">Acesse o menu principal, selecione o nível de proficiência desejada (do N5 ao N1) e determine a extensão do simulador entre 10, 20 ou 30 questões.</span>
-                    </div>
+            <div class="step-item">
+                <span class="step-number">1</span>
+                <div class="step-content">
+                    <strong>Configuração do Treino</strong>
+                    <span class="text-muted small" style="font-size: 13px; color: #64748b;">Acesse o menu principal, selecione o nível de proficiência desejada (do N5 ao N1) e determine a extensão do simulador entre 10, 20 ou 30 questões.</span>
                 </div>
+            </div>
 
-                <div class="d-flex gap-3 align-items-start">
-                    <span class="step-number flex-shrink-0">2</span>
-                    <div>
-                        <strong class="text-dark d-block small">Quiz e Dicas</strong>
-                        <span class="text-muted small">Analise o Kanji em destaque na tela e selecione o significado correto. Caso necessite de apoio contextual para guiar o seu raciocínio, acione o botão de dicas para exibir o modal flutuante.</span>
-                    </div>
+            <div class="step-item">
+                <span class="step-number">2</span>
+                <div class="step-content">
+                    <strong>Quiz e Dicas</strong>
+                    <span class="text-muted small" style="font-size: 13px; color: #64748b;">Analise o Kanji em destaque na tela e selecione o significado correto. Caso necessite de apoio contextual para guiar o seu raciocínio, acione o botão de dicas para exibir o modal flutuante.</span>
                 </div>
+            </div>
 
-                <div class="d-flex gap-3 align-items-start">
-                    <span class="step-number flex-shrink-0">3</span>
-                    <div>
-                        <strong class="text-dark d-block small">Resultado e Histórico</strong>
-                        <span class="text-muted small">Ao concluir o round, o sistema exibirá uma lista detalhada contendo a revisão de acertos e erros. A pontuação será persistida na sessão local do navegador, permitindo acompanhar o histórico de desempenho das últimas 5 sessões de treino de forma privada.</span>
-                    </div>
+            <div class="step-item">
+                <span class="step-number">3</span>
+                <div class="step-content">
+                    <strong>Resultado e Histórico</strong>
+                    <span class="text-muted small" style="font-size: 13px; color: #64748b;">Ao concluir o round, o sistema exibirá uma lista detalhada contendo a revisão de acertos e erros. A pontuação será persistida na sessão local do navegador, permitindo acompanhar o histórico de desempenho das últimas 5 sessões de treino de forma privada.</span>
                 </div>
             </div>
         </div>
 
-    </main>
+    </div>
 
-    <!-- 👑 RODAPÉ PERSONALIZADO UNIFIL -->
-    <footer class="text-center text-muted py-4 small border-top bg-white mt-5">
-        <p class="mb-1 fw-bold" style="color: #1e293b;">UniFil - Centro Universitário Filadélfia</p>
-        <p class="mb-0 text-secondary" style="font-size: 12px;">© 2026 Kanji Quiz · Projeto de Extensão Universitária · Documentação Homologada</p>
+    <!-- Rodapé Centralizado UniFil -->
+    <footer>
+        <p class="unifil-sub">© 2026 Kanji Quiz · UniFil - Centro Universitário Filadélfia</p>
     </footer>
 
 </body>
