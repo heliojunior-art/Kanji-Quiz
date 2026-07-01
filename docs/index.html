@@ -3,140 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanji Quiz - Central do Projeto</title>
-    
-    <!-- Bootstrap 5 CSS via CDN para estrutura básica -->
-    <link href="https://jsdelivr.net" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Hélio Junior</title>
     
     <style>
+        /* 🌊 ESTILO MINIMALISTA INSPIRADO NO EXEMPLO */
         body { 
-            background-color: #f8fafc; 
-            color: #334155;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #ffffff; 
+            color: #24292f;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
         }
-        /* Cabeçalho minimalista estável */
-        .hero { 
-            background: #1e293b; 
-            color: #ffffff; 
-            padding: 50px 0; 
-            border-bottom: 4px solid #58cc02; 
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
         }
-        .card-clean { 
-            border-radius: 14px; 
-            border: 1px solid #e2e8f0; 
-            background-color: #ffffff;
-            padding: 24px;
-            margin-bottom: 24px;
-        }
-        .btn-success-clean {
-            background-color: #58cc02;
-            color: #ffffff;
+        h1 {
+            font-size: 28px;
+            color: #0969da;
             font-weight: 600;
-            border-radius: 10px;
-            padding: 10px 24px;
-            border: none;
-            transition: background 0.15s ease;
+            margin-top: 0;
+            margin-bottom: 20px;
         }
-        .btn-success-clean:hover {
-            background-color: #46a302;
-            color: #ffffff;
+        h2 {
+            font-size: 18px;
+            color: #24292f;
+            font-weight: 600;
+            margin-top: 30px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #d8dee4;
+            padding-bottom: 8px;
         }
-        .step-number {
-            background-color: #f1f5f9;
-            color: #475569;
-            font-weight: 700;
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
+        p, li {
             font-size: 14px;
+            color: #24292f;
+        }
+        ul {
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: #0969da;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .links-group {
+            margin-top: 15px;
+            display: flex;
+            gap: 15px;
+        }
+        .competencias {
+            color: #57606a;
+            font-style: italic;
+            font-size: 13px;
+            margin-top: 5px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Hero Section Centralizada -->
-    <header class="hero text-center">
-        <div class="container px-4" style="max-width: 700px;">
-            <h1 class="h2 fw-bold mb-2">📘 Kanji Quiz</h1>
-            <p class="text-white-50 small mb-0">Apresentação Técnica, Modo de Uso e Portfólio</p>
-        </div>
-    </header>
+    <div class="container">
 
-    <!-- Conteúdo Técnico Principal -->
-    <main class="container my-4" style="max-width: 700px;">
+        <!-- 👤 SEÇÃO 1: Sobre o Desenvolvedor (Topo) -->
+        <h1>Hélio Junior</h1>
+        <p>Hi there 👋</p>
+        <p>
+            Sou desenvolvedor de software focado na criação de soluções web modernas, eficientes e integradas a arquiteturas de banco de dados robustas.
+        </p>
+        <p class="competencias">
+            Tecnologias utilizadas neste ecossistema: Django Framework, Python Back-End, SQLite Relation, JavaScript Popstate e Bootstrap 5 UI.
+        </p>
+
+        <!-- 📋 SEÇÃO 2: Sobre o Projeto e URLs Oficiais -->
+        <h2>Kanji Quiz</h2>
+        <p>
+            O <strong>Kanji Quiz</strong> é um ecossistema gamificado projetado para o treino e memorização ativa de 1.447 caracteres do exame internacional de proficiência em língua japonesa <strong>JLPT (N5 ao N1)</strong>. O sistema foi desenvolvido em Python através do framework Django, garantindo conformidade com todos os requisitos funcionais propostos.
+        </p>
         
-        <!-- 👤 SEÇÃO 1: Portfólio do Desenvolvedor (Primeiro) -->
-        <div class="card-clean">
-            <h2 class="h5 fw-bold text-dark mb-3">👤 Portfólio do Desenvolvedor</h2>
-            <p class="text-secondary small lh-base mb-3">
-                Olá! Meu nome é <strong>Hélio Junior</strong>. Sou desenvolvedor de software focado na criação de soluções web modernas, eficientes e integradas a arquiteturas de banco de dados robustas.
-            </p>
-            <div class="p-3 bg-light rounded-3">
-                <strong class="text-dark d-block small mb-2">Principais Competências do Projeto:</strong>
-                <div class="d-flex flex-wrap gap-1.5">
-                    <span class="badge bg-secondary text-white fw-normal" style="font-size: 11px;">Django Framework</span>
-                    <span class="badge bg-secondary text-white fw-normal" style="font-size: 11px;">Python Back-End</span>
-                    <span class="badge bg-secondary text-white fw-normal" style="font-size: 11px;">SQLite Relation</span>
-                    <span class="badge bg-secondary text-white fw-normal" style="font-size: 11px;">JavaScript Popstate</span>
-                    <span class="badge bg-secondary text-white fw-normal" style="font-size: 11px;">Bootstrap 5 UI</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- 📋 SEÇÃO 2: Sobre o Projeto e URLs (Segundo) -->
-        <div class="card-clean">
-            <h2 class="h5 fw-bold text-dark mb-3">📋 Sobre o Projeto</h2>
-            <p class="text-secondary small lh-base mb-4">
-                O <strong>Kanji Quiz</strong> é um ecossistema gamificado projetado para o treino e memorização activa de 1.447 caracteres do exame internacional de proficiência em língua japonesa <strong>JLPT (N5 ao N1)</strong>. O sistema foi desenvolvido em Python através do framework Django, garantindo conformidade com todos os requisitos funcionais propostos.
-            </p>
-            
-            <!-- Botões Oficiais de Acesso à URL e Código -->
-            <div class="d-flex flex-wrap gap-2 pt-2 border-top">
-                <a href="https://onrender.com" target="_blank" class="btn btn-success-clean text-decoration-none">🚀 Abrir Aplicativo</a>
-                <a href="https://github.com" target="_blank" class="btn btn-outline-light btn-sm px-4 rounded-3 text-decoration-none font-weight-bold" style="padding-top: 10px; border: 1px solid #cbd5e1; color: #475569;">💻 Código-Fonte</a>
-            </div>
+        <div class="links-group">
+            <!-- 🚀 Substitua pelas suas URLs reais do seu app e repositório -->
+            <a href="https://onrender.com" target="_blank">🚀 Abrir Aplicativo Online</a>
+            <a href="https://github.com" target="_blank">💻 Código-Fonte no GitHub</a>
         </div>
 
         <!-- 📖 SEÇÃO 3: Guia do Aplicativo / Modo de Uso (Final) -->
-        <div class="card-clean">
-            <h2 class="h5 fw-bold text-dark mb-3">📖 Guia do Aplicativo</h2>
-            
-            <div class="d-flex flex-column gap-3">
-                <div class="d-flex gap-3 align-items-start">
-                    <span class="step-number flex-shrink-0">1</span>
-                    <div>
-                        <strong class="text-dark d-block small">Configuração do Treino</strong>
-                        <span class="text-muted small">Acesse o menu principal, selecione a faixa de proficiência desejada (do N5 ao N1) e determine a extensão do simulador entre 10, 20 ou 30 questões.</span>
-                    </div>
-                </div>
+        <h2>Guia do Aplicativo</h2>
+        <ul>
+            <li><strong>Configuração do Treino:</strong> Acesse o menu principal, selecione a faixa de proficiência desejada (do N5 ao N1) e determine a extensão do simulador entre 10, 20 ou 30 questões.</li>
+            <li><strong>Resolução Ativa e Suporte:</strong> Analise o caractere em destaque na tela e selecione o significado correto. Caso necessite de apoio contextual, acione o botão de dicas para exibir o modal flutuante.</li>
+            <li><strong>Relatórios e Histórico Privado:</strong> Ao concluir o round, avalie a lista detalhada de acertos e erros. O sistema registrará a pontuação na sessão local do seu navegador, realizando a limpeza automática dos dados assim que a aba for fechada.</li>
+        </ul>
 
-                <div class="d-flex gap-3 align-items-start">
-                    <span class="step-number flex-shrink-0">2</span>
-                    <div>
-                        <strong class="text-dark d-block small">Resolução Ativa e Suporte</strong>
-                        <span class="text-muted small">Analise o caractere em destaque na tela e selecione o significado correto. Caso necessite de apoio contextual, acione o botão de dicas para exibir o modal flutuante.</span>
-                    </div>
-                </div>
-
-                <div class="d-flex gap-3 align-items-start">
-                    <span class="step-number flex-shrink-0">3</span>
-                    <div>
-                        <strong class="text-dark d-block small">Relatórios e Histórico Privado</strong>
-                        <span class="text-muted small">Ao concluir o round, avalie a lista detalhada de acertos e erros. O sistema registrará a pontuação na sessão local do seu navegador, realizando a limpeza automática dos dados assim que a aba for fechada.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </main>
-
-    <!-- Rodapé Minimalista -->
-    <footer class="text-center text-muted py-4 small border-top bg-white mt-5">
-        <p class="mb-0">© 2026 Kanji Quiz. Código-fonte e documentação homologados.</p>
-    </footer>
+    </div>
 
 </body>
 </html>
