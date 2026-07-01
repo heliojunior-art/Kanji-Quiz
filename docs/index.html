@@ -3,49 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanji Quiz - Informações do Projeto</title>
-    <link href="https://jsdelivr.net" rel="stylesheet">
+    <title>Kanji Quiz - Documentação e Apresentação</title>
+    
+    <link href="https://jsdelivr.net" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
     <style>
-        body { background: #f4f6f9; color: #334155; }
-        .hero { background: #212529; color: #ffffff; padding: 60px 0; border-bottom: 5px solid #58cc02; }
-        .card-preview { border-radius: 20px; border: none; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.05); }
+        body { 
+            background-color: #f8fafc; 
+            color: #334155;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        .hero { 
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); 
+            color: #ffffff; 
+            padding: 80px 0; 
+            border-bottom: 5px solid #58cc02; 
+        }
+        .card-preview { 
+            border-radius: 20px; 
+            border: none; 
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05), 0 8px 10px -6px rgba(0,0,0,0.05);
+            background-color: #ffffff;
+            padding: 32px;
+            transition: transform 0.2s ease;
+        }
+        .card-preview:hover {
+            transform: translateY(-2px);
+        }
+        .btn-premium-success {
+            background-color: #58cc02;
+            border-color: #58cc02;
+            color: #ffffff;
+            font-weight: 700;
+            border-radius: 14px;
+            padding: 12px 28px;
+            box-shadow: 0 4px 0 #46a302;
+            transition: all 0.1s ease;
+        }
+        .btn-premium-success:hover {
+            background-color: #46a302;
+            border-color: #46a302;
+            color: #ffffff;
+        }
+        .btn-premium-success:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 #46a302;
+        }
+        .btn-premium-outline {
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            font-weight: 700;
+            border-radius: 14px;
+            padding: 11px 28px;
+            transition: all 0.2s ease;
+        }
+        .btn-premium-outline:hover {
+            background-color: #ffffff;
+            color: #1e293b;
+        }
+        .badge-req {
+            background-color: #e2e8f0;
+            color: #475569;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 12px;
+        }
     </style>
 </head>
 <body>
 
-    <!-- Hero Section -->
-    <header class="hero text-center">
-        <div class="container">
-            <h1 class="display-4 fw-bold">📘 Kanji Quiz</h1>
-            <p class="lead opacity-75 mt-2">Apresentação Técnica e Apresentação de Requisitos</p>
-            <div class="mt-4">
-                <a href="https://onrender.com" target="_blank" class="btn btn-success btn-lg fw-bold px-4 py-2 me-2" style="border-radius: 12px; background-color: #58cc02; border-color: #58cc02;">🚀 Acessar Aplicação Online</a>
-                <a href="https://github.com" target="_blank" class="btn btn-outline-light btn-lg fw-bold px-4 py-2" style="border-radius: 12px;">💻 Código-Fonte no GitHub</a>
+    <header class="hero text-center shadow-sm">
+        <div class="container" style="max-width: 800px;">
+            <span style="font-size: 56px; display: block; margin-bottom: 10px;">📘</span>
+            <h1 class="display-4 fw-bold mb-2" style="letter-spacing: -1px;">Kanji Quiz</h1>
+            <p class="lead opacity-75 mb-4" style="font-size: 18px;">Apresentação Técnica do Projeto e Validação de Requisitos</p>
+            
+            <div class="d-flex flex-wrap justify-content-center gap-3 mt-2">
+                <a href="https://onrender.com" target="_blank" class="btn btn-premium-success shadow-sm">🚀 Acessar Aplicação Online</a>
+                <a href="https://github.com" target="_blank" class="btn btn-premium-outline">💻 Código-Fonte no GitHub</a>
             </div>
         </div>
     </header>
 
     <main class="container my-5" style="max-width: 800px;">
-        <div class="card card-preview p-4 bg-white mb-4">
-            <h2 class="h4 fw-bold text-dark border-bottom pb-2 mb-3">📋 Sobre o Projeto</h2>
-            <p>O <strong>Kanji Quiz</strong> é uma plataforma gamificada de alto desempenho projetada para auxiliar estudantes da língua japonesa a dominarem os 1.447 Kanjis oficiais exigidos no exame internacional JLPT. O projeto atende com rigor a todos os requisitos funcionais e não-funcionais estabelecidos no escopo inicial de desenvolvimento.</p>
+        
+        <div class="card-preview mb-4">
+            <h2 class="h4 fw-bold text-dark border-bottom pb-2 mb-3 d-flex align-items-center gap-2">
+                <span>📋</span> Sobre o Projeto
+            </h2>
+            <p class="text-secondary lh-lg mb-0" style="font-size: 15px;">
+                O <strong>Kanji Quiz</strong> é uma plataforma gamificada de alto desempenho projetada especificamente para auxiliar estudantes da língua japonesa a memorizarem de forma ativa os 1.447 Kanjis oficiais do exame internacional <strong>JLPT (N5 ao N1)</strong>. O sistema resolve com rigor os requisitos de usabilidade e responsividade exigidos para uma aplicação moderna.
+            </p>
         </div>
 
-        <div class="card card-preview p-4 bg-white mb-4">
-            <h2 class="h4 fw-bold text-dark border-bottom pb-2 mb-3">🛠️ Diferenciais Técnicos Atendidos</h2>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item bg-transparent px-0">✔ <strong>Estrutura Django com SQLite:</strong> Persistência de dados íntegra utilizando transações atômicas para salvar sessões e respostas.</li>
-                <li class="list-group-item bg-transparent px-0">✔ <strong>Design Otimizado:</strong> Interface construída sob demanda usando Bootstrap v5 para garantir usabilidade rápida em computadores e celulares.</li>
-                <li class="list-group-item bg-transparent px-0">✔ <strong>Segurança de Fluxo de Jogo:</strong> Filtros JavaScript integrados que interceptam o botão voltar do navegador, impedindo perdas acidentais de progresso.</li>
-                <li class="list-group-item bg-transparent px-0">✔ <strong>Mecanismo de Dicas em Tempo Real:</strong> Modais customizados em CSS/JS puro livres de quebras que oferecem suporte focado ao estudante.</li>
-                <li class="list-group-item bg-transparent px-0">✔ <strong>Histórico de Desempenho Inteligente:</strong> Painel de estatísticas isolado por sessões privadas de navegação e com autolimpeza automática ao fechar o app.</li>
-            </ul>
+        <div class="card-preview mb-4">
+            <h2 class="h4 fw-bold text-dark border-bottom pb-2 mb-3 d-flex align-items-center gap-2">
+                <span>🛠️</span> Diferenciais Técnicos Atendidos
+            </h2>
+            
+            <div class="d-flex flex-column gap-3 mt-2">
+                <div class="p-2 rounded-3 bg-light px-3">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-1">
+                        <strong class="text-dark">✨ Persistência e Integridade de Dados</strong>
+                        <span class="badge-req">Back-end</span>
+                    </div>
+                    <p class="text-muted small mb-0">Estrutura Django com SQLite utilizando o decorador <code>@transaction.atomic</code> para gravação de respostas sem riscos de corrupção ou travamentos de memória na nuvem.</p>
+                </div>
+
+                <div class="p-2 rounded-3 bg-light px-3">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-1">
+                        <strong class="text-dark">📱 Design Gamificado de Alta Performance</strong>
+                        <span class="badge-req">Front-end</span>
+                    </div>
+                    <p class="text-muted small mb-0">Interface responsiva construída em Bootstrap v5. Otimizada para celulares e computadores com animações fluidas processadas diretamente via hardware (CSS puro).</p>
+                </div>
+
+                <div class="p-2 rounded-3 bg-light px-3">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-1">
+                        <strong class="text-dark">🔒 Segurança de Navegação Avançada</strong>
+                        <span class="badge-react">JavaScript</span>
+                    </div>
+                    <p class="text-muted small mb-0">Implementação de travas de histórico via rotinas de <code>popstate</code> que interceptam ações involuntárias no botão 'Voltar' do navegador, garantindo a proteção do progresso do quiz.</p>
+                </div>
+
+                <div class="p-2 rounded-3 bg-light px-3">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-1">
+                        <strong class="text-dark">🗂️ Isolamento e Privacidade de Sessão</strong>
+                        <span class="badge-req">Cookies</span>
+                    </div>
+                    <p class="text-muted small mb-0">Lógica baseada na API <code>request.session</code> do Django. O histórico de acertos é estritamente privado por navegador e conta com destruição automática de dados ao fechar o app.</p>
+                </div>
+            </div>
         </div>
+
     </main>
 
-    <footer class="text-center text-muted py-4 small border-top bg-white">
-        <p class="mb-0">© 2026 Kanji Quiz. Apresentação final de projeto concluída.</p>
+    <footer class="text-center text-muted py-4 small border-top bg-white mt-5">
+        <p class="mb-0 fw-medium">© 2026 Kanji Quiz. Apresentação Final de Engenharia de Software.</p>
     </footer>
 
+    <script src="https://jsdelivr.net" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
