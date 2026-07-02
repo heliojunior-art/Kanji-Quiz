@@ -14,20 +14,21 @@
         Domine os ideogramas japoneses do N5 ao N1 de forma prática, rápida e totalmente gratuita.
     </p>
 
-    <div class="mb-5">
+        <div class="mb-5">
         <a href="{% url 'menu' %}" 
-           class="btn text-white font-weight-bold px-5 py-3 shadow transition-all"
+           class="btn text-white font-weight-bold px-5 py-3 transition-all"
            style="
                 background-color: #58cc02;
                 font-size: 26px;
                 border-radius: 18px;
                 box-shadow: 0 6px 0 #46a302 !important;
+                border-color: transparent !important;
                 display: inline-block;
                 text-decoration: none;
            "
-           onmousedown="this.style.transform='translateY(4px)'; this.style.boxShadow='0 2px 0 #46a302'"
-           onmouseup="this.style.transform='none'; this.style.boxShadow='0 6px 0 #46a302'"
-           onmouseleave="this.style.transform='none'; this.style.boxShadow='0 6px 0 #46a302'">
+           onmousedown="this.style.transform='translateY(4px)'; this.style.boxShadow='0 2px 0 #46a302 !important'"
+           onmouseup="this.style.transform='none'; this.style.boxShadow='0 6px 0 #46a302 !important'"
+           onmouseleave="this.style.transform='none'; this.style.boxShadow='0 6px 0 #46a302 !important'">
             ▶ Iniciar Treino
         </a>
     </div>

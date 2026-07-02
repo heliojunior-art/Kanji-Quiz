@@ -10,7 +10,6 @@ body {
 .kanji {
     font-size: 6rem;
     font-weight: 900;
-    /* ⚡ 'Noto Serif JP' adicionada no topo da prioridade */
     font-family: "Noto Serif JP", "Yu Mincho", "MS Mincho", "Hiragino Mincho ProN", serif;
     line-height: 1.1;
     display: inline-block;
